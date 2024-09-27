@@ -1,0 +1,77 @@
+site_name: Gcube Docs
+site_url: https://docs.gcube.ai/
+docs_dir: docs
+theme:
+  name: material
+#  custom_dir: overrides
+  language: ko
+  favicon: images/favicon.png
+  logo: images/gcube_logo.svg
+  font:
+    text: Inter
+  features:
+    - navigation.indexes
+    - navigation.expand
+#    - navigation.tabs
+#    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - search.highlight
+    - content.code.annotate
+    - content.tabs.link
+    - search.suggest
+#    - content.action.edit
+    - navigation.top
+    - toc.follow
+    - navigation.path
+    - content.code.copy
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - footnotes
+#  - markdown_include.include
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: ["docs/snippets", "docs/admin"]
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details 
+  - admonition
+  - attr_list
+  - meta
+  - tables
+  - toc:
+      permalink: True 
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+#extra:
+#  social:
+#    - icon: fontawesome/brands/twitter
+#      link: https://twitter.com/runailabs
+#    - icon: fontawesome/brands/linkedin
+#      link: https://linkedin.com/company/runailabs/
+#  analytics:
+#    provider: google
+#    property: UA-122651141-1
+#  version:
+#    provider: mike
+
+
+ 
+nav:
+  - 개요: index.md
+  - gcube 가이드:
+    - 계정생성: user-guide/sign-up.md
+    - 노드 사용자 가이드: user-guide/node.md
+    - 워크로드 사용자 가이드: user-guide/workload.md
+ 

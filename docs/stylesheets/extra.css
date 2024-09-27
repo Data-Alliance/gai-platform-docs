@@ -1,0 +1,77 @@
+
+
+.md-header {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.md-header .md-search input {
+    color: #000000;
+}
+
+.md-header .md-search:hover {
+    background-color: #f0f0f0;
+}
+
+.md-header .md-search input::placeholder {
+    color: #999999;
+}
+
+.md-footer-nav {
+    /* background-image: url(../assets/images/second-nav-blue.png); */
+    background-color: rgb(255, 255, 255) !important;
+
+    /* max-height: 90px; */
+}
+
+.md-footer-meta {
+    background-color: rgb(255, 255, 255) !important;
+    border-top: 1px solid #1b2532 !important;
+}
+.md-header-nav__button.md-logo img, .md-header-nav__button.md-logo svg {
+    width: 50px
+}
+
+
+.md-nav__link:hover {
+  color: rgb(130, 71 ,255) !important;
+}
+
+.md-nav__link--active {
+  color: rgb(130, 71 ,255) !important;
+}
+
+.md-nav__link:focus {
+  color: rgb(130, 71 ,255) !important;
+}
+
+
+:root {
+  --md-text-font: "Inter", sans-serif;
+  --md-header-font: "Inter", sans-serif
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9em
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+}
+
+p, li {
+    font-family: 'Inter', sans-serif;
+}
+
+.md-sidebar {
+    font-family: 'Inter', sans-serif;
+}
+
+.md-header .md-header__title {
+    font-family: 'Inter', sans-serif;
+}
+
+.md-content, .md-typeset {
+    font-family: 'Inter', sans-serif;
+}
+

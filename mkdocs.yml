@@ -3,24 +3,22 @@ site_url: https://docs.gcube.ai/
 docs_dir: docs
 theme:
   name: material
-#  custom_dir: overrides
   language: ko
   favicon: images/favicon.png
   logo: images/gcube_logo.svg
   font:
     text: Inter
   features:
-    - navigation.indexes
-    - navigation.expand
-#    - navigation.tabs
-#    - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.indexes
+    - announce.dismiss
+    - content.action.view
+    - content.tooltips
+#    - navigation.expand
+#    - navigation.sections
+#    - navigation.indexes
     - search.highlight
     - content.code.annotate
     - content.tabs.link
     - search.suggest
-#    - content.action.edit
     - navigation.top
     - toc.follow
     - navigation.path
@@ -49,7 +47,7 @@ markdown_extensions:
   - meta
   - tables
   - toc:
-      permalink: True 
+      permalink: False
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -70,8 +68,28 @@ markdown_extensions:
  
 nav:
   - 개요: index.md
-  - gcube 가이드:
-    - 계정생성: user-guide/sign-up.md
-    - 노드 사용자 가이드: user-guide/node.md
-    - 워크로드 사용자 가이드: user-guide/workload.md
+  - 계정생성: user-guide/sign-up.md
+  # - gcube 가이드:
+  #   - 계정생성: user-guide/sign-up.md
+  - 노드 사용자 가이드:
+    - GPU 가격 비교: user-guide/node/gpu-price-comparison.md
+    - 대쉬보드: user-guide/node/node-dashboard.md
+    - 새 노드 연결: user-guide/node/connect-new-node.md
+    - GPU 공유 중단: user-guide/node/stop-gpu-sharing.md
+    - 에이전트 Node 모니터링 확인: user-guide/node/check-agent-node-monitoring.md
+    - 에이전트 세팅: user-guide/node/agent-setup.md
+    - 프로필 설정: user-guide/node/profile-settings.md
+    - GPU 공유 정보 확인: user-guide/node/check-gpu-sharing-info.md
+    - GPU 공유 가격 설정: user-guide/node/set-gpu-sharing-pricing.md
+    - GPU 공유 수입내역 확인: user-guide/node/check-gpu-sharing-income.md
+    - GPU 공유 모니터링 확인: user-guide/node/check-gpu-sharing-monitoring.md
+  - 워크로드 사용자 가이드: 
+    - GPU 가격 비교: user-guide/node/gpu-price-comparison.md
+    - 대쉬보드: user-guide/workload/workload-dashboard.md
+    - 새 워크로드 등록: user-guide/workload/register-new-workload.md
+    - 워크로드 배포: user-guide/workload/deploy-workload.md
+    - 워크로드 모니터링: user-guide/workload/monitor-workload.md
+    - 워크로드 지출내역: user-guide/workload/workload-expenses.md
+    - 워크로드 종료: user-guide/workload/terminate-workload.md
+
  

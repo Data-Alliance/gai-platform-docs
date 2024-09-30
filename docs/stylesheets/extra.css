@@ -44,15 +44,34 @@
   color: rgb(130, 71 ,255) !important;
 }
 
+.md-nav__link {
+    font-weight: bold; /* Bold for top-level items */
+    font-size: 0.9em;
+}
 
-:root {
+.md-nav__item--section > .md-nav__link {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #c01818; /* Adjust color as needed */
+}
+
+/* Style for sub-items */
+.md-nav__item--nested .md-nav__link {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #333333; /* Adjust color as needed */
+}
+
+
+
+root {
   --md-text-font: "Inter", sans-serif;
   --md-header-font: "Inter", sans-serif
 }
 
 body {
     font-family: 'Inter', sans-serif;
-    font-size: 0.9em
+    font-size: 0.9em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -73,5 +92,6 @@ p, li {
 
 .md-content, .md-typeset {
     font-family: 'Inter', sans-serif;
+    font-size: 0.9em;
 }
 

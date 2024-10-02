@@ -69,8 +69,6 @@ markdown_extensions:
 nav:
   - 개요: index.md
   - 계정생성: user-guide/sign-up.md
-  # - gcube 가이드:
-  #   - 계정생성: user-guide/sign-up.md
   - 노드 사용자 가이드:
     - GPU 가격 비교: user-guide/node/gpu-price-comparison.md
     - 대쉬보드: user-guide/node/node-dashboard.md

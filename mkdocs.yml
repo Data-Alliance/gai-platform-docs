@@ -97,7 +97,7 @@ nav:
     - GPU 공유 수입내역 확인: user-guide/node/check-gpu-sharing-income.md
     - GPU 공유 모니터링 확인: user-guide/node/check-gpu-sharing-monitoring.md
   - 워크로드 사용자 가이드: 
-    - GPU 가격 비교: user-guide/node/gpu-price-comparison.md
+    - GPU 가격 비교: user-guide/workload/gpu-price-comparison.md
     - 대쉬보드: user-guide/workload/workload-dashboard.md
     - 새 워크로드 등록: user-guide/workload/register-new-workload.md
     - 워크로드 배포: user-guide/workload/deploy-workload.md

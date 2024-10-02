@@ -24,7 +24,7 @@
 }
 
 .md-footer-meta {
-    background-color: rgb(8, 8, 8) !important;
+    background-color: rgb(255, 255, 255) !important;
     border-top: 1px solid #1b2532 !important;
 }
 .md-header-nav__button.md-logo img, .md-header-nav__button.md-logo svg {
@@ -38,7 +38,6 @@
 
 .md-nav__link--active {
   color: rgb(130, 71 ,255) !important;
-  font-weight: bold; 
 }
 
 .md-nav__link:focus {
@@ -46,7 +45,7 @@
 }
 
 .md-nav__link {
-     /*font-weight: bold; */
+    font-weight: bold; 
     font-size: 0.9em; 
 }
 
@@ -83,13 +82,3 @@ p, li {
     font-size: 0.9em;
 }
 
-/* Change the toggle button color to dark gray */
-.md-header__option {
-    background-color: #ffffff; /* Dark gray background */
-    color: #8b8b8b; /* White text color */
-}
-
-/* Optional: Change hover effect
-.md-header__option:hover {
-    background-color: #444; /* Slightly lighter gray on hover */
-} */

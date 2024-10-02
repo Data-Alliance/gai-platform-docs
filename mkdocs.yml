@@ -8,21 +8,36 @@ theme:
   logo: images/gcube_logo.svg
   font:
     text: Inter
-  features:
-    - announce.dismiss
-    - content.action.view
-    - content.tooltips
-#    - navigation.expand
-#    - navigation.sections
-#    - navigation.indexes
-    - search.highlight
-    - content.code.annotate
-    - content.tabs.link
-    - search.suggest
-    - navigation.top
-    - toc.follow
-    - navigation.path
-    - content.code.copy
+  palette:
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      toggle:
+        icon: material/weather-night
+        name: Switch to Dark mode
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to Light mode
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
 extra_css:
   - stylesheets/extra.css
 
@@ -37,8 +52,8 @@ markdown_extensions:
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+        - class: mermaid
+        - format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.details 

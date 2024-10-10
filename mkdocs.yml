@@ -5,7 +5,7 @@ theme:
   name: material
   language: ko
   favicon: images/favicon.png
-  logo: images/gcube_logo.svg
+  logo: images/gcube_logo.svg 
   font:
     text: Inter
   palette:

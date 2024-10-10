@@ -5,7 +5,7 @@
 }
 
 .md-header .md-search input {
-    color: #000000;
+    color: #999999;
 }
 
 .md-header .md-search:hover {
@@ -13,7 +13,7 @@
 }
 
 .md-header .md-search input::placeholder {
-    color: #999999;
+    color: #070707;
 }
 
 .md-footer-nav {
@@ -45,11 +45,9 @@
   color: rgb(130, 71 ,255) !important;
 }
 
-.md-nav__link {
+/* .md-nav__link {
      /*font-weight: bold; */
-    font-size: 0.9em; 
-}
-
+    /* font-size: 0.9em;  }*/
 
 
 root {
@@ -89,7 +87,63 @@ p, li {
     color: #8b8b8b; /* White text color */
 }
 
-/* Optional: Change hover effect
-.md-header__option:hover {
-    background-color: #444; /* Slightly lighter gray on hover */
+/* for the mobile nav bar
+@media only screen and (max-width: 76.1875em) {
+
+    html .md-nav--primary .md-nav__title--site {
+        background-color: rgb(0, 76, 117) !important;
+        border-bottom: 1px solid #1b2532 !important;
+    }
+
+    .md-nav__source {
+        background-color: #1f4e79 !important;
+    }
+
+    html .md-nav--primary .md-nav__title {
+        background-color: rgb(0, 76, 117) !important;
+        border-bottom: 1px solid #1b2532 !important;
+        color: #ffffff;
+    }
+
+    html .md-nav--primary .md-nav__title::before {
+        color: #ffffff;
+    }
+
 } */
+
+
+
+/* Mobile navigation bar styles */
+@media only screen and (max-width: 76.1875em) {
+    .md-nav__title,
+    .md-nav__title--site,
+    .md-nav__source {
+      background-color: rgb(255, 255, 255) !important;
+      color: #110606 !important; /* White text */
+    }
+  
+    .md-nav__title {
+      border-bottom: 1px solid #666666 !important; /* Darker gray border */
+    }
+  
+    .md-nav__title::before {
+      color: #ffffff !important; /* White color for the menu icon */
+    }
+  
+    .md-nav__list {
+      background-color: #f0f0f0 !important; /* Light gray background for the menu items */
+    }
+  
+    .md-nav__item {
+      color: #333333 !important; /* Dark gray text for menu items */
+    }
+    
+    .md-header {
+      background-color: rgb(130, 71 ,255) !important;
+    }
+
+    .md-header__option {
+        background-color: rgb(130, 71 ,255) !important;
+        color: #f0f0f0; /* White text color */
+    }
+  }

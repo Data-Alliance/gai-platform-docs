@@ -87,30 +87,6 @@ p, li {
     color: #8b8b8b; /* White text color */
 }
 
-/* for the mobile nav bar
-@media only screen and (max-width: 76.1875em) {
-
-    html .md-nav--primary .md-nav__title--site {
-        background-color: rgb(0, 76, 117) !important;
-        border-bottom: 1px solid #1b2532 !important;
-    }
-
-    .md-nav__source {
-        background-color: #1f4e79 !important;
-    }
-
-    html .md-nav--primary .md-nav__title {
-        background-color: rgb(0, 76, 117) !important;
-        border-bottom: 1px solid #1b2532 !important;
-        color: #ffffff;
-    }
-
-    html .md-nav--primary .md-nav__title::before {
-        color: #ffffff;
-    }
-
-} */
-
 
 
 /* Mobile navigation bar styles */
@@ -145,5 +121,9 @@ p, li {
     .md-header__option {
         background-color: rgb(130, 71 ,255) !important;
         color: #f0f0f0; /* White text color */
+    }
+    body {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.1em;
     }
   }

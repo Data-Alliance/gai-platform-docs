@@ -40,6 +40,8 @@ theme:
         name: Switch to system preference
 extra_css:
   - stylesheets/extra.css
+extra:
+  homepage: https://console.gcube.ai/
 
 markdown_extensions:
   - footnotes

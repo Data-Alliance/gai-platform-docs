@@ -25,7 +25,7 @@ gcube의 GPU를 공유받기 위해, ‘새 워크로드 등록’이 필요합�
     ```
     username/repository:tag
     ```
-    예시: `ollama:ollama:latest`
+    예시: `ollama/ollama:latest`
 
 === "NVIDIA NGC"
     ```

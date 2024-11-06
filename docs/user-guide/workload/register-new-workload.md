@@ -11,7 +11,7 @@ gcube의 GPU를 공유받기 위해, ‘새 워크로드 등록’이 필요합�
 ### 설명
 ![input-workload-description](img/register-new-workload/workload_desc.png) <br>
 
-- **워크로드 설명**: 워크로드에 대한 간략한 설명을 작성합니다.
+- **워크로드 설명**: 워크로드의 용도와 특징을 간단히 작성합니다.
 
 
 ### 컨테이너

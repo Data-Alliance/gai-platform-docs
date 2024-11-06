@@ -19,21 +19,48 @@ gcube의 GPU를 공유받기 위해, ‘새 워크로드 등록’이 필요합�
 
 - **저장소 유형**: 컨테이너 이미지가 저장된 플랫폼을 선택하세요. <br>
 
-- **컨테이너 이미지**: 컨테이너 이미지 URL을 입력하세요. 정확한 이미지 URL을 입력 후 우측 체크 표시를 클릭하면 녹색으로 변경되며, 컨테이너 포트가 자동으로 입력됩니다.
+- **컨테이너 이미지**: 아래 저장소별 이미지 입력 형식을 참고하여 컨테이너 이미지 URL을 입력하세요. 
 
-!!! Note
-    <이미지 입력 예시><br>
+=== "Docker Hub"
+    ```
+    username/repository:tag
+    ```
+    예시: `ollama:ollama:latest`
 
-      - Docker Hub 공식 이미지: `pytorch/pytorch:2.0.0-cuda11.7-cudnn8-runtime` <br>
-      - 개인 저장소 이미지: `koojy717/stable-diffusion:1.00` <br><br>
+=== "NVIDIA NGC"
+    ```
+    nvcr.io/nvidia/repository:tag
+    ```
+    예시: `nvcr.io/nvidia/cuda:12.0.0-base-ubuntu22.04`
 
-    ! 태그를 생략하면 자동으로 'latest'가 지정되나, 명시적인 태그 지정을 권장합니다. <br>
-    ! 저장소에 존재하지 않거나 사용 불가 이미지일 경우, <ins>빨간색 체크 표시</ins>가 나타나며 컨테이너 포트 또한 입력되지 않습니다. <br>
+=== "GitHub"
+    ```
+    ghcr.io/owner/repository:tag
+    ```
+    예시: `ghcr.io/organization/app:1.0`
+
+=== "Red Hat Quay"
+    ```
+    quay.io/namespace/repository:tag
+    ```
+    예시: `quay.io/redhat/ubi8:latest`
+
+=== "Hugging Face"
+    ```
+    registry.hf.space/username/repository:tag
+    ```
+    예시: `registry.hf.space/username/model-server:v1`
+
+!!! tip "이미지 검증 확인"
+    * 정확한 이미지 URL을 입력하면 녹색 체크 표시가 나타나고 포트가 자동으로 입력됩니다
+    * 유효하지 않은 이미지는 빨간색 체크 표시가 나타나며 포트가 입력되지 않습니다
 
 <br>
 
+
 - **컨테이너 명령**: 컨테이너가 시작될 때 실행할 명령어를 지정합니다. 컨테이너 내부에서 실행 가능한 명령어만 사용 가능합니다.
-!!! Warning
+
+!!! warning "명령어 지정 시 주의사항"
     대부분의 경우, 이미지에 이미 기본 명령어가 설정되어 있으므로 비워두셔도 됩니다. <br>
 
     잘못된 명령어를 입력하면 <ins>컨테이너가 시작되지 않거나 즉시 종료</ins>될 수 있으니 주의하시기 바랍니다.

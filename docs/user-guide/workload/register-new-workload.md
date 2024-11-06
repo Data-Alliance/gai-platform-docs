@@ -48,7 +48,7 @@ gcube의 GPU를 공유받기 위해, ‘새 워크로드 등록’이 필요합�
 ![input-workload-spec](img/register-new-workload/workload_spec.png) <br>
 
 - **목적노드** : Tier별 공급 가능한 GPU 리소스 항목이 나타납니다. <br>
-    - `Any`: 사용 가능한 GPU 자동 할당 <br>
+    - `Any` : 사용 가능한 GPU 자동 할당 <br>
     - `Tier 1` : 클라우드 사업자 <br>
     - `Tier 2` : 전용 서버 <br>
     - `Tier 3` : PC방, 개인 <br>

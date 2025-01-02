@@ -1,0 +1,129 @@
+
+
+.md-header {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.md-header .md-search input {
+    color: #999999;
+}
+
+.md-header .md-search:hover {
+    background-color: #f0f0f0;
+}
+
+.md-header .md-search input::placeholder {
+    color: #070707;
+}
+
+.md-footer-nav {
+    /* background-image: url(../assets/images/second-nav-blue.png); */
+    background-color: rgb(255, 255, 255) !important;
+
+    /* max-height: 90px; */
+}
+
+.md-footer-meta {
+    background-color: rgb(8, 8, 8) !important;
+    border-top: 1px solid #1b2532 !important;
+}
+.md-header-nav__button.md-logo img, .md-header-nav__button.md-logo svg {
+    width: 50px
+}
+
+
+.md-nav__link:hover {
+  color: rgb(130, 71 ,255) !important;
+}
+
+.md-nav__link--active {
+  color: rgb(130, 71 ,255) !important;
+  font-weight: bold; 
+}
+
+.md-nav__link:focus {
+  color: rgb(130, 71 ,255) !important;
+}
+
+/* .md-nav__link {
+     /*font-weight: bold; */
+    /* font-size: 0.9em;  }*/
+
+
+root {
+  --md-text-font: "Inter", sans-serif;
+  --md-header-font: "Inter", sans-serif
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+}
+
+p, li {
+    font-family: 'Inter', sans-serif;
+}
+
+.md-sidebar {
+    font-family: 'Inter', sans-serif;
+}
+
+.md-header .md-header__title {
+    font-family: 'Inter', sans-serif;
+}
+
+.md-content, .md-typeset {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9em;
+}
+
+/* Change the toggle button color to dark gray */
+.md-header__option {
+    background-color: #ffffff; /* Dark gray background */
+    color: #8b8b8b; /* White text color */
+}
+
+
+
+/* Mobile navigation bar styles */
+@media only screen and (max-width: 76.1875em) {
+    .md-nav__title,
+    .md-nav__title--site,
+    .md-nav__source {
+      background-color: rgb(255, 255, 255) !important;
+      color: #110606 !important; /* White text */
+    }
+  
+    .md-nav__title {
+      border-bottom: 1px solid #666666 !important; /* Darker gray border */
+    }
+  
+    .md-nav__title::before {
+      color: #ffffff !important; /* White color for the menu icon */
+    }
+  
+    .md-nav__list {
+      background-color: #f0f0f0 !important; /* Light gray background for the menu items */
+    }
+  
+    .md-nav__item {
+      color: #333333 !important; /* Dark gray text for menu items */
+    }
+    
+    .md-header {
+      background-color: rgb(130, 71 ,255) !important;
+    }
+
+    .md-header__option {
+        background-color: rgb(130, 71 ,255) !important;
+        color: #f0f0f0; /* White text color */
+    }
+    body {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.2em;
+    }
+  }

@@ -103,6 +103,7 @@ nav:
     - GPU 가격 비교: user-guide/workload/gpu-price-comparison.md
     - 대쉬보드: user-guide/workload/workload-dashboard.md
     - 새 워크로드 등록: user-guide/workload/register-new-workload.md
+    - 워크로드 등록 예시: user-guide/workload/example-workload.md
     - 워크로드 배포: user-guide/workload/deploy-workload.md
     - 워크로드 모니터링: user-guide/workload/monitor-workload.md
     - 워크로드 지출내역: user-guide/workload/workload-expenses.md

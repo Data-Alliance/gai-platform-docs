@@ -99,6 +99,7 @@ nav:
     - GPU 공유 가격 설정: user-guide/node/set-gpu-sharing-pricing.md
     - GPU 공유 수입내역 확인: user-guide/node/check-gpu-sharing-income.md
     - GPU 공유 모니터링 확인: user-guide/node/check-gpu-sharing-monitoring.md
+    - 에이전트 사용 오류 해결: user-guide/node/troubleshooting_agent_errors.md
   - 워크로드 사용자 가이드: 
     - GPU 가격 비교: user-guide/workload/gpu-price-comparison.md
     - 대쉬보드: user-guide/workload/workload-dashboard.md

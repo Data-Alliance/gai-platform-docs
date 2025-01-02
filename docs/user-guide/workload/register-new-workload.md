@@ -1,7 +1,7 @@
 # 새 워크로드 등록
 
 이 문서는 gcube에서 새로운 워크로드를 등록하는 방법을 설명합니다. <br>
-[딥러닝 개발 환경 워크로드 등록 예시](https://gcube.ai/workload)에서 실제 딥러닝 개발 환경 설정 예시를 확인할 수 있습니다.
+[딥러닝 개발 환경 워크로드 등록 예시](https://data-alliance.github.io/gai-platform-docs/user-guide/workload/example-workload/)에서 실제 딥러닝 개발 환경 설정 예시를 확인할 수 있습니다.
 
 ### 워크로드 등록 순서
 

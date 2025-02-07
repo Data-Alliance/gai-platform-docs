@@ -5,7 +5,7 @@
 
 
 ## 개요
-`koojy717/lora-tuning:1.02` 이미지는 딥러닝 개발에 필요한 주요 프레임워크와 도구들이 포함되어 있습니다:
+`data-alliance/lora-tuning:1.02` 이미지는 딥러닝 개발에 필요한 주요 프레임워크와 도구들이 포함되어 있습니다:
 
 ### 주요 구성 요소
 - PyTorch 2.0.1 (CUDA 11.8 지원)
@@ -22,11 +22,11 @@
 ### 컨테이너 설정
 ![input-workload-description](img/register-new-workload/03_workload_container.png) <br>
 
-- **저장소 유형**: Docker Hub <br>
+- **저장소 유형**: 깃허브 <br>
 
-- **컨테이너 이미지**: `koojy717/lora-tuning:1.02` <br>
+- **컨테이너 이미지**: `data-alliance/lora-tuning:1.02` <br>
 
-- **컨테이너 포트**: 8888 <br>
+- **컨테이너 포트**: 8888 (이미지 검증 시 자동입력됨) <br>
 
 
 ### 목적스펙 설정

@@ -138,7 +138,7 @@ A :
 Making pizza can be a fun and rewarding process! Here's a basic guide to
 making your own pizza at home:
 
-### **Pizza dough:**
+ **Pizza dough:**
 
 1. **Activate yeast**: In a small bowl, mix 1 teaspoon of sugar with 1 cup
 of warm water (around 110°F). Sprinkle in the active dry yeast, cover, and
@@ -149,7 +149,7 @@ sticky ball.
 3. **Knead dough**: knead the dough on a floured surface for about 8-10
 minutes until it becomes smooth and elastic.
 
-### **Assembling the pizza:**
+**Assembling the pizza:**
 
 1. **Prepare sauce**: Make your favorite tomato sauce or pesto as the
 base.
@@ -159,7 +159,7 @@ baking sheet or pizza stone.
 3. **Add toppings**: Add your preferred toppings, such as cheese,
 vegetables, or meats, leaving space for the edges.
 
-### **Baking:**
+**Baking:**
 
 1. **Preheat oven**: Preheat your oven to the highest temperature (around
 500-550°F) for about 10-15 minutes.
@@ -167,7 +167,7 @@ vegetables, or meats, leaving space for the edges.
 on the pizza stone. Cook for 10-15 minutes, or until the crust is golden
 and cheese is bubbly.
 
-### **Tips:**
+**Tips:**
 
 - For a crispy crust, brush the dough with olive oil before baking.
 - Add toppings in even amounts to avoid overcrowding the pizza.

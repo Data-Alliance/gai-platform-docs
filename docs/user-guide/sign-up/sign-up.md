@@ -1,25 +1,31 @@
-# 계정생성
+# **계정생성**
 
 ## 회원가입&로그인
 
-![gcube main](img/login1.png)
+![gcube 홈페이지 이미지.PNG](img/gcube%20홈페이지%20이미지.PNG)
 
 1\. 홈페이지 우측 상단의 “**로그인**” 버튼을 클릭하세요.
 
-![sign up](img/login2.png)
+![gcube 로그인 화면 이미지.PNG](img/gcube%20로그인%20화면%20이미지.PNG)
 
-2\. **구글 / 마이크로소프트** 중 원하는 계정으로 간편 회원가입을 진행합니다.
+2\. 로그인 화면 하단의 **‘회원가입’** 버튼을 클릭하세요.
 
-![registration form](img/login3.png)
+![gcube 회원가입 화면 이미지.PNG](img/gcube%20회원가입%20화면%20이미지.PNG)
 
-3\. **약관동의** 후, 회원 정보를 입력하여 **회원가입**을 완료합니다.
+3\. **구글 / 마이크로소프트** 중 원하는 계정으로 간편 회원가입을 진행합니다.
 
-![login](img/login4.png)
+![gcube 약관동의 및 회원가입 이미지.png](img/gcube%20약관동의%20및%20회원가입%20이미지.png)
 
-4\. 로그인 페이지로 이동하여 가입한 이메일 계정을 선택하여 로그인합니다.
+4\. 사용하실 계정을 선택하신 후**, 약관동의**를 진행하신 다음 회원 정보를 입력하여 **회원가입**을 완료합니다.
 
-![login completed](img/login5.png)
+![gcube 구글MS 로그인 화면 이미지.PNG](img/gcube%20구글MS%20로그인%20화면%20이미지.PNG)
 
-5\. 로그인 후, gcube의 모든 서비스를 이용하실 수 있습니다.
+5\. 로그인 페이지로 이동하여 가입한 이메일 계정을 선택하여 로그인합니다.
 
-[gcube 로그인 바로가기](https://console.gcube.ai/auth/signin)
+![image.png](img/gcube%20로그인%20후%20이미지.png)
+
+6\. 로그인 후, gcube의 모든 서비스를 이용하실 수 있습니다.
+
+[GCUBE 로그인 바로가기](https://console.gcube.ai/)
+
+[GPU 공유 모니터링 확인](https://www.notion.so/GPU-16f1f0bde15a814aa99fc6be43159153?pvs=21)

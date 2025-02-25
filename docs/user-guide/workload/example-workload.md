@@ -1,4 +1,4 @@
-# 워크로드 등록 예시
+# **워크로드 등록 예시**
 
 이 문서는 딥러닝 개발을 위한 워크로드 등록 예시를 설명합니다.
 실제 등록 방법은 [새 워크로드 등록](https://data-alliance.github.io/gai-platform-docs/user-guide/workload/register-new-workload/) 문서를 참고해 주세요.
@@ -20,7 +20,7 @@
 ## 워크로드 설정 가이드
 
 ### 컨테이너 설정
-![input-workload-description](img/register-new-workload/03_workload_container.png) <br>
+![컨테이너 이미지](img/register-new-workload/새%20워크로드%20등록%20컨테이너%20이미지.PNG) <br>
 
 - **저장소 유형**: 깃허브 <br>
 

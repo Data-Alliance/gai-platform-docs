@@ -1,28 +1,28 @@
-# 새 워크로드 등록
+# **새 워크로드 등록**
 
 이 문서는 gcube에서 새로운 워크로드를 등록하는 방법을 설명합니다. <br>
 [딥러닝 개발 환경 워크로드 등록 예시](https://data-alliance.github.io/gai-platform-docs/user-guide/workload/example-workload/)에서 실제 딥러닝 개발 환경 설정 예시를 확인할 수 있습니다.
 
 ### 워크로드 등록 순서
 
-![register-new-workload](img/register-new-workload/01_register-new-workload.png)
+![새 워크로드 등록 메인 화면 이미지](img/register-new-workload/새%20워크로드%20등록%20메인%20화면%20이미지.PNG)
 
 1\. 워크로드 탭에서 “**새 워크로드 등록**” 버튼을 클릭하세요. <br><br>
 
-2\. 워크로드 등록 페이지에 각 항목을 입력합니다.
+2\. 워크로드 등록 페이지에 각 항목을 입력합니다.<br>
 
 ### 설명
-![input-workload-description](img/register-new-workload/02_workload_desc.png) <br>
+![새 워크로드 등록 워크로드 설명 이미지](img/register-new-workload/새%20워크로드%20등록%20워크로드%20설명%20이미지.PNG) <br>
 
 - **워크로드 설명**: 워크로드의 용도와 특징을 간단히 작성합니다.
 
 
 ### 컨테이너
-![input-workload-description](img/register-new-workload/03_workload_container.png) <br>
+![새 워크로드 등록 컨테이너 이미지](img/register-new-workload/새%20워크로드%20등록%20컨테이너%20이미지.PNG) <br>
 
 - **저장소 유형**: 컨테이너 이미지가 저장된 플랫폼을 선택하세요. <br>
 
-- **컨테이너 이미지**: 아래 저장소별 이미지 입력 형식을 참고하여 컨테이너 이미지 URL을 입력하세요. 
+- **컨테이너 이미지**: 아래 저장소별 이미지 입력 형식을 참고하여 컨테이너 이미지 URL을 입력하세요. <br>
 
 - **컨테이너 포트** : 컨테이너에서 사용하는 네트워크 포트입니다. 이미지 검증 시 자동으로 입력됩니다.
 
@@ -74,7 +74,9 @@
 
 
 ### 목적스펙
-![input-workload-spec](img/register-new-workload/04_workload_spec.png) <br>
+![새 워크로드 등록 목적 스펙 1 이미지](img/register-new-workload/새%20워크로드%20등록%20목적%20스펙%201%20이미지.PNG) <br>
+![새 워크로드 등록 목적 스펙 2 이미지](img/register-new-workload/새%20워크로드%20등록%20목적%20스펙%202%20이미지.PNG) <br>
+![새 워크로드 등록 목적 스펙 3 이미지](img/register-new-workload/새%20워크로드%20등록%20목적%20스펙%203%20이미지.PNG) <br>
 
 - **목적노드** : Tier별 공급 가능한 GPU 리소스 항목이 나타납니다. <br>
     - `전체` : 사용 가능한 GPU 자동 할당 <br>
@@ -88,7 +90,7 @@
 <br>
 
 ### 옵션
-![workload-option](img/register-new-workload/05_workload_option.png) <br>
+![새 워크로드 등록 옵션 이미지](img/register-new-workload/새%20워크로드%20등록%20옵션%20이미지.PNG) <br>
 
 - **컨테이너 명령** : 컨테이너가 시작될 때 실행할 명령어를 지정합니다. 비워두면 도커 이미지에 설정된 기본 명령어가 실행됩니다. <br>
 - **컨테이너 환경변수** : 컨테이너 내부에서 사용할 환경 변수를 설정하는 곳입니다. 필요한 경우에만 Key-Value 형식으로 입력합니다.<br>
@@ -99,12 +101,11 @@
 <br>
 
 ### 등록
-![workload-registration](img/register-new-workload/06_workload_register.png) <br>
+![새 워크로드 등록 총 예상 금액 이미지](img/register-new-workload/새%20워크로드%20등록%20총%20예상%20금액%20이미지.PNG) <br>
 
 - 총 예상 금액을 확인하고 즉시배포 여부를 선택한 후 “**등록**” 버튼을 클릭하세요. <br>
 
-<br>
-![workload-registration-complete](img/register-new-workload/07_workload_registration_complete.png) <br>
+![새 워크로드 등록 워크로드 실행 화면 이미지](img/register-new-workload/새%20워크로드%20등록%20워크로드%20실행%20화면%20이미지.PNG) <br>
 
 3\. 워크로드가 생성되어 목록에서 확인하실 수 있습니다. 
 

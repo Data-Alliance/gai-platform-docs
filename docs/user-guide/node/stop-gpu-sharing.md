@@ -8,8 +8,8 @@
 
 ![GPU 공유 중단 과정 이미지.PNG](img/stop-gpu-sharing/GPU%20공유%20중단%20과정%20이미지.PNG)
 
-2\. 공유 중단 과정에서 위 화면과 같이 “Turning off” 상태로 변경됩니다.<br><br>
+2\. 공유 중단 과정에서 위 화면과 같이 **“Turning off”** 상태로 변경됩니다.<br><br>
 
 ![GPU 공유 중단 중단 완료 이미지.PNG](img/stop-gpu-sharing/GPU%20공유%20중단%20중단%20완료%20이미지.PNG)
 
-3\. 공유 중단이 완료되면 “Stopped”로 표시됩니다.<br>
+3\. 공유 중단이 완료되면 **“Stopped”**로 표시됩니다.<br>

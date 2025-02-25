@@ -1,6 +1,6 @@
 # **워크로드 등록 예시**
 
-이 문서는 딥러닝 개발을 위한 워크로드 등록 예시를 설명합니다.
+이 문서는 딥러닝 개발을 위한 워크로드 등록 예시를 설명합니다. <br>
 실제 등록 방법은 [새 워크로드 등록](https://data-alliance.github.io/gai-platform-docs/user-guide/workload/register-new-workload/) 문서를 참고해 주세요.
 
 

@@ -1,13 +1,11 @@
 # 에이전트 세팅
 
-에이전트 세팅은 그래픽 드라이버의 업데이트와 VM의 설정이 가능합니다. 
+에이전트 세팅은 그래픽 드라이버의 업데이트와 VM의 설정이 가능합니다. <br><br>
 
-![agent-settings](img/agent-setup/agent-settings.png)
+![에이전트 세팅 진입 화면 이미지.PNG](img/agent-setup/에이전트%20세팅%20진입%20화면%20이미지.PNG)
 
-1\. **“Setting”** 클릭 
-<br><br>
+1\. **“Setting”** 클릭 <br><br>
 
-![modify-settings-info](img/agent-setup/modify-settings-info.png)
+![에이전트 세팅 기능 표시 화면 이미지.PNG](img/agent-setup/에이전트%20세팅%20기능%20표시%20화면%20이미지.PNG)
 
-2\. 그래픽 드라이버 재설치 또는 VM삭제 등의 세팅 수정이 가능합니다.
-<br><br>
+2\. 그래픽 드라이버 재설치 또는 VM삭제 등의 세팅 수정이 가능합니다.<br>

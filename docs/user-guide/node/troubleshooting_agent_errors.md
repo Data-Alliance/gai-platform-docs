@@ -1,6 +1,6 @@
 # 에이전트 사용 오류 해결
 
-![agent-error-01](img/troubleshooting_agent_errors/image01.png)
+![agent-error-01](img/troubleshooting_agent_errors/에이전트%20사용%20오류%20해결%20initializing%20오류.PNG)
 
 Initializing 오류 발생 시, Hyper-V 활성화를 확인할 수 있습니다.  
 

@@ -1,12 +1,14 @@
-# GPU 가격 비교
+# **GPU 가격 비교**
 
-‘GPU 가격 비교’를 통해 클라우드 GPU 가격을 한 곳에서 모두 확인할 수 있습니다.
+![GPU 가격 비교 입장 이미지.PNG](img/gpu-price-comparison/GPU%20가격%20비교%20입장%20이미지.PNG)
 
-![gpu-price-comparison](img/gpu-price-comparison/gpu-price-comparison.png)
+**‘GPU 가격 비교’** 탭을 통해 클라우드 GPU 가격을 한 곳에서 모두 확인할 수 있습니다.<br><br> 
 
-1\. 화면에 표시된것과 같이 확인이 필요한 공급업체명을 누르면 해당 가격표로 이동 합니다. <br><br>
+![GPU 가격 비교 공급업체명 이미지.PNG](img/gpu-price-comparison/GPU%20가격%20비교%20공급업체명%20이미지.PNG)
 
-![gpu-more-details](img/gpu-price-comparison/gpu-more-details.png)
+1\. 화면에 표시된것과 같이 확인이 필요한 공급업체명을 누르면 해당 가격표로 이동합니다.<br><br>
 
-2\. 가격표에 나온 정보 외에 추가적인 GPU 가격이 궁금할경우, 업체명 우측의 **“GPU 더보기”** 를 클릭 <br>
-→ 해당 업체 페이지로 이동하여 자세한 GPU 사양과 가격을 확인하실 수 있습니다. <br><br>
+![GPU 가격 비교 공급업체 더보기 이미지.PNG](img/gpu-price-comparison/GPU%20가격%20비교%20공급업체%20더보기%20이미지.PNG)
+
+2\. 가격표에 나온 정보 외에 추가적인 GPU가격이 궁금할 경우, 업체명 상단우측의 **“화살표”** 를 클릭 <br>
+    → 해당 업체 페이지로 이동하여 자세한 GPU 사양과 가격을 확인하실 수 있습니다.

@@ -3,7 +3,7 @@
 ## **1. Ubuntu OS 설치**
 
 - Ubuntu Server 22.04 LTS 이미지 파일 다운로드 및 부팅디스크 생성
-    - https://ubuntu.com/download/server/thank-you?version=22.04.5&architecture=amd64&lts=true 
+    - [Ubuntu Server 22.04 LTS 다운로드](https://ubuntu.com/download/server/thank-you?version=22.04.5&architecture=amd64&lts=true)
 
 - Ubuntu Server 22.04 LTS 실행
     
@@ -26,13 +26,13 @@
     
 
 - Ubuntu 설치 타입 설정
-    - Ubuntu Server 설치
+    - **Ubuntu Server** 설치
     
     ![tier2 우분투 설치 가이드 우분투 타입 설정 화면 이미지.PNG](img/tier-2-ubuntu-setting-guide/tier2%20우분투%20설치%20가이드%20우분투%20타입%20설정%20화면%20이미지.PNG)
     
 
 - 설치 시 OS 네트워크는, 외부 인터넷 연결이 가능하도록 설정 (최소 100Mbps 이상 권장)
-    - DHCPv4 옆 IP주소 표시 확인 후 이동
+    - DHCPv4 옆 **IP주소 표시 확인** 후 이동
     
     ![tier2 우분투 설치 가이드 네트워크 설정 화면 이미지.PNG](img/tier-2-ubuntu-setting-guide/tier2%20우분투%20설치%20가이드%20네트워크%20설정%20화면%20이미지.PNG)
     
@@ -227,7 +227,7 @@
     INFO   [2025-02-25T06:14:53Z] **procGaiClientInstaller complete.**  
     ```
     
-    - 마지막 라인에 **‘procGaiClientInstaller complete’** 출력 시, 기본 구성 요소들의 설치가 완료된 상황
+    - 마지막 라인에 **‘procGaiClientInstaller complete’** 출력 시, 기본 구성 요소들의 설치가 완료 상황
     
     - 실행 화면 예시)
     
@@ -318,6 +318,6 @@
     
 
 - 이후 [gcube.ai](http://gcube.ai) 노드 페이지에서 등록된 노드 확인 가능
-    - https://gcube.ai/ko/provision/node/list
+    - [노드 페이지로 이동하기](https://gcube.ai/ko/provision/node/list)
     
     ![image-20250226-015605.png](img/tier-2-ubuntu-setting-guide/image-20250226-015605.png)

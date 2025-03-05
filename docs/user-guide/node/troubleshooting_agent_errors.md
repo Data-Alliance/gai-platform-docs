@@ -1,6 +1,6 @@
 # 에이전트 사용 오류 해결
 
-![agent-error-01](img/troubleshooting_agent_errors/image01.png)
+![agent-error-01](img/troubleshooting_agent_errors/에이전트%20사용%20오류%20해결%20initializing%20오류.PNG)
 
 Initializing 오류 발생 시, Hyper-V 활성화를 확인할 수 있습니다.  
 
@@ -82,5 +82,5 @@ Initializing 오류 발생 시, Hyper-V 활성화를 확인할 수 있습니다.
 
 ![agent-error-12](img/troubleshooting_agent_errors/image12.png)
 
-3\. 최상위 탭으로 다시 돌아갑니다. **저장 &Amp; 끝내기** 탭이 표시 될 때까지 오른쪽 화살표 키를 클릭합니다.<br>
+3\. 최상위 탭으로 다시 돌아갑니다. **저장 & 끝내기** 탭이 표시 될 때까지 오른쪽 화살표 키를 클릭합니다.<br>
 4\. **변경 내용 저장을 선택하고 종료** 하여 변경 사항이 저장된 시스템을 부팅합니다.

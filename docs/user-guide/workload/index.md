@@ -6,6 +6,8 @@
 
 [대쉬보드](./workload-dashboard.md)
 
+[프로필 설정](./profile-settings.md)
+
 [새 워크로드 등록](./register-new-workload.md)
 
 [워크로드 배포](./deploy-workload.md)

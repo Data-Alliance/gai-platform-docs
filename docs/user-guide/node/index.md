@@ -14,8 +14,6 @@
 
 [에이전트 세팅](./agent-setup.md)
 
-[프로필 설정](./profile-settings.md)
-
 [GPU 공유 정보 확인](./check-gpu-sharing-info.md)
 
 [GPU 공유 가격 설정](./set-gpu-sharing-pricing.md)

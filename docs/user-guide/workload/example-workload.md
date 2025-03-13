@@ -22,13 +22,27 @@
 ### 컨테이너 설정
 ![컨테이너 이미지](img/register-new-workload/새%20워크로드%20등록%20컨테이너%20이미지.PNG) <br>
 
-- **저장소 유형**: 깃허브 <br>
+- **GPU RTX 50시리즈 이용 시 컨테이너 이미지**
 
-- **컨테이너 이미지**: `data-alliance/lora-tuning:1.02` <br>
+=== "GitHub"
+    ```
+    data-alliance/lora-tuning-blackwell:1.01
+    ```
 
-- **컨테이너 포트**: 8888 (이미지 검증 시 자동입력됨) <br>
+=== "Docker Hub"
+    ```
+    koojy717/lora-tuning-blackwell:1.01
+    ```
 
+- **그 이외 GPU 이용 시 컨테이너 이미지**
 
+=== "Docker Hub"
+    ```
+    koojy717/lora-tuning:1.02
+    ```
+
+- **컨테이너 포트: 8888**
+<br><br>
 ### 목적스펙 설정
 작업 규모에 따른 권장 설정:
 

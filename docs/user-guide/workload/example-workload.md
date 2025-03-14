@@ -4,44 +4,57 @@
 실제 등록 방법은 [새 워크로드 등록](https://data-alliance.github.io/gai-platform-docs/user-guide/workload/register-new-workload/) 문서를 참고해 주세요.
 
 
-## 개요
-`data-alliance/lora-tuning:1.02` 이미지는 딥러닝 개발에 필요한 주요 프레임워크와 도구들이 포함되어 있습니다:
-
-### 주요 구성 요소
-- PyTorch 2.0.1 (CUDA 11.8 지원)
-- TensorFlow 2.12.0
-- Transformers 4.28.0
-- PEFT 0.3.0
-- Jupyter Notebook/Lab 환경
-- 시스템 관리 도구 (net-tools, ping, traceroute)
-
-- - -
-
 ## 워크로드 설정 가이드
+??? note "GPU 사용을 위한 주요 구성 요소" 
+    `koojy717/lora-tuning:1.02` 이미지는 딥러닝 개발에 필요한 주요 프레임워크와 도구들이 포함되어 있습니다:
 
-### 컨테이너 설정
-![컨테이너 이미지](img/register-new-workload/새%20워크로드%20등록%20컨테이너%20이미지.PNG) <br>
+    ### **주요 구성 요소**
 
-- **GPU RTX 50시리즈 이용 시 컨테이너 이미지**
+    - PyTorch 2.0.1 (CUDA 11.8 지원)
+    - TensorFlow 2.12.0
+    - Transformers 4.28.0
+    - PEFT 0.3.0
+    - Jupyter Notebook/Lab 환경
+    - 시스템 관리 도구 (net-tools, ping, traceroute)
 
-=== "GitHub"
-    ```
-    data-alliance/lora-tuning-blackwell:1.01
-    ```
+    ### **워크로드 설정 가이드**
+    ![컨테이너 이미지](img/register-new-workload/새%20워크로드%20등록%20컨테이너%20이미지.PNG) 
 
-=== "Docker Hub"
-    ```
-    koojy717/lora-tuning-blackwell:1.01
-    ```
-
-- **그 이외 GPU 이용 시 컨테이너 이미지**
-
-=== "Docker Hub"
+    ### **컨테이너 이미지**
+    === "Docker Hub"
     ```
     koojy717/lora-tuning:1.02
     ```
+    - **컨테이너 포트 : 8888**
 
-- **컨테이너 포트: 8888**
+??? note "RTX 5080/5090 시리즈 사용 시 주요 구성 요소 " 
+    RTX 5080/90 시리즈부터는 컨테이너 실행을 위해 상위 버전의 PyTorch가 요구되고 있습니다. <br>
+    `koojy717/lora-tuning-blackwell:1.01` 이미지는 딥러닝 개발을 필요한 주요 프레임워크와 도구들이 포함 되어 있습니다:
+
+    ### **주요 구성 요소**
+
+    - PyTorch 2.7.0 (CUDA 12.8 지원)
+    - TensorFlow 2.12.0
+    - Transformers 4.28.0
+    - PEFT 0.3.0
+    - Jupyter Notebook/Lab 환경
+    - 시스템 관리 도구 (net-tools, ping, traceroute)
+
+    ### **워크로드 설정 가이드**
+    ![컨테이너 이미지](img/register-new-workload/새%20워크로드%20등록%20컨테이너%20이미지.PNG) 
+
+    ### **컨테이너 이미지**
+        
+    === "GitHub"
+    ```
+    data-alliance/lora-tuning-blackwell:1.01
+    ```
+    === "Docker Hub"
+    ```
+    koojy717/lora-tuning-blackwell:1.01
+    ```
+    - **컨테이너 포트 : 8888**
+
 <br><br>
 ### 목적스펙 설정
 작업 규모에 따른 권장 설정:

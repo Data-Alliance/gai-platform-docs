@@ -3,57 +3,54 @@
 이 문서는 딥러닝 개발을 위한 워크로드 등록 예시를 설명합니다. <br>
 실제 등록 방법은 [새 워크로드 등록](https://data-alliance.github.io/gai-platform-docs/user-guide/workload/register-new-workload/) 문서를 참고해 주세요.
 
+## **개요**
 
-## 워크로드 설정 가이드
-??? note "GPU 사용을 위한 주요 구성 요소" 
-    `koojy717/lora-tuning:1.02` 이미지는 딥러닝 개발에 필요한 주요 프레임워크와 도구들이 포함되어 있습니다:
+`koojy717/lora-tuning-blackwell:1.01` 이미지는 딥러닝 개발을 필요한 주요 프레임워크와 도구들이 포함 되어 있습니다.
 
-    ### **주요 구성 요소**
+### 주요 구성 요소
 
-    - PyTorch 2.0.1 (CUDA 11.8 지원)
-    - TensorFlow 2.12.0
-    - Transformers 4.28.0
-    - PEFT 0.3.0
-    - Jupyter Notebook/Lab 환경
-    - 시스템 관리 도구 (net-tools, ping, traceroute)
+- PyTorch 2.7.0 (CUDA 12.8 지원)
+- TensorFlow 2.12.0
+- Transformers 4.28.0
+- PEFT 0.3.0
+- Jupyter Notebook/Lab 환경
+- 시스템 관리 도구 (net-tools, ping, traceroute)
+<br>
 
-    ### **워크로드 설정 가이드**
-    ![컨테이너 이미지](img/register-new-workload/새%20워크로드%20등록%20컨테이너%20이미지.PNG) 
+!!! Warning  
+      ※ PyTorch 2.7.0 버전은 NVIDIA의 Blackwell 아키텍처에 맞춰 개발된 Nightly 버전으로, 지속적인 업데이트와 수정이 이루어지는 **최신 Preview 버전**입니다.<br><br>
+      이 버전은 **정식 Stable 버전이 아니므로** 성능이 일정하게 유지되지 않을 가능성이 있습니다. 따라서 **실험적 용도로 활용**하되, 안정성이 중요한 프로젝트에서는 **정식 Stable 버전**을 사용하는 것이 좋습니다.<br><br>
+      이전 버전의 Pytorch를 사용하고 싶으시다면 `koojy717/lora-tuning:1.02` 이미지를 이용하시면 됩니다. <br> 
+      ※Pytorch 2.01(CUDA 11.8 지원) 사용, 이외 요소 동일
 
-    ### **컨테이너 이미지**
-    === "Docker Hub"
-    ```
-    koojy717/lora-tuning:1.02
-    ```
-    - **컨테이너 포트 : 8888**
+<br>
 
-??? note "RTX 5080/5090 시리즈 사용 시 주요 구성 요소 " 
-    RTX 5080/90 시리즈부터는 컨테이너 실행을 위해 상위 버전의 PyTorch가 요구되고 있습니다. <br>
-    `koojy717/lora-tuning-blackwell:1.01` 이미지는 딥러닝 개발을 필요한 주요 프레임워크와 도구들이 포함 되어 있습니다:
+### 워크로드 설정 가이드
 
-    ### **주요 구성 요소**
+![컨테이너 이미지](img/register-new-workload/새%20워크로드%20등록%20컨테이너%20이미지.PNG) 
 
-    - PyTorch 2.7.0 (CUDA 12.8 지원)
-    - TensorFlow 2.12.0
-    - Transformers 4.28.0
-    - PEFT 0.3.0
-    - Jupyter Notebook/Lab 환경
-    - 시스템 관리 도구 (net-tools, ping, traceroute)
+### 컨테이너 이미지
 
-    ### **워크로드 설정 가이드**
-    ![컨테이너 이미지](img/register-new-workload/새%20워크로드%20등록%20컨테이너%20이미지.PNG) 
 
-    ### **컨테이너 이미지**
-        
-    === "GitHub"
+=== "GitHub"
     ```
     data-alliance/lora-tuning-blackwell:1.01
     ```
-    === "Docker Hub"
+
+=== "Docker Hub"
     ```
     koojy717/lora-tuning-blackwell:1.01
     ```
-    - **컨테이너 포트 : 8888**
+    
+=== "하위 Pytorch 버전 **Docker Hub**"
+	```
+	koojy717/lora-tuning:1.02
+	```
+<br>
+
+### 컨테이너 포트
+
+컨테이너 포트 : **8888**
 
 <br><br>
 ### 목적스펙 설정

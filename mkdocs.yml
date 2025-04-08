@@ -100,6 +100,7 @@ nav:
     - GPU 공유 모니터링 확인: user-guide/node/check-gpu-sharing-monitoring.md
     - 에이전트 사용 오류 해결: user-guide/node/troubleshooting_agent_errors.md
     - Tier 2 우분투 에이전트 가이드: user-guide/node/tier-2-ubuntu-setting-guide.md
+    - NVIDIA 그래픽 드라이버 인식 오류: user-guide/node/NVIDIA-graphic-driver-error.md
   - 워크로드 사용자 가이드: 
     - GPU 가격 비교: user-guide/workload/gpu-price-comparison.md
     - 대쉬보드: user-guide/workload/workload-dashboard.md

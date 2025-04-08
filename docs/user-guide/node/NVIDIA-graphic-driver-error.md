@@ -1,6 +1,6 @@
 # **NVIDIA 그래픽 드라이버 인식 오류**
 
-![NVIDIA 그래픽 드라이버 인식 오류 이미지.png](img/NVIDIA-graphic-driver-error/NVIDIA%20그래픽%20드라이버%20인식%20오류%20이미지.png)<br>
+![NVIDIA 그래픽 드라이버 인식 오류 이미지.jpg](img/NVIDIA-graphic-driver-error/NVIDIA%20그래픽%20드라이버%20인식%20오류%20이미지.jpg)<br>
 
 노드 공급 중 상태가 노드 상태가 실패로 표기되는 오류가 발생할 수 있습니다.<br><br>
 

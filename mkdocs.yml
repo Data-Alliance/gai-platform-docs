@@ -111,6 +111,7 @@ nav:
     - 워크로드 모니터링: user-guide/workload/monitor-workload.md
     - 워크로드 지출내역: user-guide/workload/workload-expenses.md
     - 워크로드 종료: user-guide/workload/terminate-workload.md
+    - PV 사용 가이드: user-guide/workload/pv-user-guide.md
   - 플랫폼 이용 가이드:
     - Ollama 사용 가이드 - DeepSeek: user-guide/platform-guide/ollama-deepseek.md
     - Ollama 사용 가이드 - llama3: user-guide/platform-guide/ollama-llama3.md

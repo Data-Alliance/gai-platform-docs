@@ -117,4 +117,5 @@ nav:
     - Ollama 사용 가이드 - llama3: user-guide/platform-guide/ollama-llama3.md
     - Stable Diffusion 사용 가이드: user-guide/platform-guide/stable-diffusion.md
     - QnA 사용 가이드: user-guide/platform-guide/QnA-user-guide.md
+    - Wan2.2 사용 가이드: user-guide/platform-guide/Wan2.2-user-guide.md
 

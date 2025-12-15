@@ -2,8 +2,6 @@
 
 ![bg-3.png](img/workload-index-bg.png)
 
-[GPU 가격 비교 ](../node/gpu-price-comparison.md)
-
 [대쉬보드](./workload-dashboard.md)
 
 [프로필 설정](./profile-settings.md)

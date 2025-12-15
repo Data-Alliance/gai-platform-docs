@@ -88,18 +88,18 @@ nav:
   - 개요: index.md
   - 계정생성: user-guide/sign-up/sign-up.md
   - 노드 사용자 가이드:
-    - GPU 가격 비교: user-guide/node/gpu-price-comparison.md
-    - 대쉬보드: user-guide/node/node-dashboard.md
+    - Home: user-guide/node/node-home.md
     - 새 노드 연결: user-guide/node/connect-new-node.md
     - GPU 공유 중단: user-guide/node/stop-gpu-sharing.md
     - 에이전트 Node 모니터링 확인: user-guide/node/check-agent-node-monitoring.md
     - 에이전트 세팅: user-guide/node/agent-setup.md
     - GPU 공유 정보 확인: user-guide/node/check-gpu-sharing-info.md
     - GPU 공유 가격 설정: user-guide/node/set-gpu-sharing-pricing.md
-    - GPU 공유 수입내역 확인: user-guide/node/check-gpu-sharing-income.md
+    - GPU 공유수익 상세내역: user-guide/node/check-gpu-sharing-income.md
     - GPU 공유 모니터링 확인: user-guide/node/check-gpu-sharing-monitoring.md
     - 에이전트 사용 오류 해결: user-guide/node/troubleshooting_agent_errors.md
-    - Tier 2 우분투 에이전트 가이드: user-guide/node/tier-2-ubuntu-setting-guide.md
+    - Tier 2 Ubuntu OS 세팅 가이드: user-guide/node/Ubuntu-OS-setup.md
+    - Tier 2 노드 공급자 세팅 가이드: user-guide/node/tier-2-ubuntu-setting-guide.md
     - NVIDIA 그래픽 드라이버 인식 오류: user-guide/node/NVIDIA-graphic-driver-error.md
   - 워크로드 사용자 가이드: 
     - GPU 가격 비교: user-guide/workload/gpu-price-comparison.md

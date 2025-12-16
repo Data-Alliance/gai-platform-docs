@@ -21,17 +21,17 @@
 ## **1. Gcube 플랫폼 워크로드 서비스 등록 절차**
 
 - **워크로드 생성 및 배포**
-    - [gcube.ai](http://gcube.ai/) 접속 및 [워크로드 페이지](https://gcube.ai/ko/demand/workload/list/) 이동
+    - [gcube.ai](http://gcube.ai/) 접속 및 워크로드 페이지 이동 ( https://gcube.ai/ko/demand/workload/list )
     - 해당 페이지에서 새 워크로드를 등록하거나 기존에 등록된 워크로드를 수정하여 정보 입력
         
-        ![ollama 워크로드 이미지 새 워크로드.PNG](img/ollama-deepseek/01_registration.png)
+        ![새워크로드 등록_20251210_01.png](img/ollama-deepseek/새워크로드%20등록_20251210_01.png)
         
 
 - **설명 개요**
     - 워크로드 이름 작성
         - ex : ollama
 
-![ollama 워크로드 이미지 설명.PNG](img/ollama-deepseek/02_description.png)
+![새워크로드 등록_20251210_02.png](img/ollama-deepseek/새워크로드%20등록_20251210_02.png)
 
 - **컨테이너 개요**
     - 저장소 유형 선택 및 컨테이너 이미지 선택
@@ -41,7 +41,7 @@
         - 컨테이너 이미지 : ollama/ollama:latest
         - 컨테이너 이미지 레이어의 메타데이터(ExposedPorts)를 확인하여 컨테이너 포트가 자동으로 작성된다 (ollama 의 경우 11434)
             
-            ![ollama 워크로드 이미지 컨테이너.PNG](img/ollama-deepseek/03_container.png)
+            ![ollama_20251210_01.png](img/ollama-deepseek/ollama_20251210_01.png)
             
 
 - **목적스펙 개요**
@@ -52,9 +52,7 @@
         - GPU 메모리 : 가용 GPU 필터링
             - 본 예제에서는 Tier3 RTX3060 을 선택
 
-![ollama 워크로드 이미지 목적 스펙 1.PNG](img/ollama-deepseek/04_spec.png)
-
-![ollama 워크로드 이미지 목적 스펙 2.PNG](img/ollama-deepseek/05_gpu.png)
+![ollama_20251210_02.png](img/ollama-deepseek/ollama_20251210_02.png)
 
 - **옵션 개요 (optional)**
     - 컨테이너 명령
@@ -79,21 +77,21 @@
         - 리눅스 시스템에서 제공하는 공유 메모리 영역 (/dev/shm)
         - 프로세스 간 데이터 공유를 위해 설계된 영역 (대규모 데이터 처리를 위한 고속 임시 스토리지)
 
-![ollama 워크로드 이미지 옵션.PNG](img/ollama-deepseek/06_option.png)
+![ollama 워크로드 이미지 옵션.PNG](img/ollama-deepseek/ollama%20워크로드%20이미지%20옵션.PNG.png)
 
 - **총 예상금액 개요**
     - 선택한 스펙의 최대 시간당 가격 정보
     - 내용 확인 후 등록 진행
         - ‘즉시배포’ 선택 시 등록 및 배포 진행
 
-![ollama 워크로드 이미지 총 예상 금액.PNG](img/ollama-deepseek/07_deployment.png)
+![새워크로드 등록_20251210_06.png](img/ollama-deepseek/새워크로드%20등록_20251210_06.png)
 
 ## **2. Gcube 플랫폼 워크로드 서비스 사용 방법**
 
 - **생성된 워크로드 확인**
     - 워크로드 페이지(https://gcube.ai/ko/demand/workload/list )에서 생성한 워크로드 이름 클릭 시, 워크로드 세부 정보 진입 가능
 
-![ollama 워크로드 이미지 배포 시작 화면.PNG](img/ollama-deepseek/08_workload_list.png)
+![ollama_20251210_03.png](img/ollama-deepseek/ollama_20251210_03.png)
 
 - **워크로드 세부 정보 개요**
     - 개요 : 워크로드 번호, 설명, 유형, 상태, 서비스 URL 정보 등
@@ -102,27 +100,29 @@
     - 옵션 : 컨테이너 명령, 컨테이너 환경변수, 레플리카, 최소 CUDA 버전, 공유 메모리 정보 등
     - 배포상태 : 컨테이너 배포 이벤트, 노드, 파드, 파드 상태, 컨테이너 로그, 컨테이너 터미널, 컨테이너 SSH 정보 등
 
-![ollama 워크로드 이미지 컨테이너세부 정보.PNG](img/ollama-deepseek/09_workload_detail.png)
+![ollama_20251210_04.png](img/ollama-deepseek/ollama_20251210_04.png)
+
+![ollama_20251210_05.png](img/ollama-deepseek/ollama_20251210_05.png)
 
 - **파드상태가 ‘실행’ 인 경우**
     - '컨테이너 SSH' 클릭하여 공인IP 조회 및 접속정보 등록
         - 정보 등록 시 SSH 접속 관련 정보 확인
 
-![ollama 워크로드 이미지 컨테이너 SSH 접속.PNG](img/ollama-deepseek/10_container_ssh.png)
+![ollama 워크로드 이미지 컨테이너 SSH 접속.PNG](img/ollama-deepseek/ollama%20워크로드%20이미지%20컨테이너%20SSH%20접속.PNG.png)
 
-![ollama 워크로드 이미지 컨테이너 SSH 접속 정보.PNG](img/ollama-deepseek/11_ssh_info.png)
+![ollama 워크로드 이미지 컨테이너 SSH 접속 정보.PNG](img/ollama-deepseek/ollama%20워크로드%20이미지%20컨테이너%20SSH%20접속%20정보.PNG.png)
 
 - **터미널 프로그램 (ex: putty) 실행 후 위에서 확인한 SSH 접속 정보 입력하여 컨테이너 접속**
     - IP, Port, 사용자 아이디, 사용자 비밀번호 등
 
-![ollama 워크로드 이미지 터미널 프로그램.PNG](img/ollama-deepseek/12_terminal.png)
+![ollama 워크로드 이미지 터미널 프로그램.PNG](img/ollama-deepseek/ollama%20워크로드%20이미지%20터미널%20프로그램.PNG.png)
 
-![ollama 워크로드 이미지 터미널 실행.PNG](img/ollama-deepseek/13_terminal_run.png)
+![ollama 워크로드 이미지 터미널 실행.PNG](img/ollama-deepseek/ollama%20워크로드%20이미지%20터미널%20실행.PNG.png)
 
 - **해당 CLI 에서 하기 커맨드 입력하여 deepseek 언어 모델 다운 및 실행 (약 4.7GB)**
-    - ollama run deepseek-r1:8b
+    -  ollama run deepseek-r1:8b
     
-    ![gcube 가이드 DeepSeek 실행 화면.PNG](img/ollama-deepseek/14_run_ollama.png)
+    ![gcube 가이드 DeepSeek 실행 화면.PNG](img/ollama-deepseek/gcube%20가이드%20DeepSeek%20실행%20화면.PNG.png)
     
 - **이후 DeepSeek 모델로, ChatGPT 처럼 AI 추론 서비스를 사용할 수 있음**
     - ex)
@@ -138,7 +138,7 @@ A :
 Making pizza can be a fun and rewarding process! Here's a basic guide to
 making your own pizza at home:
 
- **Pizza dough:**
+### **Pizza dough:**
 
 1. **Activate yeast**: In a small bowl, mix 1 teaspoon of sugar with 1 cup
 of warm water (around 110°F). Sprinkle in the active dry yeast, cover, and
@@ -149,7 +149,7 @@ sticky ball.
 3. **Knead dough**: knead the dough on a floured surface for about 8-10
 minutes until it becomes smooth and elastic.
 
-**Assembling the pizza:**
+### **Assembling the pizza:**
 
 1. **Prepare sauce**: Make your favorite tomato sauce or pesto as the
 base.
@@ -159,7 +159,7 @@ baking sheet or pizza stone.
 3. **Add toppings**: Add your preferred toppings, such as cheese,
 vegetables, or meats, leaving space for the edges.
 
-**Baking:**
+### **Baking:**
 
 1. **Preheat oven**: Preheat your oven to the highest temperature (around
 500-550°F) for about 10-15 minutes.
@@ -167,7 +167,7 @@ vegetables, or meats, leaving space for the edges.
 on the pizza stone. Cook for 10-15 minutes, or until the crust is golden
 and cheese is bubbly.
 
-**Tips:**
+### **Tips:**
 
 - For a crispy crust, brush the dough with olive oil before baking.
 - Add toppings in even amounts to avoid overcrowding the pizza.
@@ -175,6 +175,6 @@ and cheese is bubbly.
 
 Enjoy your homemade pizza!
 
-ex2) <br>
+ex2)
 
-![gcube 가이드 DeepSeek 실행 화면2.PNG](img/ollama-deepseek/15_example.png)
+![gcube 가이드 DeepSeek 실행 화면2.PNG](img/ollama-deepseek/gcube%20가이드%20DeepSeek%20실행%20화면2.PNG.png)

@@ -86,7 +86,7 @@ extra:
   homepage: https://console.gcube.ai/
   alternate:
     - name: 한국어
-      link: /gai-platform-docs/ko/
+      link: /gai-platform-docs/
       lang: ko
     - name: English
       link: /gai-platform-docs/en/

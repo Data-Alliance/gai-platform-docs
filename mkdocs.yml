@@ -1,5 +1,5 @@
 site_name: gcube Docs
-site_url: https://docs.gcube.ai/
+site_url: https://data-alliance.github.io/gai-platform-docs/
 docs_dir: docs
 
 # 플러그인 설정
@@ -86,10 +86,10 @@ extra:
   homepage: https://console.gcube.ai/
   alternate:
     - name: 한국어
-      link: /ko/
+      link: /gai-platform-docs/ko/
       lang: ko
     - name: English
-      link: /en/
+      link: /gai-platform-docs/en/
       lang: en
 
 markdown_extensions:

@@ -1,29 +1,64 @@
-site_name: gcube 문서
+site_name: gcube Docs
 site_url: https://docs.gcube.ai/
 docs_dir: docs
+
+# 플러그인 설정
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: ko
+          default: true
+          name: 한국어
+          build: true
+        - locale: en
+          name: English
+          build: true
+          nav_translations:
+            개요: Overview
+            계정생성: Sign Up
+            노드 사용자 가이드: Node Provider Guide
+            Home: Home
+            새 노드 연결: Connect New Node
+            GPU 공유 중단: Stop GPU Sharing
+            에이전트 Node 모니터링 확인: Check Agent Node Monitoring
+            에이전트 세팅: Agent Setup
+            GPU 공유 정보 확인: Check GPU Sharing Info
+            GPU 공유 가격 설정: Set GPU Sharing Pricing
+            GPU 공유수익 상세내역: GPU Sharing Income Details
+            GPU 공유 모니터링 확인: Check GPU Sharing Monitoring
+            에이전트 사용 오류 해결: Troubleshooting Agent Errors
+            Tier 2 Ubuntu OS 세팅 가이드: Tier 2 Ubuntu OS Setup Guide
+            Tier 2 노드 공급자 세팅 가이드: Tier 2 Node Provider Setup Guide
+            NVIDIA 그래픽 드라이버 인식 오류: NVIDIA Graphics Driver Recognition Error
+            워크로드 사용자 가이드: Workload User Guide
+            프로필 설정: Profile Settings
+            새 워크로드 등록: Register New Workload
+            워크로드 등록 예시: Workload Registration Example
+            워크로드 배포: Deploy Workload
+            워크로드 모니터링: Monitor Workload
+            워크로드 이용내역: Workload Expenses
+            워크로드 종료: Terminate Workload
+            저장소 관리 설정: Storage Management Settings
+            플랫폼 이용 가이드: Platform Usage Guide
+            Ollama 사용 가이드 - DeepSeek: Ollama Usage Guide - DeepSeek
+            Ollama 사용 가이드 - llama3: Ollama Usage Guide - llama3
+            Stable Diffusion 사용 가이드: Stable Diffusion Usage Guide
+            QnA 사용 가이드: QnA Usage Guide
+            Wan2.2 사용 가이드: Wan2.2 Usage Guide
+
 theme:
   name: material
   language: ko
   favicon: images/favicon.png
-  logo: images/gcube_logo.svg 
+  logo: images/gcube_logo.svg
   font:
     text: Inter
   palette:
-    - scheme: default
-      media: "(prefers-color-scheme: light)"
-      toggle:
-        icon: material/weather-night
-        name: Switch to Dark mode
-    - scheme: slate
-      media: "(prefers-color-scheme: dark)"
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to Light mode
-  palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/link
-        name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
@@ -37,11 +72,25 @@ theme:
       accent: indigo
       toggle:
         icon: material/toggle-switch-off
-        name: Switch to system preference
+        name: Switch to light mode
+  features:
+    - navigation.tracking
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
 extra_css:
   - stylesheets/extra.css
 extra:
   homepage: https://console.gcube.ai/
+  alternate:
+    - name: 한국어
+      link: /ko/
+      lang: ko
+    - name: English
+      link: /en/
+      lang: en
 
 markdown_extensions:
   - footnotes
@@ -101,7 +150,7 @@ nav:
     - Tier 2 Ubuntu OS 세팅 가이드: user-guide/node/Ubuntu-OS-setup.md
     - Tier 2 노드 공급자 세팅 가이드: user-guide/node/tier-2-ubuntu-setting-guide.md
     - NVIDIA 그래픽 드라이버 인식 오류: user-guide/node/NVIDIA-graphic-driver-error.md
-  - 워크로드 사용자 가이드: 
+  - 워크로드 사용자 가이드:
     - Home: user-guide/workload/workload-home.md
     - 프로필 설정: user-guide/workload/profile-settings.md
     - 새 워크로드 등록: user-guide/workload/register-new-workload.md

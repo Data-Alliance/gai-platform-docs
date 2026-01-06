@@ -20,7 +20,7 @@ plugins:
           build: true
           nav_translations:
             개요: Overview
-            계정생성: Sign Up
+            계정생성: Account Creation
             노드 사용자 가이드: Node Provider Guide
             Home: Home
             새 노드 연결: Connect New Node
@@ -36,20 +36,20 @@ plugins:
             Tier 2 노드 공급자 세팅 가이드: Tier 2 Node Provider Setup Guide
             NVIDIA 그래픽 드라이버 인식 오류: NVIDIA Graphics Driver Recognition Error
             워크로드 사용자 가이드: Workload User Guide
-            프로필 설정: Profile Settings
+            프로필 설정: Profile Setup
             새 워크로드 등록: Register New Workload
             워크로드 등록 예시: Workload Registration Example
-            워크로드 배포: Deploy Workload
-            워크로드 모니터링: Monitor Workload
-            워크로드 이용내역: Workload Expenses
+            워크로드 배포: Workload Deployment
+            워크로드 모니터링: Workload Monitoring
+            워크로드 이용내역: Workload Usage History
             워크로드 종료: Terminate Workload
-            저장소 관리 설정: Storage Management Settings
-            플랫폼 이용 가이드: Platform Usage Guide
-            Ollama 사용 가이드 - DeepSeek: Ollama Usage Guide - DeepSeek
-            Ollama 사용 가이드 - llama3: Ollama Usage Guide - llama3
-            Stable Diffusion 사용 가이드: Stable Diffusion Usage Guide
-            QnA 사용 가이드: QnA Usage Guide
-            Wan2.2 사용 가이드: Wan2.2 Usage Guide
+            저장소 관리 설정: Storage Management Setup
+            플랫폼 이용 가이드: Platform User Guide
+            Ollama 사용 가이드 - DeepSeek: Ollama User Guide - DeepSeek
+            Ollama 사용 가이드 - llama3: Ollama User Guide - llama3
+            Stable Diffusion 사용 가이드: Stable Diffusion User Guide
+            QnA 사용 가이드: QnA User Guide
+            Wan2.2 사용 가이드: Wan2.2 User Guide
 
 theme:
   name: material

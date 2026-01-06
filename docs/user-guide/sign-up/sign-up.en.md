@@ -27,4 +27,4 @@
 6\. Once logged in, you can access all of gcube’s services. <br>
 Use the **Mode Toggle** button at the top of the left-hand menu to switch between **Workload Deployment Mode** (for users) and **Node Provider Mode** (for suppliers). <br><br>
 
-[Go to GCUBE Login Page](https://console.gcube.ai/)
+[Go to GCUBE Login Page](https://gcube.ai/en/index)

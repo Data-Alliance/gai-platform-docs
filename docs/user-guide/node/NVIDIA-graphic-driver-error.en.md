@@ -1,6 +1,6 @@
 # **Troubleshooting: NVIDIA Graphics Driver Recognition Error**
 
-![NVIDIA 그래픽 드라이버 인식 오류 이미지.jpg](img/NVIDIA-graphic-driver-error/NVIDIA%20그래픽%20드라이버%20인식%20오류%20이미지.jpg)<br>
+![Nvidia_Graphics_Driver_Recognition_Error_20260108_01.jpg](img.en/NVIDIA-graphic-drivber-error/Nvidia_Graphics_Driver_Recognition_Error_20260108_01.jpg)<br>
 
 During the node provisioning process, the node status may be marked as **"Failed."**<br><br>
 
@@ -17,4 +17,4 @@ To resolve driver conflicts, use the **AMD Display Driver Uninstaller (DDU)** to
 Other troubleshooting methods include disabling the iGPU function in the BIOS, or identifying the iGPU in the Device Manager to disable the device and uninstall its driver.<br><br>
 
 Once the conflicting graphics drivers are removed, the issue will be resolved and the status will be displayed as shown below.<br>
-![NVIDIA 그래픽 드라이버 인식 오류 해결 이미지.png](img/NVIDIA-graphic-driver-error/NVIDIA%20그래픽%20드라이버%20인식%20오류%20해결%20이미지.png)
+![Nvidia_Graphics_Driver_Recognition_Error_20260108_02.jpg](img.en/NVIDIA-graphic-drivber-error/Nvidia_Graphics_Driver_Recognition_Error_20260108_02.jpg)

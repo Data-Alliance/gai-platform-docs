@@ -1,0 +1,1673 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/tier-2-ubuntu-setting-guide/">
+      
+      
+        <link rel="prev" href="../Ubuntu-OS-setup/">
+      
+      
+        <link rel="next" href="../NVIDIA-graphic-driver-error/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="ko">
+        
+          <link rel="alternate" href="../../../en/user-guide/node/tier-2-ubuntu-setting-guide/" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Tier 2 노드 공급자 세팅 가이드 - gcube Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tier-2" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="상단/헤더">
+    <a href="https://console.gcube.ai/" title="gcube Docs" class="md-header__button md-logo" aria-label="gcube Docs" data-md-component="logo">
+      
+  <img src="../../../images/gcube_logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            gcube Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tier 2 노드 공급자 세팅 가이드
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="언어설정">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="ko" class="md-select__link">
+              한국어
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../en/user-guide/node/tier-2-ubuntu-setting-guide/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="검색">
+        
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            검색 초기화
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="네비게이션" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://console.gcube.ai/" title="gcube Docs" class="md-nav__button md-logo" aria-label="gcube Docs" data-md-component="logo">
+      
+  <img src="../../../images/gcube_logo.svg" alt="logo">
+
+    </a>
+    gcube Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    개요
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sign-up/sign-up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    계정생성
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    노드 사용자 가이드
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    노드 사용자 가이드
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../node-home/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect-new-node/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    새 노드 연결
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stop-gpu-sharing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GPU 공유 중단
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../check-agent-node-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    에이전트 Node 모니터링 확인
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agent-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    에이전트 세팅
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../check-gpu-sharing-info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GPU 공유 정보 확인
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../set-gpu-sharing-pricing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GPU 공유 가격 설정
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../check-gpu-sharing-income/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GPU 공유수익 상세내역
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../check-gpu-sharing-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GPU 공유 모니터링 확인
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting_agent_errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    에이전트 사용 오류 해결
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Ubuntu-OS-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tier 2 Ubuntu OS 세팅 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tier 2 노드 공급자 세팅 가이드
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tier 2 노드 공급자 세팅 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-nvidia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Nvidia 그래픽 드라이버 설치
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-gcube-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Gcube agent 설치
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NVIDIA-graphic-driver-error/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NVIDIA 그래픽 드라이버 인식 오류
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    워크로드 사용자 가이드
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    워크로드 사용자 가이드
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/workload-home/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/profile-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    프로필 설정
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/register-new-workload/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    새 워크로드 등록
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/example-workload/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    워크로드 등록 예시
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/deploy-workload/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    워크로드 배포
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/monitor-workload/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    워크로드 모니터링
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/workload-expenses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    워크로드 이용내역
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/terminate-workload/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    워크로드 종료
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/pv-user-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    저장소 관리 설정
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    플랫폼 이용 가이드
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    플랫폼 이용 가이드
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../platform-guide/ollama-deepseek/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ollama 사용 가이드 - DeepSeek
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../platform-guide/ollama-llama3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ollama 사용 가이드 - llama3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../platform-guide/stable-diffusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stable Diffusion 사용 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../platform-guide/QnA-user-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    QnA 사용 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../platform-guide/Wan2.2-user-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wan2.2 사용 가이드
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-nvidia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Nvidia 그래픽 드라이버 설치
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-gcube-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Gcube agent 설치
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="tier-2"><strong>Tier 2 노드 공급자 세팅 가이드</strong></h1>
+<p>Tier 2 이용자들을 진행 전 아래 가이드에 따라 Ubuntu OS 세팅을 완료하신 후, 진행해주시길 바랍니다. <br>
+<a href="../Ubuntu-OS-setup/">Tier 2 Ubuntu OS 세팅 가이드</a>
+<br></p>
+<h2 id="1-nvidia"><strong>1. Nvidia 그래픽 드라이버 설치</strong></h2>
+<ul>
+<li>Ubuntu 접속 후, Nvidia 그래픽 카드 인식을 위한 드라이버 설치</li>
+<li>
+<p>기존 드라이버 삭제</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">$</span><span class="w"> </span><span class="nx">sudo</span><span class="w"> </span><span class="nx">apt</span><span class="o">-</span><span class="nx">get</span><span class="w"> </span><span class="nx">purge</span><span class="w"> </span><span class="nx">nvidia</span><span class="o">*</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nx">$</span><span class="w"> </span><span class="nx">sudo</span><span class="w"> </span><span class="nx">apt</span><span class="o">-</span><span class="nx">get</span><span class="w"> </span><span class="nx">autoremove</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nx">$</span><span class="w"> </span><span class="nx">sudo</span><span class="w"> </span><span class="nx">apt</span><span class="o">-</span><span class="nx">get</span><span class="w"> </span><span class="nx">autoclean</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nx">$</span><span class="w"> </span><span class="nx">sudo</span><span class="w"> </span><span class="nx">dpkg</span><span class="w"> </span><span class="o">-</span><span class="nx">l</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">grep</span><span class="w"> </span><span class="nx">nvidia</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nx">$</span><span class="w"> </span><span class="nx">sudo</span><span class="w"> </span><span class="nx">apt</span><span class="w"> </span><span class="nx">remove</span><span class="w"> </span><span class="o">--</span><span class="nx">purge</span><span class="w"> </span><span class="p">{</span><span class="nx">위</span><span class="w"> </span><span class="nx">명령어로</span><span class="w"> </span><span class="nx">출력된</span><span class="w"> </span><span class="nx">패키지</span><span class="w"> </span><span class="nx">이름</span><span class="p">}</span>
+</code></pre></div>
+</li>
+<li>
+<p>신규 드라이버 설치</p>
+<ul>
+<li>그래픽 드라이버 설치를 위한 사전 패키지 설치</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">$</span><span class="w"> </span><span class="nx">sudo</span><span class="w"> </span><span class="nx">apt</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">ubuntu</span><span class="o">-</span><span class="nx">drivers</span><span class="o">-</span><span class="nx">common</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nx">$</span><span class="w"> </span><span class="nx">sudo</span><span class="w"> </span><span class="nx">add</span><span class="o">-</span><span class="nx">apt</span><span class="o">-</span><span class="nx">repository</span><span class="w"> </span><span class="nx">ppa</span><span class="o">:</span><span class="nx">graphics</span><span class="o">-</span><span class="nx">drivers</span><span class="o">/</span><span class="nx">ppa</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nx">$</span><span class="w"> </span><span class="nx">sudo</span><span class="w"> </span><span class="nx">apt</span><span class="w"> </span><span class="nx">update</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nx">$</span><span class="w"> </span><span class="nx">sudo</span><span class="w"> </span><span class="nx">apt</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">alsa</span><span class="o">-</span><span class="nx">utils</span><span class="w"> </span><span class="o">-</span><span class="nx">y</span>
+</code></pre></div>
+</li>
+<li>
+<p>해당 명령어 수행 후, <strong>recommended</strong>로 표시되는 그래픽 드라이버 설치</p>
+<ul>
+<li>ex : NVIDIA GeForce RTX 3060 그래픽 카드인 경우</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nx">$</span><span class="w"> </span><span class="nx">sudo</span><span class="w"> </span><span class="nx">ubuntu</span><span class="o">-</span><span class="nx">drivers</span><span class="w"> </span><span class="nx">devices</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="o">==</span><span class="w"> </span><span class="err">/sys/devices/pci0000:00/0000:00:03.1/0000:09:00.0 ==</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nx">modalias</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nx">pci</span><span class="o">:</span><span class="nx">v000010DEd00002504sv00001458sd0000407Bbc03sc00i00</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nx">vendor</span><span class="w">   </span><span class="o">:</span><span class="w"> </span><span class="nx">NVIDIA</span><span class="w"> </span><span class="nx">Corporation</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nx">model</span><span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="nx">GA106</span><span class="w"> </span><span class="p">[</span><span class="nx">GeForce</span><span class="w"> </span><span class="nx">RTX</span><span class="w"> </span><span class="mf">3060</span><span class="w"> </span><span class="nx">Lite</span><span class="w"> </span><span class="nx">Hash</span><span class="w"> </span><span class="nx">Rate</span><span class="p">]</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nx">driver</span><span class="w">   </span><span class="o">:</span><span class="w"> </span><span class="nx">nvidia</span><span class="o">-</span><span class="nx">driver</span><span class="o">-</span><span class="mf">550</span><span class="o">-</span><span class="nx">open</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">distro</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">free</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nx">driver</span><span class="w">   </span><span class="o">:</span><span class="w"> </span><span class="nx">nvidia</span><span class="o">-</span><span class="nx">driver</span><span class="o">-</span><span class="mf">545</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">distro</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">free</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="nx">driver</span><span class="w">   </span><span class="o">:</span><span class="w"> </span><span class="nx">nvidia</span><span class="o">-</span><span class="nx">driver</span><span class="o">-</span><span class="mf">535</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">distro</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">free</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="nx">driver</span><span class="w">   </span><span class="o">:</span><span class="w"> </span><span class="nx">nvidia</span><span class="o">-</span><span class="nx">driver</span><span class="o">-</span><span class="mf">535</span><span class="o">-</span><span class="nx">server</span><span class="o">-</span><span class="nx">open</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">distro</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">free</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="o">**</span><span class="nx">driver</span><span class="w">   </span><span class="o">:</span><span class="w"> </span><span class="nx">nvidia</span><span class="o">-</span><span class="nx">driver</span><span class="o">-</span><span class="mf">550</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">distro</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">free</span><span class="w"> </span><span class="nx">recommended</span><span class="o">**</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="nx">driver</span><span class="w">   </span><span class="o">:</span><span class="w"> </span><span class="nx">nvidia</span><span class="o">-</span><span class="nx">driver</span><span class="o">-</span><span class="mf">545</span><span class="o">-</span><span class="nx">open</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">distro</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">free</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="nx">driver</span><span class="w">   </span><span class="o">:</span><span class="w"> </span><span class="nx">nvidia</span><span class="o">-</span><span class="nx">driver</span><span class="o">-</span><span class="mf">535</span><span class="o">-</span><span class="nx">server</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">distro</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">free</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="nx">driver</span><span class="w">   </span><span class="o">:</span><span class="w"> </span><span class="nx">nvidia</span><span class="o">-</span><span class="nx">driver</span><span class="o">-</span><span class="mf">535</span><span class="o">-</span><span class="nx">open</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">distro</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">free</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="nx">driver</span><span class="w">   </span><span class="o">:</span><span class="w"> </span><span class="nx">nvidia</span><span class="o">-</span><span class="nx">driver</span><span class="o">-</span><span class="mf">470</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">distro</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">free</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="nx">driver</span><span class="w">   </span><span class="o">:</span><span class="w"> </span><span class="nx">nvidia</span><span class="o">-</span><span class="nx">driver</span><span class="o">-</span><span class="mf">470</span><span class="o">-</span><span class="nx">server</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">distro</span><span class="w"> </span><span class="nx">non</span><span class="o">-</span><span class="nx">free</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="nx">driver</span><span class="w">   </span><span class="o">:</span><span class="w"> </span><span class="nx">xserver</span><span class="o">-</span><span class="nx">xorg</span><span class="o">-</span><span class="nx">video</span><span class="o">-</span><span class="nx">nouveau</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nx">distro</span><span class="w"> </span><span class="nx">free</span><span class="w"> </span><span class="nx">builtin</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="nx">$</span><span class="w"> </span><span class="nx">sudo</span><span class="w"> </span><span class="nx">apt</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">nvidia</span><span class="o">-</span><span class="nx">driver</span><span class="o">-</span><span class="mf">550</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="err">#</span><span class="w"> </span><span class="nx">공급자</span><span class="w"> </span><span class="nx">본인</span><span class="w"> </span><span class="nx">화면에</span><span class="w"> </span><span class="nx">표시된</span><span class="w"> </span><span class="nx">recommended</span><span class="w"> </span><span class="nx">driver를</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">하시면</span><span class="w"> </span><span class="nx">됩니다</span><span class="p">.</span>
+</code></pre></div>
+</li>
+<li>
+<p>그래픽 드라이버 설치 이후, OS 재기동</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">$</span><span class="w"> </span><span class="nx">sudo</span><span class="w"> </span><span class="nx">reboot</span>
+</code></pre></div>
+</li>
+<li>
+<p>OS 기동 이후,  <strong>nvidia-smi</strong> 명령어 수행하여 그래픽 드라이버가 정상 설치되었는지 확인</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">$</span><span class="w"> </span><span class="n">nvidia</span><span class="o">-</span><span class="n">smi</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">Tue</span><span class="w"> </span><span class="n">Feb</span><span class="w"> </span><span class="mi">25</span><span class="w"> </span><span class="mi">09</span><span class="o">:</span><span class="mi">47</span><span class="o">:</span><span class="mi">42</span><span class="w"> </span><span class="mi">2025</span><span class="w">       </span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="o">+-----------------------------------------------------------------------------------------+</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="o">|</span><span class="w"> </span><span class="n">NVIDIA</span><span class="o">-</span><span class="n">SMI</span><span class="w"> </span><span class="mf">550.120</span><span class="w">                </span><span class="n">Driver</span><span class="w"> </span><span class="n">Version</span><span class="o">:</span><span class="w"> </span><span class="mf">550.120</span><span class="w">        </span><span class="n">CUDA</span><span class="w"> </span><span class="n">Version</span><span class="o">:</span><span class="w"> </span><span class="mf">12.4</span><span class="w">     </span><span class="o">|</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="o">|-----------------------------------------+------------------------+----------------------+</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="o">|</span><span class="w"> </span><span class="n">GPU</span><span class="w">  </span><span class="n">Name</span><span class="w">                 </span><span class="n">Persistence</span><span class="o">-</span><span class="n">M</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Bus</span><span class="o">-</span><span class="n">Id</span><span class="w">          </span><span class="n">Disp</span><span class="p">.</span><span class="n">A</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">Volatile</span><span class="w"> </span><span class="n">Uncorr</span><span class="p">.</span><span class="w"> </span><span class="n">ECC</span><span class="w"> </span><span class="o">|</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="o">|</span><span class="w"> </span><span class="n">Fan</span><span class="w">  </span><span class="n">Temp</span><span class="w">   </span><span class="n">Perf</span><span class="w">          </span><span class="n">Pwr</span><span class="o">:</span><span class="n">Usage</span><span class="o">/</span><span class="n">Cap</span><span class="w"> </span><span class="o">|</span><span class="w">           </span><span class="n">Memory</span><span class="o">-</span><span class="n">Usage</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">GPU</span><span class="o">-</span><span class="n">Util</span><span class="w">  </span><span class="n">Compute</span><span class="w"> </span><span class="n">M</span><span class="p">.</span><span class="w"> </span><span class="o">|</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="o">|</span><span class="w">                                         </span><span class="o">|</span><span class="w">                        </span><span class="o">|</span><span class="w">               </span><span class="n">MIG</span><span class="w"> </span><span class="n">M</span><span class="p">.</span><span class="w"> </span><span class="o">|</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="o">|=========================================+========================+======================|</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="o">|</span><span class="w">   </span><span class="mi">0</span><span class="w">  </span><span class="n">NVIDIA</span><span class="w"> </span><span class="n">GeForce</span><span class="w"> </span><span class="n">RTX</span><span class="w"> </span><span class="mi">3060</span><span class="w">        </span><span class="n">On</span><span class="w">  </span><span class="o">|</span><span class="w">   </span><span class="mo">00000000</span><span class="o">:</span><span class="mi">09</span><span class="o">:</span><span class="mf">00.0</span><span class="w"> </span><span class="n">Off</span><span class="w"> </span><span class="o">|</span><span class="w">                  </span><span class="n">N</span><span class="o">/</span><span class="n">A</span><span class="w"> </span><span class="o">|</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="o">|</span><span class="w">  </span><span class="mi">0</span><span class="o">%</span><span class="w">   </span><span class="mi">42</span><span class="n">C</span><span class="w">    </span><span class="n">P8</span><span class="w">             </span><span class="mi">23</span><span class="n">W</span><span class="w"> </span><span class="o">/</span><span class="w">  </span><span class="mi">170</span><span class="n">W</span><span class="w"> </span><span class="o">|</span><span class="w">       </span><span class="mi">2</span><span class="n">MiB</span><span class="w"> </span><span class="o">/</span><span class="w">  </span><span class="mi">12288</span><span class="n">MiB</span><span class="w"> </span><span class="o">|</span><span class="w">      </span><span class="mi">0</span><span class="o">%</span><span class="w">      </span><span class="n">Default</span><span class="w"> </span><span class="o">|</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="o">|</span><span class="w">                                         </span><span class="o">|</span><span class="w">                        </span><span class="o">|</span><span class="w">                  </span><span class="n">N</span><span class="o">/</span><span class="n">A</span><span class="w"> </span><span class="o">|</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="o">+-----------------------------------------+------------------------+----------------------+</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="o">+-----------------------------------------------------------------------------------------+</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="o">|</span><span class="w"> </span><span class="n">Processes</span><span class="o">:</span><span class="w">                                                                              </span><span class="o">|</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="o">|</span><span class="w">  </span><span class="n">GPU</span><span class="w">   </span><span class="n">GI</span><span class="w">   </span><span class="n">CI</span><span class="w">        </span><span class="n">PID</span><span class="w">   </span><span class="n">Type</span><span class="w">   </span><span class="n">Process</span><span class="w"> </span><span class="n">name</span><span class="w">                              </span><span class="n">GPU</span><span class="w"> </span><span class="n">Memory</span><span class="w"> </span><span class="o">|</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="o">|</span><span class="w">        </span><span class="n">ID</span><span class="w">   </span><span class="n">ID</span><span class="w">                                                               </span><span class="n">Usage</span><span class="w">      </span><span class="o">|</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="o">|=========================================================================================|</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="o">|</span><span class="w">  </span><span class="n">No</span><span class="w"> </span><span class="n">running</span><span class="w"> </span><span class="n">processes</span><span class="w"> </span><span class="n">found</span><span class="w">                                                             </span><span class="o">|</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="o">+-----------------------------------------------------------------------------------------+</span>
+</code></pre></div>
+</li>
+</ul>
+<h2 id="2-gcube-agent"><strong>2. Gcube agent 설치</strong></h2>
+<ul>
+<li>Agent 설치 전 사전 준비<ol>
+<li>공급자는 하기 항목을 gcube측에 <strong>정보 전달</strong>이 필요<ul>
+<li><a href="http://gcube.ai/">gcube.ai</a>  홈페이지 <strong>사용자 계정 정보</strong></li>
+<li><strong>Ubuntu OS user 계정 ID/PW</strong></li>
+<li>파일과 토큰을 받으실 <strong>이메일 주소</strong></li>
+</ul>
+</li>
+<li>gcube에서 고객님의 정보를 받은 후, <br>
+agent 설치 파일 및 설치 진행 시 필요한 개인 사용자 토큰 전달<br>
+<strong>※ 보내주신 이메일을 통해 전달해 드릴 예정입니다.</strong><ul>
+<li>gai_svr_inst (설치 파일)</li>
+<li>개인 사용자 토큰</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>이후 Ubuntu 접속 후 해당 과정 진행</p>
+</li>
+<li>
+<p>agent 설치 디렉터리 생성 및 agent 설치 파일 권한 부여</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="err">#</span><span class="w"> </span><span class="nx">디렉토리</span><span class="w"> </span><span class="nx">생성</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nx">$</span><span class="w"> </span><span class="nx">mkdir</span><span class="w"> </span><span class="o">-</span><span class="nx">p</span><span class="w"> </span><span class="o">~</span><span class="err">/work/gcube_instller</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="err">#</span><span class="w"> </span><span class="nx">해당</span><span class="w"> </span><span class="nx">경로에</span><span class="w"> </span><span class="nx">agent</span><span class="w"> </span><span class="nx">설치파일</span><span class="w"> </span><span class="nx">위치</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nx">$</span><span class="w"> </span><span class="nx">cd</span><span class="w"> </span><span class="o">~</span><span class="err">/work/gcube_installer/</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="err">#</span><span class="w"> </span><span class="nx">agent</span><span class="w"> </span><span class="nx">설치</span><span class="w"> </span><span class="nx">파일</span><span class="w"> </span><span class="nx">권한</span><span class="w"> </span><span class="nx">부여</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="nx">$</span><span class="w"> </span><span class="nx">chmod</span><span class="w"> </span><span class="o">+</span><span class="nx">x</span><span class="w"> </span><span class="nx">gai_svr_inst</span>
+</code></pre></div>
+</li>
+<li>
+<p>기본 파일 설치</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="err">#</span><span class="w"> </span><span class="nx">기본</span><span class="w"> </span><span class="nx">파일</span><span class="w"> </span><span class="nx">설치</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nx">$</span><span class="w"> </span><span class="nx">sudo</span><span class="w"> </span><span class="p">.</span><span class="o">/</span><span class="nx">gai_svr_inst</span><span class="w"> </span><span class="nx">base</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="nx">INFO</span><span class="p">[</span><span class="mo">0000</span><span class="p">]</span><span class="w"> </span><span class="nx">Rnd</span><span class="w"> </span><span class="nx">initialized</span><span class="p">...</span><span class="w">                           </span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">11</span><span class="o">:</span><span class="mf">15</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">Install</span><span class="w"> </span><span class="nx">Base</span><span class="w"> </span><span class="nx">All</span><span class="w"> </span><span class="p">...</span><span class="w">                         </span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">11</span><span class="o">:</span><span class="mf">38</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">baseNetools</span><span class="w"> </span><span class="nx">complete</span><span class="p">.</span><span class="w">                        </span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">11</span><span class="o">:</span><span class="mf">46</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">procWireGuard</span><span class="w"> </span><span class="nx">complete</span><span class="p">.</span><span class="w">                      </span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">11</span><span class="o">:</span><span class="mf">46</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">PktPathBase</span><span class="o">:</span><span class="w"> </span><span class="err">/root/packages/ubuntu22/ k8s_packages_u22_v1.28.tar.gz </span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">12</span><span class="o">:</span><span class="mf">10</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">procK8sPackage</span><span class="w"> </span><span class="nx">complete</span><span class="p">.</span><span class="w">                     </span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="nx">ERROR</span><span class="w">  </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">13</span><span class="o">:</span><span class="mf">28</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">Failed</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">run</span><span class="w">                                 </span><span class="nx">error</span><span class="o">=</span><span class="s2">&quot;exit status 1&quot;</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="nx">WARNING</span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">13</span><span class="o">:</span><span class="mf">28</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">util</span><span class="p">.</span><span class="nx">ExecCommand</span><span class="w"> </span><span class="nx">dpkg</span><span class="w"> </span><span class="nx">crio</span><span class="w">                    </span><span class="nx">error</span><span class="o">=</span><span class="s2">&quot;exit status 1&quot;</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">13</span><span class="o">:</span><span class="mf">29</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">procCrio</span><span class="w"> </span><span class="nx">complete</span><span class="p">.</span><span class="w">                           </span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">14</span><span class="o">:</span><span class="mf">31</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">procKubernetes</span><span class="w"> </span><span class="nx">complete</span><span class="p">.</span><span class="w">                     </span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="nx">ERROR</span><span class="w">  </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">14</span><span class="o">:</span><span class="mf">36</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">Failed</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">run</span><span class="w">                                 </span><span class="nx">error</span><span class="o">=</span><span class="s2">&quot;exit status 100&quot;</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="nx">WARNING</span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">14</span><span class="o">:</span><span class="mf">36</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">ExecCommand</span><span class="w"> </span><span class="nx">apt</span><span class="w"> </span><span class="nx">install</span><span class="w">                       </span><span class="nx">error</span><span class="o">=</span><span class="s2">&quot;exit status 100&quot;</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">14</span><span class="o">:</span><span class="mf">36</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">apt</span><span class="w"> </span><span class="nx">fix</span><span class="w"> </span><span class="nx">broken</span><span class="w">                               </span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">14</span><span class="o">:</span><span class="mf">42</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">retry</span><span class="w"> </span><span class="nx">install</span><span class="w"> </span><span class="nx">nvidia</span><span class="o">-</span><span class="nx">container</span><span class="o">-</span><span class="nx">toolkit</span><span class="w">       </span>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">14</span><span class="o">:</span><span class="mf">52</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">procNvidiaPlugin</span><span class="w"> </span><span class="nx">complete</span><span class="p">.</span><span class="w">                   </span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">14</span><span class="o">:</span><span class="mf">53</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">clearAutoUpdate</span><span class="w"> </span><span class="nx">complete</span><span class="p">.</span><span class="w">                    </span>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">14</span><span class="o">:</span><span class="mf">53</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="o">**</span><span class="nx">procGaiClientInstaller</span><span class="w"> </span><span class="nx">complete</span><span class="p">.</span><span class="o">**</span><span class="w">  </span>
+</code></pre></div>
+<ul>
+<li>
+<p>마지막 라인에 <strong>‘procGaiClientInstaller complete’</strong> 출력 시, 기본 구성 요소들의 설치가 완료 상황</p>
+</li>
+<li>
+<p>실행 화면 예시)</p>
+</li>
+</ul>
+<p><img alt="tier2 우분투 설치 가이드 에이전트 설치 예시 1 화면 이미지.png" src="../img/tier-2-ubuntu-setting-guide/tier2%20%EC%9A%B0%EB%B6%84%ED%88%AC%20%EC%84%A4%EC%B9%98%20%EA%B0%80%EC%9D%B4%EB%93%9C%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%84%A4%EC%B9%98%20%EC%98%88%EC%8B%9C%201%20%ED%99%94%EB%A9%B4%20%EC%9D%B4%EB%AF%B8%EC%A7%80.png" /></p>
+</li>
+<li>
+<p>노드 개통 진행</p>
+<ul>
+<li>
+<p>이후 하기 명령어를 수행하여, 노드 개통 진행</p>
+<ul>
+<li><strong>ethernet nic name</strong> : 설치 장비의 네트워크 인터페이스 이름</li>
+<li><strong>access token</strong> : 전달받은 개인 사용자 토큰 (토큰값 입력 시 대소문자 구분 필요)</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="err">#</span><span class="w"> </span><span class="nx">사용중인</span><span class="w"> </span><span class="nx">이더넷</span><span class="w"> </span><span class="nx">인터페이스</span><span class="w"> </span><span class="nx">모두</span><span class="w"> </span><span class="nx">보기</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nx">$</span><span class="w"> </span><span class="nx">ifconfig</span><span class="w"> </span><span class="o">-</span><span class="nx">a</span><span class="w"> </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="err">#</span><span class="w"> </span><span class="nx">노드</span><span class="w"> </span><span class="nx">개통을</span><span class="w"> </span><span class="nx">위한</span><span class="w"> </span><span class="nx">명령어</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="nx">$</span><span class="w"> </span><span class="nx">sudo</span><span class="w"> </span><span class="p">.</span><span class="o">/</span><span class="nx">gai_svr_inst</span><span class="w"> </span><span class="o">--</span><span class="nx">nic</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">ethernet</span><span class="w"> </span><span class="na">nic</span><span class="w"> </span><span class="na">name</span><span class="p">&gt;</span><span class="w"> </span><span class="nx">reg</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">access</span><span class="w"> </span><span class="na">token</span><span class="p">&gt;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="err">#</span><span class="w"> </span><span class="nx">ex</span><span class="p">)</span><span class="w"> </span><span class="nx">수행</span><span class="w"> </span><span class="nx">예시</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="err">#</span><span class="w"> </span><span class="nx">사용중인</span><span class="w"> </span><span class="nx">외부연결</span><span class="w"> </span><span class="nx">이더넷</span><span class="w"> </span><span class="nx">인터페이스</span><span class="w"> </span><span class="nx">이름</span><span class="w"> </span><span class="nx">확인</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="p">(</span><span class="nx">enp5s0</span><span class="p">)</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="nx">$</span><span class="w"> </span><span class="nx">ifconfig</span><span class="w"> </span><span class="o">-</span><span class="nx">a</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="nx">docker0</span><span class="o">:</span><span class="w"> </span><span class="nx">flags</span><span class="o">=</span><span class="mf">4099</span><span class="p">&lt;</span><span class="nt">UP</span><span class="err">,</span><span class="na">BROADCAST</span><span class="err">,</span><span class="na">MULTICAST</span><span class="p">&gt;</span><span class="w">  </span><span class="nx">mtu</span><span class="w"> </span><span class="mf">1500</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">        </span><span class="nx">inet</span><span class="w"> </span><span class="mf">172.17.0.1</span><span class="w">  </span><span class="nx">netmask</span><span class="w"> </span><span class="mf">255.255.0.0</span><span class="w">  </span><span class="nx">broadcast</span><span class="w"> </span><span class="mf">172.17.255.255</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">        </span><span class="nx">inet6</span><span class="w"> </span><span class="nx">fe80</span><span class="o">::</span><span class="mf">7807</span><span class="o">:</span><span class="nx">f9ff</span><span class="o">:</span><span class="nx">fe9c</span><span class="o">:</span><span class="mf">6967</span><span class="w">  </span><span class="nx">prefixlen</span><span class="w"> </span><span class="mf">64</span><span class="w">  </span><span class="nx">scopeid</span><span class="w"> </span><span class="mh">0x20</span><span class="p">&lt;</span><span class="nt">link</span><span class="p">&gt;</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">        </span><span class="nx">ether</span><span class="w"> </span><span class="mf">7</span><span class="nx">a</span><span class="o">:</span><span class="mo">07</span><span class="o">:</span><span class="nx">f9</span><span class="o">:</span><span class="mf">9</span><span class="nx">c</span><span class="o">:</span><span class="mf">69</span><span class="o">:</span><span class="mf">67</span><span class="w">  </span><span class="nx">txqueuelen</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="p">(</span><span class="nx">Ethernet</span><span class="p">)</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">        </span><span class="nx">RX</span><span class="w"> </span><span class="nx">packets</span><span class="w"> </span><span class="mf">1779</span><span class="w">  </span><span class="nx">bytes</span><span class="w"> </span><span class="mf">49812</span><span class="w"> </span><span class="p">(</span><span class="mf">49.8</span><span class="w"> </span><span class="nx">KB</span><span class="p">)</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="w">        </span><span class="nx">RX</span><span class="w"> </span><span class="nx">errors</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">dropped</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">overruns</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">frame</span><span class="w"> </span><span class="mf">0</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="w">        </span><span class="nx">TX</span><span class="w"> </span><span class="nx">packets</span><span class="w"> </span><span class="mf">1189</span><span class="w">  </span><span class="nx">bytes</span><span class="w"> </span><span class="mf">130886</span><span class="w"> </span><span class="p">(</span><span class="mf">130.8</span><span class="w"> </span><span class="nx">KB</span><span class="p">)</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="w">        </span><span class="nx">TX</span><span class="w"> </span><span class="nx">errors</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">dropped</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="nx">overruns</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">carrier</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">collisions</span><span class="w"> </span><span class="mf">0</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="nx">enp5s0</span><span class="o">:</span><span class="w"> </span><span class="nx">flags</span><span class="o">=</span><span class="mf">4163</span><span class="p">&lt;</span><span class="nt">UP</span><span class="err">,</span><span class="na">BROADCAST</span><span class="err">,</span><span class="na">RUNNING</span><span class="err">,</span><span class="na">MULTICAST</span><span class="p">&gt;</span><span class="w">  </span><span class="nx">mtu</span><span class="w"> </span><span class="mf">1500</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">        </span><span class="nx">inet</span><span class="w"> </span><span class="mf">10.39.60.65</span><span class="w">  </span><span class="nx">netmask</span><span class="w"> </span><span class="mf">255.255.254.0</span><span class="w">  </span><span class="nx">broadcast</span><span class="w"> </span><span class="mf">10.39.61.255</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="w">        </span><span class="nx">inet6</span><span class="w"> </span><span class="nx">fe80</span><span class="o">::</span><span class="mf">642</span><span class="o">:</span><span class="mf">1</span><span class="nx">aff</span><span class="o">:</span><span class="nx">fe94</span><span class="o">:</span><span class="mf">5</span><span class="nx">edd</span><span class="w">  </span><span class="nx">prefixlen</span><span class="w"> </span><span class="mf">64</span><span class="w">  </span><span class="nx">scopeid</span><span class="w"> </span><span class="mh">0x20</span><span class="p">&lt;</span><span class="nt">link</span><span class="p">&gt;</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="w">        </span><span class="nx">ether</span><span class="w"> </span><span class="mo">04</span><span class="o">:</span><span class="mf">42</span><span class="o">:</span><span class="mf">1</span><span class="nx">a</span><span class="o">:</span><span class="mf">94</span><span class="o">:</span><span class="mf">5</span><span class="nx">e</span><span class="o">:</span><span class="nx">dd</span><span class="w">  </span><span class="nx">txqueuelen</span><span class="w"> </span><span class="mf">1000</span><span class="w">  </span><span class="p">(</span><span class="nx">Ethernet</span><span class="p">)</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="w">        </span><span class="nx">RX</span><span class="w"> </span><span class="nx">packets</span><span class="w"> </span><span class="mf">2283880</span><span class="w">  </span><span class="nx">bytes</span><span class="w"> </span><span class="mf">2164088878</span><span class="w"> </span><span class="p">(</span><span class="mf">2.1</span><span class="w"> </span><span class="nx">GB</span><span class="p">)</span>
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="w">        </span><span class="nx">RX</span><span class="w"> </span><span class="nx">errors</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">dropped</span><span class="w"> </span><span class="mf">10</span><span class="w">  </span><span class="nx">overruns</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">frame</span><span class="w"> </span><span class="mf">0</span>
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="w">        </span><span class="nx">TX</span><span class="w"> </span><span class="nx">packets</span><span class="w"> </span><span class="mf">1513085</span><span class="w">  </span><span class="nx">bytes</span><span class="w"> </span><span class="mf">1359887094</span><span class="w"> </span><span class="p">(</span><span class="mf">1.3</span><span class="w"> </span><span class="nx">GB</span><span class="p">)</span>
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="w">        </span><span class="nx">TX</span><span class="w"> </span><span class="nx">errors</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">dropped</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="nx">overruns</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">carrier</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">collisions</span><span class="w"> </span><span class="mf">0</span>
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a><span class="w">        </span><span class="nx">device</span><span class="w"> </span><span class="nx">memory</span><span class="w"> </span><span class="mh">0xfc400000</span><span class="o">-</span><span class="nx">fc4fffff</span><span class="w">  </span>
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a><span class="nx">lo</span><span class="o">:</span><span class="w"> </span><span class="nx">flags</span><span class="o">=</span><span class="mf">73</span><span class="p">&lt;</span><span class="nt">UP</span><span class="err">,</span><span class="na">LOOPBACK</span><span class="err">,</span><span class="na">RUNNING</span><span class="p">&gt;</span><span class="w">  </span><span class="nx">mtu</span><span class="w"> </span><span class="mf">65536</span>
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a><span class="w">        </span><span class="nx">inet</span><span class="w"> </span><span class="mf">127.0.0.1</span><span class="w">  </span><span class="nx">netmask</span><span class="w"> </span><span class="mf">255.0.0.0</span>
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a><span class="w">        </span><span class="nx">inet6</span><span class="w"> </span><span class="o">::</span><span class="mf">1</span><span class="w">  </span><span class="nx">prefixlen</span><span class="w"> </span><span class="mf">128</span><span class="w">  </span><span class="nx">scopeid</span><span class="w"> </span><span class="mh">0x10</span><span class="p">&lt;</span><span class="nt">host</span><span class="p">&gt;</span>
+<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a><span class="w">        </span><span class="nx">loop</span><span class="w">  </span><span class="nx">txqueuelen</span><span class="w"> </span><span class="mf">1000</span><span class="w">  </span><span class="p">(</span><span class="nx">Local</span><span class="w"> </span><span class="nx">Loopback</span><span class="p">)</span>
+<a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a><span class="w">        </span><span class="nx">RX</span><span class="w"> </span><span class="nx">packets</span><span class="w"> </span><span class="mf">46784</span><span class="w">  </span><span class="nx">bytes</span><span class="w"> </span><span class="mf">3534359</span><span class="w"> </span><span class="p">(</span><span class="mf">3.5</span><span class="w"> </span><span class="nx">MB</span><span class="p">)</span>
+<a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a><span class="w">        </span><span class="nx">RX</span><span class="w"> </span><span class="nx">errors</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">dropped</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">overruns</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">frame</span><span class="w"> </span><span class="mf">0</span>
+<a id="__codelineno-9-31" name="__codelineno-9-31" href="#__codelineno-9-31"></a><span class="w">        </span><span class="nx">TX</span><span class="w"> </span><span class="nx">packets</span><span class="w"> </span><span class="mf">46784</span><span class="w">  </span><span class="nx">bytes</span><span class="w"> </span><span class="mf">3534359</span><span class="w"> </span><span class="p">(</span><span class="mf">3.5</span><span class="w"> </span><span class="nx">MB</span><span class="p">)</span>
+<a id="__codelineno-9-32" name="__codelineno-9-32" href="#__codelineno-9-32"></a><span class="w">        </span><span class="nx">TX</span><span class="w"> </span><span class="nx">errors</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">dropped</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="nx">overruns</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">carrier</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">collisions</span><span class="w"> </span><span class="mf">0</span>
+<a id="__codelineno-9-33" name="__codelineno-9-33" href="#__codelineno-9-33"></a>
+<a id="__codelineno-9-34" name="__codelineno-9-34" href="#__codelineno-9-34"></a><span class="nx">wlp4s0</span><span class="o">:</span><span class="w"> </span><span class="nx">flags</span><span class="o">=</span><span class="mf">4098</span><span class="p">&lt;</span><span class="nt">BROADCAST</span><span class="err">,</span><span class="na">MULTICAST</span><span class="p">&gt;</span><span class="w">  </span><span class="nx">mtu</span><span class="w"> </span><span class="mf">1500</span>
+<a id="__codelineno-9-35" name="__codelineno-9-35" href="#__codelineno-9-35"></a><span class="w">        </span><span class="o">*</span><span class="nx">ether</span><span class="w"> </span><span class="nx">f4</span><span class="o">:</span><span class="nx">b3</span><span class="o">:</span><span class="mo">01</span><span class="o">:</span><span class="mf">39</span><span class="o">:</span><span class="mf">2</span><span class="nx">b</span><span class="o">:</span><span class="mf">91</span><span class="w">  </span><span class="nx">txqueuelen</span><span class="w"> </span><span class="mf">1000</span><span class="w">  </span><span class="p">(</span><span class="nx">Ethernet</span><span class="p">)</span><span class="o">*</span>
+<a id="__codelineno-9-36" name="__codelineno-9-36" href="#__codelineno-9-36"></a><span class="w">        </span><span class="nx">RX</span><span class="w"> </span><span class="nx">packets</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">bytes</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="p">(</span><span class="mf">0.0</span><span class="w"> </span><span class="nx">B</span><span class="p">)</span>
+<a id="__codelineno-9-37" name="__codelineno-9-37" href="#__codelineno-9-37"></a><span class="w">        </span><span class="nx">RX</span><span class="w"> </span><span class="nx">errors</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">dropped</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">overruns</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">frame</span><span class="w"> </span><span class="mf">0</span>
+<a id="__codelineno-9-38" name="__codelineno-9-38" href="#__codelineno-9-38"></a><span class="w">        </span><span class="nx">TX</span><span class="w"> </span><span class="nx">packets</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">bytes</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="p">(</span><span class="mf">0.0</span><span class="w"> </span><span class="nx">B</span><span class="p">)</span>
+<a id="__codelineno-9-39" name="__codelineno-9-39" href="#__codelineno-9-39"></a><span class="w">        </span><span class="nx">TX</span><span class="w"> </span><span class="nx">errors</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">dropped</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="nx">overruns</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">carrier</span><span class="w"> </span><span class="mf">0</span><span class="w">  </span><span class="nx">collisions</span><span class="w"> </span><span class="mf">0</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="err">#</span><span class="w"> </span><span class="nx">이후</span><span class="w"> </span><span class="nx">sudo</span><span class="w"> </span><span class="p">.</span><span class="o">/</span><span class="nx">gai_svr_inst</span><span class="w"> </span><span class="o">--</span><span class="nx">nic</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">ethernet</span><span class="w"> </span><span class="na">nic</span><span class="w"> </span><span class="na">name</span><span class="p">&gt;</span><span class="w"> </span><span class="nx">reg</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">access</span><span class="w"> </span><span class="na">token</span><span class="p">&gt;</span><span class="w"> </span><span class="nx">형식으로</span><span class="w"> </span><span class="nx">노드</span><span class="w"> </span><span class="nx">등록</span><span class="w"> </span><span class="nx">진행</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nx">$</span><span class="w"> </span><span class="nx">sudo</span><span class="w"> </span><span class="p">.</span><span class="o">/</span><span class="nx">gai_svr_inst</span><span class="w"> </span><span class="o">--</span><span class="nx">nic</span><span class="w"> </span><span class="nx">enp5s0</span><span class="w"> </span><span class="nx">reg</span><span class="w"> </span><span class="nx">eyJh</span><span class="p">...</span><span class="nx">생략</span><span class="p">...</span><span class="nx">X63w</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="nx">INFO</span><span class="p">[</span><span class="mo">0000</span><span class="p">]</span><span class="w"> </span><span class="nx">Rnd</span><span class="w"> </span><span class="nx">initialized</span><span class="p">...</span><span class="w">                           </span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">23</span><span class="o">:</span><span class="mf">16</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">access</span><span class="w"> </span><span class="nx">token</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="o">&amp;</span><span class="p">[</span><span class="nx">eyJh</span><span class="p">...</span><span class="nx">X63w</span><span class="p">]</span><span class="w"> </span><span class="nx">enp5s0</span><span class="w"> </span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">23</span><span class="o">:</span><span class="mf">16</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">MAC</span><span class="w"> </span><span class="nx">address</span><span class="w">                                   </span><span class="nx">mac</span><span class="o">=</span><span class="s2">&quot;00:00:00:00:00:00&quot;</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">23</span><span class="o">:</span><span class="mf">16</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">mac</span><span class="w"> </span><span class="nx">address</span><span class="w"> </span><span class="mo">000000000000</span><span class="w">                     </span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="nx">DEBUG</span><span class="w">  </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">23</span><span class="o">:</span><span class="mf">16</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">url</span><span class="w"> </span><span class="nx">https</span><span class="o">:</span><span class="c1">//api.gcube.ai/api/node/register   </span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="nx">DEBUG</span><span class="w">  </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">23</span><span class="o">:</span><span class="mf">16</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">body</span><span class="w"> </span><span class="p">{</span><span class="s2">&quot;category&quot;</span><span class="o">:</span><span class="s2">&quot;svr&quot;</span><span class="p">,</span><span class="s2">&quot;macId&quot;</span><span class="o">:</span><span class="s2">&quot;000000000000&quot;</span><span class="p">}</span><span class="w"> </span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="nx">DEBUG</span><span class="w">  </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">23</span><span class="o">:</span><span class="mf">16</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">res</span><span class="w"> </span><span class="o">&amp;</span><span class="p">{</span><span class="mf">200</span><span class="w"> </span><span class="mf">6150125230709283</span><span class="w"> </span><span class="nx">eyJh</span><span class="p">...</span><span class="nx">xsHS</span><span class="w">  </span><span class="p">}</span><span class="w"> </span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">23</span><span class="o">:</span><span class="mf">16</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">provision</span><span class="w"> </span><span class="nx">code</span><span class="w"> </span><span class="mo">0000000000000000</span><span class="w">              </span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="nx">INFO</span><span class="w">   </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">23</span><span class="o">:</span><span class="mf">16</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">start</span><span class="w"> </span><span class="nx">provision</span><span class="w"> </span><span class="p">...</span><span class="w">                          </span>
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="nx">DEBUG</span><span class="w">  </span><span class="p">[</span><span class="mf">2025</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mf">25</span><span class="nx">T06</span><span class="o">:</span><span class="mf">23</span><span class="o">:</span><span class="mf">16</span><span class="nx">Z</span><span class="p">]</span><span class="w"> </span><span class="nx">body</span><span class="w"> </span><span class="p">{</span><span class="s2">&quot;provision_code&quot;</span><span class="o">:</span><span class="s2">&quot;0000000000000000&quot;</span><span class="p">}</span>
+</code></pre></div>
+</li>
+<li>
+<p>실행 화면 예시)</p>
+</li>
+</ul>
+<p><img alt="tier2 우분투 설치 가이드 에이전트 설치 예시 2 화면 이미지.png" src="../img/tier-2-ubuntu-setting-guide/tier2%20%EC%9A%B0%EB%B6%84%ED%88%AC%20%EC%84%A4%EC%B9%98%20%EA%B0%80%EC%9D%B4%EB%93%9C%20%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8%20%EC%84%A4%EC%B9%98%20%EC%98%88%EC%8B%9C%202%20%ED%99%94%EB%A9%B4%20%EC%9D%B4%EB%AF%B8%EC%A7%80.png" /></p>
+</li>
+<li>
+<p>이후 <a href="http://gcube.ai">gcube.ai</a> 노드 페이지에서 등록된 노드 확인 가능</p>
+<ul>
+<li><a href="https://gcube.ai/ko/provision/node/list">노드 페이지로 이동하기</a></li>
+</ul>
+<p><img alt="image-20250226-015605.png" src="../img/tier-2-ubuntu-setting-guide/%EC%9A%B0%EB%B6%84%ED%88%AC_20251210_02.png" /></p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  맨위로
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

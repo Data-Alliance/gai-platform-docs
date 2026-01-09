@@ -1,0 +1,1698 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/platform-guide/ollama-llama3/">
+      
+      
+        <link rel="prev" href="../ollama-deepseek/">
+      
+      
+        <link rel="next" href="../stable-diffusion/">
+      
+      
+        
+          <link rel="alternate" href="../../../../user-guide/platform-guide/ollama-llama3/" hreflang="ko">
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../../../images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Ollama User Guide - llama3 - gcube Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ollama-user-guide-llama3" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://console.gcube.ai/" title="gcube Docs" class="md-header__button md-logo" aria-label="gcube Docs" data-md-component="logo">
+      
+  <img src="../../../../images/gcube_logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            gcube Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ollama User Guide - llama3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../../user-guide/platform-guide/ollama-llama3/" hreflang="ko" class="md-select__link">
+              한국어
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://console.gcube.ai/" title="gcube Docs" class="md-nav__button md-logo" aria-label="gcube Docs" data-md-component="logo">
+      
+  <img src="../../../../images/gcube_logo.svg" alt="logo">
+
+    </a>
+    gcube Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sign-up/sign-up/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Account Creation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Node Provider Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Node Provider Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../node/node-home/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../node/connect-new-node/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connect New Node
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../node/stop-gpu-sharing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stop GPU Sharing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../node/check-agent-node-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Check Agent Node Monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../node/agent-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../node/check-gpu-sharing-info/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Check GPU Sharing Info
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../node/set-gpu-sharing-pricing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Set GPU Sharing Pricing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../node/check-gpu-sharing-income/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GPU Sharing Income Details
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../node/check-gpu-sharing-monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Check GPU Sharing Monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../node/troubleshooting_agent_errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting Agent Errors
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../node/Ubuntu-OS-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tier 2 Ubuntu OS Setup Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../node/tier-2-ubuntu-setting-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tier 2 Node Provider Setup Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../node/NVIDIA-graphic-driver-error/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NVIDIA Graphics Driver Recognition Error
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workload User Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Workload User Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/workload-home/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/profile-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Profile Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/register-new-workload/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Register New Workload
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/example-workload/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workload Registration Example
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/deploy-workload/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workload Deployment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/monitor-workload/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workload Monitoring
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/workload-expenses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workload Usage History
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/terminate-workload/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terminate Workload
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workload/pv-user-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Storage Management Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Platform User Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Platform User Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ollama-deepseek/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ollama User Guide - DeepSeek
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ollama User Guide - llama3
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ollama User Guide - llama3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-gcube-platform-workload-service-registration-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. gcube Platform Workload Service Registration Process
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-how-to-use-gcube-platform-workload-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. How to Use gcube Platform Workload Services
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stable-diffusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stable Diffusion User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../QnA-user-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    QnA User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Wan2.2-user-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wan2.2 User Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        0. Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-gcube-platform-workload-service-registration-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. gcube Platform Workload Service Registration Process
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-how-to-use-gcube-platform-workload-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. How to Use gcube Platform Workload Services
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ollama-user-guide-llama3"><strong>Ollama User Guide - llama3</strong></h1>
+<h2 id="0-overview"><strong>0. Overview</strong></h2>
+<ul>
+<li><strong>What is Ollama?</strong><ul>
+<li>A platform designed to execute and manage LLMs (Large Language Models)</li>
+<li>Enables users to download and test open-source language models in a local environment</li>
+<li>Key supported language models include:<ul>
+<li>Llama3<ul>
+<li>The latest language model developed by Meta, featuring superior natural language processing performance</li>
+</ul>
+</li>
+<li>Phi 3<ul>
+<li>Developed by Microsoft Research, this model possesses exceptional reasoning and language understanding capabilities</li>
+</ul>
+</li>
+<li>Mistral<ul>
+<li>Optimized for various linguistic tasks, boasting high-performance efficiency</li>
+</ul>
+</li>
+<li>Gemma 2<ul>
+<li>Developed by Google, showing strength in natural language processing and generation tasks</li>
+</ul>
+</li>
+<li>CodeGemma<ul>
+<li>Specialized in code generation and completion, supporting a wide range of programming tasks</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Users can run and manage open-source or custom models via a user-friendly interface using Ollama, including model creation and deployment</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-gcube-platform-workload-service-registration-process"><strong>1. gcube Platform Workload Service Registration Process</strong></h2>
+<ul>
+<li><strong>Workload Creation and Deployment</strong><ul>
+<li>Access <a href="http://gcube.ai/">gcube.ai</a> and navigate to the Workload page ( https://gcube.ai/ko/demand/workload/list )</li>
+<li>Register a new workload or modify an existing one by entering the required information on the page.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="ollama_deepseek_20260106_01.jpg" src="../../../../user-guide/platform-guide/img.en/ollama-deepseek/ollama_deepseek_20260106_01.jpg" /></p>
+<ul>
+<li><strong>Description Overview</strong><ul>
+<li>Enter the workload name<ul>
+<li>ex : ollama</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="ollama_deepseek_20260106_02.jpg" src="../../../../user-guide/platform-guide/img.en/ollama-deepseek/ollama_deepseek_20260106_02.jpg" /></p>
+<ul>
+<li><strong>Container Overview</strong><ul>
+<li>Select the storage type and container image<ul>
+<li>Use the official image provided by Ollama on Docker Hub<ul>
+<li>Reference URL : https://hub.docker.com/r/ollama/ollama</li>
+</ul>
+</li>
+<li>Storage Type: Docker Hub</li>
+<li>Container Image: ollama/ollama:latest</li>
+<li>Container ports are automatically populated by checking the metadata (ExposedPorts) of the container image layer. (For Ollama, the port is 11434)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="ollama_deepseek_20260106_03.jpg" src="../../../../user-guide/platform-guide/img.en/ollama-deepseek/ollama_deepseek_20260106_03.jpg" /></p>
+<ul>
+<li><strong>GPU Selection Overview</strong><ul>
+<li>Select the desired performance specification<ul>
+<li>Tier1 : High Performance</li>
+<li>Tier2 : High Reliability</li>
+<li>Tier3 : Individual Users</li>
+<li>GPU Memory: Filter available GPUs<ul>
+<li>In this example, select <strong>Tier 3 RTX 3070</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="ollama_deepseek_20260106_04.jpg" src="../../../../user-guide/platform-guide/img.en/ollama-deepseek/ollama_deepseek_20260106_04.jpg" /></p>
+<ul>
+<li><strong>Option Overview (optional)</strong><ul>
+<li>Container Command<ul>
+<li>Corresponds to the CMD instruction in a Dockerfile (the command to be executed when the container starts)<ul>
+<li>Format : CMD ["executable", "param1", "param2"] / CMD [“echo“, “Hello, world!“]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Container Environment Variables<ul>
+<li>Corresponds to the ENV instruction in a Dockerfile (environment variables to be used inside the container)<ul>
+<li>형식 : ENV <KEY> <VALUE> / ENV DEF_PORT 9999</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Replicas<ul>
+<li>The number of container instances running simultaneously across different nodes</li>
+<li>Purpose:<ul>
+<li>Enhances application reliability and throughput</li>
+<li>Ensures service continuity even if a specific node fails</li>
+<li>Reduces latency and improves the developer experience</li>
+<li>L7 Consistent Hashing Technique:<ul>
+<li>Routes requests to specific backends based on a key</li>
+<li>Uses a hashing algorithm to distribute traffic consistently</li>
+<li>Guarantees that only a minimum number of requests are shifted to other servers when nodes or servers are added or removed</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>CUDA<ul>
+<li>Select the CUDA version</li>
+</ul>
+</li>
+<li>Shared Memory<ul>
+<li>Refers to the shared memory area (/dev/shm) provided by Linux systems</li>
+<li>An area designed for inter-process data sharing (acts as high-speed temporary storage for large-scale data processing)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="ollama_deepseek_20260106_05.jpg" src="../../../../user-guide/platform-guide/img.en/ollama-deepseek/ollama_deepseek_20260106_05.jpg" /></p>
+<ul>
+<li><strong>Estimated Cost Overview</strong><ul>
+<li>Displays the maximum hourly price information based on the selected specifications</li>
+<li>Proceed with registration after reviewing the details<ul>
+<li>If ‘Instant Deployment’ is selected, registration and deployment will proceed immediately</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="ollama_deepseek_20260106_06.jpg" src="../../../../user-guide/platform-guide/img.en/ollama-deepseek/ollama_deepseek_20260106_06.jpg" /></p>
+<h2 id="2-how-to-use-gcube-platform-workload-services"><strong>2. How to Use gcube Platform Workload Services</strong></h2>
+<ul>
+<li><strong>Checking Created Workloads</strong><ul>
+<li>On the Workload page(https://gcube.ai/ko/demand/workload/list ), click on the Workload Name to enter the Workload Details page</li>
+</ul>
+</li>
+</ul>
+<p><img alt="ollama_deepseek_20260106_07.jpg" src="../../../../user-guide/platform-guide/img.en/ollama-deepseek/ollama_deepseek_20260106_07.jpg" /></p>
+<ul>
+<li><strong>Workload Details Overview</strong><ul>
+<li>General: Workload ID, description, type, status, Service URL, etc.</li>
+<li>Container: Container image, container port, storage type, creation date/time, deployment date/time, termination date/time, etc.</li>
+<li>Target Specification: Target node, GPU memory, GPU information, etc.</li>
+<li>Options: Container command, container environment variables, replicas, minimum CUDA version, shared memory information, etc.</li>
+<li>Deployment Status: Container deployment events, node information, pod details, pod status, container logs, container terminal, container SSH access, etc.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="ollama_deepseek_20260106_08.jpg" src="../../../../user-guide/platform-guide/img.en/ollama-deepseek/ollama_deepseek_20260106_08.jpg" /></p>
+<ul>
+<li><strong>When Pod Status is ‘Running’</strong><ul>
+<li>Click ‘Container SSH’ to view the Public IP and register access credentials<ul>
+<li>Verify SSH access information during the credential registration process.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="ollama_deepseek_20260106_09.jpg" src="../../../../user-guide/platform-guide/img.en/ollama-deepseek/ollama_deepseek_20260106_09.jpg" /></p>
+<p><img alt="ollama_deepseek_20260106_10.jpg" src="../../../../user-guide/platform-guide/img.en/ollama-deepseek/ollama_deepseek_20260106_10.jpg" /></p>
+<ul>
+<li><strong>Connect to the container by entering the SSH access information confirmed above into a terminal program (e.g., PuTTY)</strong><ul>
+<li>Enter the IP address, Port, User ID, and Password</li>
+</ul>
+</li>
+</ul>
+<p><img alt="ollama 워크로드 이미지 터미널 프로그램.PNG" src="../../../../user-guide/platform-guide/img/ollama-llama3/ollama%20%EC%9B%8C%ED%81%AC%EB%A1%9C%EB%93%9C%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%84%B0%EB%AF%B8%EB%84%90%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8.PNG.png" /></p>
+<p><img alt="ollama 워크로드 이미지 터미널 실행.PNG" src="../../../../user-guide/platform-guide/img/ollama-llama3/ollama%20%EC%9B%8C%ED%81%AC%EB%A1%9C%EB%93%9C%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%84%B0%EB%AF%B8%EB%84%90%20%EC%8B%A4%ED%96%89.PNG.png" /></p>
+<ul>
+<li><strong>Enter the following command in the CLI to download and run the Llama 3 language model (approx. 4.7GB):</strong><ul>
+<li>ollama run llama3</li>
+</ul>
+</li>
+</ul>
+<p><img alt="ollama 워크로드 이미지 터미널 설치 완료.PNG" src="../../../../user-guide/platform-guide/img/ollama-llama3/ollama%20%EC%9B%8C%ED%81%AC%EB%A1%9C%EB%93%9C%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%84%B0%EB%AF%B8%EB%84%90%20%EC%84%A4%EC%B9%98%20%EC%99%84%EB%A3%8C.PNG.png" /></p>
+<ul>
+<li><strong>Afterward, utilize Llama 3 for AI inference services similar to ChatGPT.</strong><ul>
+<li>ex)</li>
+</ul>
+</li>
+</ul>
+<p>Q : How to make pizza?</p>
+<p>A :
+Ingredients:</p>
+<ul>
+<li>2 cups of warm water</li>
+<li>1 tablespoon of sugar</li>
+<li>2 teaspoons of active dry yeast</li>
+<li>3 1/2 cups of all-purpose flour</li>
+<li>1 teaspoon of salt</li>
+<li>2 tablespoons of olive oil</li>
+<li>Pizza sauce (homemade or store-bought)</li>
+<li>Shredded mozzarella cheese (and any other toppings you like!)</li>
+<li>Fresh basil leaves, chopped (optional)</li>
+</ul>
+<p>Instructions:</p>
+<ol>
+<li><strong>Make the dough:</strong> In a large mixing bowl, combine the warm water, sugar, and yeast. Let it sit for 5-10
+minutes until the yeast is activated and foamy.</li>
+<li>Add the flour, salt, and olive oil to the bowl. Mix until a shaggy dough forms.</li>
+<li><strong>Knead the dough:</strong> Turn the dough out onto a floured surface and knead for 5-10 minutes, until the dough
+becomes smooth and elastic.</li>
+<li><strong>Let it rise:</strong> Place the dough in a lightly oiled bowl, cover it with plastic wrap or a damp cloth, and
+let it rise in a warm place for about an hour, or until it has doubled in size.</li>
+<li><strong>Punch down the dough:</strong> Gently punch down the dough to release any air bubbles.</li>
+<li><strong>Shape the crust:</strong> Use your hands to shape the dough into your desired pizza crust shape (e.g., circle,
+rectangle, etc.).</li>
+<li><strong>Roll out the crust:</strong> Roll out the crust to your desired thickness (about 1/4 inch is a good starting
+point).</li>
+<li><strong>Preheat the oven:</strong> Preheat your oven to 425°F (220°C) with a baking sheet or pizza stone inside.</li>
+<li><strong>Add sauce and toppings:</strong> Spread a thin layer of pizza sauce over the crust, leaving a small border
+around the edges. Add your desired toppings, such as shredded mozzarella cheese, pepperoni slices, mushrooms,
+bell peppers, olives, etc.</li>
+<li><strong>Bake the pizza:</strong> Place the pizza on the preheated baking sheet or stone and bake for 12-15 minutes, or
+until the crust is golden brown and the cheese is melted and bubbly.</li>
+<li><strong>Add fresh basil (optional):</strong> Sprinkle some chopped fresh basil leaves over the top of the pizza for a
+pop of color and flavor.</li>
+<li><strong>Enjoy your pizza:</strong> Remove the pizza from the oven and let it cool for a few minutes before slicing and
+serving.</li>
+</ol>
+<p>Tips and Variations:</p>
+<ul>
+<li>Use a pizza peel or piece of parchment paper to transfer the dough to the preheated baking sheet or stone
+if you don't have a pizza stone.</li>
+<li>Try different topping combinations, such as Hawaiian-style with ham and pineapple, or Mediterranean-style
+with feta cheese and olives.</li>
+<li>Experiment with various crust flavors by adding herbs, spices, or garlic powder to the dough before
+kneading.</li>
+<li>Make mini pizzas using individual portions of dough and toppings for a fun appetizer or snack.</li>
+</ul>
+<p>Remember, making pizza is all about having fun and being creative! Don't be afraid to try new things and
+experiment with different flavors and combinations. Happy baking!</p>
+<p>ex2)</p>
+<p><img alt="ollama 워크로드 이미지 llama3 실행 화면.PNG" src="../../../../user-guide/platform-guide/img/ollama-llama3/ollama%20%EC%9B%8C%ED%81%AC%EB%A1%9C%EB%93%9C%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20llama3%20%EC%8B%A4%ED%96%89%20%ED%99%94%EB%A9%B4.PNG.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tracking", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/node/NVIDIA-graphic-driver-error/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/NVIDIA-graphic-driver-error/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/NVIDIA-graphic-driver-error/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/node/Ubuntu-OS-setup/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/Ubuntu-OS-setup/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/Ubuntu-OS-setup/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/node/agent-setup/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/agent-setup/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/agent-setup/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/node/check-agent-node-monitoring/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/check-agent-node-monitoring/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/check-agent-node-monitoring/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/node/check-gpu-sharing-income/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/check-gpu-sharing-income/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/check-gpu-sharing-income/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/node/check-gpu-sharing-info/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/check-gpu-sharing-info/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/check-gpu-sharing-info/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/node/check-gpu-sharing-monitoring/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/check-gpu-sharing-monitoring/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/check-gpu-sharing-monitoring/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/node/connect-new-node/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/connect-new-node/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/connect-new-node/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/node/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/node/node-home/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/node-home/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/node-home/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/node/set-gpu-sharing-pricing/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/set-gpu-sharing-pricing/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/set-gpu-sharing-pricing/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/node/stop-gpu-sharing/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/stop-gpu-sharing/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/stop-gpu-sharing/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/node/tier-2-ubuntu-setting-guide/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/tier-2-ubuntu-setting-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/tier-2-ubuntu-setting-guide/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/node/troubleshooting_agent_errors/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/troubleshooting_agent_errors/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/troubleshooting_agent_errors/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/platform-guide/QnA-user-guide/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/platform-guide/QnA-user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/platform-guide/QnA-user-guide/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/platform-guide/Wan2.2-user-guide/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/platform-guide/Wan2.2-user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/platform-guide/Wan2.2-user-guide/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/platform-guide/ollama-deepseek/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/platform-guide/ollama-deepseek/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/platform-guide/ollama-deepseek/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/platform-guide/ollama-llama3/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/platform-guide/ollama-llama3/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/platform-guide/ollama-llama3/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/platform-guide/stable-diffusion/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/platform-guide/stable-diffusion/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/platform-guide/stable-diffusion/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/sign-up/sign-up/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/sign-up/sign-up/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/sign-up/sign-up/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/workload/deploy-workload/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/deploy-workload/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/deploy-workload/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/workload/example-workload/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/example-workload/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/example-workload/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/workload/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/workload/monitor-workload/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/monitor-workload/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/monitor-workload/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/workload/profile-settings/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/profile-settings/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/profile-settings/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/workload/pv-user-guide/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/pv-user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/pv-user-guide/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/workload/register-new-workload/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/register-new-workload/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/register-new-workload/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/workload/terminate-workload/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/terminate-workload/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/terminate-workload/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/workload/workload-expenses/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/workload-expenses/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/workload-expenses/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/user-guide/workload/workload-home/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/workload-home/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/workload-home/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/NVIDIA-graphic-driver-error/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/NVIDIA-graphic-driver-error/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/NVIDIA-graphic-driver-error/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/Ubuntu-OS-setup/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/Ubuntu-OS-setup/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/Ubuntu-OS-setup/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/agent-setup/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/agent-setup/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/agent-setup/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/check-agent-node-monitoring/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/check-agent-node-monitoring/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/check-agent-node-monitoring/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/check-gpu-sharing-income/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/check-gpu-sharing-income/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/check-gpu-sharing-income/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/check-gpu-sharing-info/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/check-gpu-sharing-info/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/check-gpu-sharing-info/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/check-gpu-sharing-monitoring/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/check-gpu-sharing-monitoring/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/check-gpu-sharing-monitoring/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/connect-new-node/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/connect-new-node/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/connect-new-node/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/node-home/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/node-home/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/node-home/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/set-gpu-sharing-pricing/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/set-gpu-sharing-pricing/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/set-gpu-sharing-pricing/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/stop-gpu-sharing/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/stop-gpu-sharing/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/stop-gpu-sharing/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/tier-2-ubuntu-setting-guide/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/tier-2-ubuntu-setting-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/tier-2-ubuntu-setting-guide/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/troubleshooting_agent_errors/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/node/troubleshooting_agent_errors/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/node/troubleshooting_agent_errors/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/platform-guide/QnA-user-guide/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/platform-guide/QnA-user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/platform-guide/QnA-user-guide/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/platform-guide/Wan2.2-user-guide/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/platform-guide/Wan2.2-user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/platform-guide/Wan2.2-user-guide/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/platform-guide/ollama-deepseek/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/platform-guide/ollama-deepseek/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/platform-guide/ollama-deepseek/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/platform-guide/ollama-llama3/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/platform-guide/ollama-llama3/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/platform-guide/ollama-llama3/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/platform-guide/stable-diffusion/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/platform-guide/stable-diffusion/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/platform-guide/stable-diffusion/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/sign-up/sign-up/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/sign-up/sign-up/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/sign-up/sign-up/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/deploy-workload/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/deploy-workload/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/deploy-workload/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/example-workload/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/example-workload/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/example-workload/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/monitor-workload/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/monitor-workload/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/monitor-workload/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/profile-settings/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/profile-settings/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/profile-settings/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/pv-user-guide/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/pv-user-guide/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/pv-user-guide/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/register-new-workload/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/register-new-workload/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/register-new-workload/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/terminate-workload/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/terminate-workload/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/terminate-workload/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/workload-expenses/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/workload-expenses/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/workload-expenses/"/>
+    </url>
+    <url>
+        <loc>https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/workload-home/</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://data-alliance.github.io/gai-platform-docs/en/user-guide/workload/workload-home/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://data-alliance.github.io/gai-platform-docs/user-guide/workload/workload-home/"/>
+    </url>
+</urlset>

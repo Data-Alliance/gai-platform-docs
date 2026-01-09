@@ -14,7 +14,7 @@
 
 3\. Proceed with a simple sign-up using your preferred account: **Google or Microsoft.**<br><br>
 
-![계정생성_20251210_04.png](img.en/Accout_Creation_20260105_04(번역%20필요).png)
+![계정생성_20251210_04.png](img.en/Accout_Creation_20260105_04.png)
 
 4\. Select the account you wish to use, **agree to the Terms and Conditions**, and enter your user information to complete the registration. <br><br>
 

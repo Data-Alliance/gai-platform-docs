@@ -10,3 +10,6 @@ Once a workload is registered, you can begin utilizing resources by deploying it
 
 2\. Observe the workload status in the top-right corner change from **"Finished"** to **"Running."** <br>
  Once the status changes, the **Service URL** will be activated. (Please note that this process may take several minutes.)
+
+ **※** If no entrypoint is configured in the container image, the container cannot be started. <br>
+To run without an entrypoint, enter `tail -f /dev/null` in the container command field before deploying.

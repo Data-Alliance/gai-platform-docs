@@ -50,6 +50,7 @@ plugins:
             Stable Diffusion 사용 가이드: Stable Diffusion User Guide
             QnA 사용 가이드: QnA User Guide
             Wan2.2 사용 가이드: Wan2.2 User Guide
+            openwebui_comfyui 사용 가이드: openwebui_comfyui User Guide
 
 theme:
   name: material
@@ -166,4 +167,5 @@ nav:
     - Stable Diffusion 사용 가이드: user-guide/platform-guide/stable-diffusion.md
     - QnA 사용 가이드: user-guide/platform-guide/QnA-user-guide.md
     - Wan2.2 사용 가이드: user-guide/platform-guide/Wan2.2-user-guide.md
+    - openwebui_comfyui 사용 가이드: user-guide/platform-guide/openwebui_comfyui.md
 

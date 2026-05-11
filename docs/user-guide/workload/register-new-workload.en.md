@@ -14,11 +14,12 @@ To utilize Gcube’s GPU resources, you must complete the 'Register New Workload
 
 ### **컨테이너**
 
-![Registering_a_New_Workload_20260105_03.jpg](img.en/Register-new-workload/Registering_a_New_Workload_20260105_03.jpg)
+![Registering_a_New_Workload_20260105_03.jpg](img.en/Register-new-workload/Registering_a_New_Workload_20260105_03.png)
 
 - **Storage Type:** Select the platform where your container image is stored.
 - **Container Image:** Enter the container image URL, referring to the input format for each storage type provided below.
 - **Container Port:** The network port used by the container. This will be automatically populated during image verification.
+- **Max Concurrent Connections:** The number of HTTP requests or connections that can be delivered to the service at once.
 
 ```markdown
 === "Docker Hub"

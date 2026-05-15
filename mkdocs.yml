@@ -155,8 +155,11 @@ nav:
     - Home: user-guide/workload/workload-home.md
     - 프로필 설정: user-guide/workload/profile-settings.md
     - 새 워크로드 등록: user-guide/workload/register-new-workload.md
+    - 멀티 GPU 워크로드 등록: user-guide/workload/multi-gpu-workload.md
     - 워크로드 등록 예시: user-guide/workload/example-workload.md
+    - 멀티 컨테이너 등록 예시: user-guide/workload/example-multi-container.md
     - 워크로드 배포: user-guide/workload/deploy-workload.md
+    - 워크로드 SSH 터미널 접속: user-guide/workload/ssh-terminal.md
     - 워크로드 모니터링: user-guide/workload/monitor-workload.md
     - 워크로드 이용내역: user-guide/workload/workload-expenses.md
     - 워크로드 종료: user-guide/workload/terminate-workload.md

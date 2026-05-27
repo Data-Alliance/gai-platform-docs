@@ -1,15 +1,27 @@
-# **Workload Deployment**
+# **Deploy Workload**
 
-Once a workload is registered, you can begin utilizing resources by deploying it. <br><br>
+Deploy a registered workload to start using GPU resources.
 
-![Workload_Deployment_20260106_01.jpg](img.en/Workload-deployment/Workload_Deployment_20260106_01.jpg)
+!!! tip
+    Once deployment is complete, the service URL will be activated and you can access the workload.
+    Deployment may take a few minutes.
 
-1\. Locate the registered workload you wish to deploy and click the **"Deploy"** button. Click the **"Confirm"** button in the pop-up window. <br><br>
+## **How to Deploy**
 
-![Workload_Deployment_20260106_02.jpg](img.en/Workload-deployment/Workload_Deployment_20260106_02.jpg)
+1. Click the Deploy button for the workload you want to deploy in the workload list.
+![001_deploy-workload.png](img/deploy-workload/001_deploy-workload.png)
+2. Click the Confirm button in the confirmation popup.
+3. The workload status will change from Not Deployed → Deployed and the service URL will be activated.
+![002_deploy-workload.png](img/deploy-workload/002_deploy-workload.png)
 
-2\. Observe the workload status in the top-right corner change from **"Finished"** to **"Running."** <br>
- Once the status changes, the **Service URL** will be activated. (Please note that this process may take several minutes.)
+!!! warning
+    It may take a few minutes for the status to switch to Deployed. Please wait until the status changes.
 
- **※** If no entrypoint is configured in the container image, the container cannot be started. <br>
-To run without an entrypoint, enter `tail -f /dev/null` in the container command field before deploying.
+## **Deployment Status Types**
+
+| **Status** | **Description** |
+| --- | --- |
+| Not Deployed | Registered but not yet running |
+| Deploying | Preparing after the deploy command |
+| Deployed | Running normally, service URL accessible |
+| Stopped | Deployment has been stopped |

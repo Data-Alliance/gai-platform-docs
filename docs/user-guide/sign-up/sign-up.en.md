@@ -1,30 +1,36 @@
-# **Account Creation**
+# **Create Account**
 
-## Sign Up & Login Instructions
+!!! tip
+    You need to create an account before using gcube.
+    You can sign up easily with a Google or Microsoft account.
+    No separate password setup is required.
 
-![계정생성_20251210_01.png](img.en/Accout_Creation_20260105_01.jpg)
+## **Before You Begin**
 
-1\. Click the **"Login"** button located at the top right corner of the homepage.<br><br>
+- **A Google or Microsoft account is required.**
+- A **PC browser** is recommended over a mobile browser.
 
-![계정생성_20251210_02.png](img.en/Accout_Creation_20260105_02.jpg)
+---
 
-2\. Click the **"Sign Up"** button at the bottom of the login screen.<br><br>
+## **How to Sign Up**
 
-![계정생성_20251210_03.png](img.en/Accout_Creation_20260105_03.jpg)
+1. Click the **Login button** in the upper right corner of the **gcube homepage**.
+![001_sign-up.png](img/sign-up/001_sign-up.png)
+2. Click the **Sign Up button** at the bottom of the login screen.
+![002_sign-up.png](img/sign-up/002_sign-up.png)
+3. Select your **Google or Microsoft account**.
+![003_sign-up.png](img/sign-up/003_sign-up.png)
+4. Select the account you want to use, agree to the terms, and fill in your information to complete registration.
+![004_sign-up.png](img/sign-up/004_sign-up.png)
 
-3\. Proceed with a simple sign-up using your preferred account: **Google or Microsoft.**<br><br>
+---
 
-![계정생성_20251210_04.png](img.en/Accout_Creation_20260105_04.png)
+## **How to Log In**
 
-4\. Select the account you wish to use, **agree to the Terms and Conditions**, and enter your user information to complete the registration. <br><br>
+1. Select the account you used to sign up on the login page.
+![005_sign-up.png](img/sign-up/005_sign-up.png)
+2. After logging in, you will be redirected to the gcube console.
+![006_sign-up.png](img/sign-up/006_sign-up.png)
 
-![계정생성_20251210_03.png](img.en/Accout_Creation_20260105_05.jpg)
-
-5\. Return to the login page and select your registered email account to log in. <br><br>
-
-![계정생성_20251210_06.png](img.en/Accout_Creation_20260105_06.jpg)
-
-6\. Once logged in, you can access all of gcube’s services. <br>
-Use the **Mode Toggle** button at the top of the left-hand menu to switch between **Workload Deployment Mode** (for users) and **Node Provider Mode** (for suppliers). <br><br>
-
-[Go to GCUBE Login Page](https://gcube.ai/en/index)
+!!! success
+    After logging in, you can switch between Provider (Share Mode) and Consumer (Workload Mode) using the mode toggle button at the top of the left menu.

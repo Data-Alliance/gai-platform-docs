@@ -19,38 +19,54 @@ plugins:
           name: English
           build: true
           nav_translations:
-            개요: Overview
-            계정생성: Account Creation
-            노드 사용자 가이드: Node Provider Guide
-            Home: Home
-            새 노드 연결: Connect New Node
-            GPU 공유 중단: Stop GPU Sharing
-            에이전트 Node 모니터링 확인: Check Agent Node Monitoring
-            에이전트 세팅: Agent Setup
-            GPU 공유 정보 확인: Check GPU Sharing Info
-            GPU 공유 가격 설정: Set GPU Sharing Pricing
-            GPU 공유수익 상세내역: GPU Sharing Income Details
-            GPU 공유 모니터링 확인: Check GPU Sharing Monitoring
-            에이전트 사용 오류 해결: Troubleshooting Agent Errors
-#            Tier 2 Ubuntu OS 세팅 가이드: Tier 2 Ubuntu OS Setup Guide 
-#            Tier 2 노드 공급자 세팅 가이드: Tier 2 Node Provider Setup Guide
-            NVIDIA 그래픽 드라이버 인식 오류: NVIDIA Graphics Driver Recognition Error
-            워크로드 사용자 가이드: Workload User Guide
+            # A — 시작하기
+            시작하기: Getting Started
+            gcube란?: What is gcube?
+            계정 만들기: Create Account
             프로필 설정: Profile Setup
-            새 워크로드 등록: Register New Workload
-            워크로드 등록 예시: Workload Registration Example
-            워크로드 배포: Workload Deployment
-            워크로드 모니터링: Workload Monitoring
-            워크로드 이용내역: Workload Usage History
+            저장소 관리: Storage Management
+            나는 공급자인가요, 소비자인가요?: Provider or Consumer?
+            # B — GPU 사용하기 (워크로드 소비자)
+            GPU 워크로드 사용하기: Use GPU
+            워크로드 대시보드: Workload Dashboard
+            워크로드 등록하기: Register Workload
+            멀티 GPU 워크로드 등록: Register Multi-GPU Workload
+            멀티 컨테이너 등록 예시: Multi-Container Registration Example
+            워크로드 배포: Deploy Workload
+            워크로드 SSH 터미널 접속: SSH Terminal Access
+            워크로드 VS Code 익스텐션: VS Code Extension Access
+            모니터링: Monitoring
+            이용내역 확인: Check Usage History
             워크로드 종료: Terminate Workload
-            저장소 관리 설정: Storage Management Setup
-            플랫폼 이용 가이드: Platform User Guide
-            Ollama 사용 가이드 - DeepSeek: Ollama User Guide - DeepSeek
-            Ollama 사용 가이드 - llama3: Ollama User Guide - llama3
-            Stable Diffusion 사용 가이드: Stable Diffusion User Guide
-            QnA 사용 가이드: QnA User Guide
-            Wan2.2 사용 가이드: Wan2.2 User Guide
-            openwebui_comfyui 사용 가이드: openwebui_comfyui User Guide
+            # C — GPU 공유하기 (노드 공급자)
+            GPU 공유하기: Share GPU
+            노드 대시보드: Node Dashboard
+            노드 연결하기: Connect Node
+            에이전트 설치 및 세팅: Agent Setup
+            공유 시작 및 중단: Start and Stop Sharing
+            공유 정보 확인: Check Sharing Info
+            가격 설정: Set Pricing
+            수익 확인: Check Earnings
+            모니터링 확인: Check Monitoring
+            에이전트 모니터링 확인: Check Agent Monitoring
+            문제 해결 (Troubleshooting): Troubleshooting
+            # D — AI 모델 실행하기
+            AI 모델 실행하기: Run AI Models
+            Ollama - 외부 API 버전: Run Ollama - API 
+            Ollama - SSH 접속 버전: Run Ollama - SSH
+            OpenWebUI + ComfyUI 실행하기: Run OpenWebUI + ComfyUI
+            OpenClaw 실행하기: Run OpenClaw
+            # E — gcube CLI
+            gcube CLI: gcube CLI
+            CLI 시작하기: Getting Started
+            설정 관리: Configuration
+            GPU 목록 조회: GPU List
+            워크로드 관리: Workload Management            
+            리소스 모니터링: Resource Monitoring
+            포인트 조회: Check Point 
+            레지스트리 인증 관리: Registry Credentials
+            사용 예시: Usage Examples
+
 
 theme:
   name: material
@@ -105,6 +121,8 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
         - class: mermaid
+
+
         - format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
@@ -133,43 +151,47 @@ markdown_extensions:
 #    provider: mike
 
 
- 
+
 nav:
-  - 개요: index.md
-  - 계정생성: user-guide/sign-up/sign-up.md
-  - 노드 사용자 가이드:
-    - Home: user-guide/node/node-home.md
-    - 새 노드 연결: user-guide/node/connect-new-node.md
-    - GPU 공유 중단: user-guide/node/stop-gpu-sharing.md
-    - 에이전트 Node 모니터링 확인: user-guide/node/check-agent-node-monitoring.md
-    - 에이전트 세팅: user-guide/node/agent-setup.md
-    - GPU 공유 정보 확인: user-guide/node/check-gpu-sharing-info.md
-    - GPU 공유 가격 설정: user-guide/node/set-gpu-sharing-pricing.md
-    - GPU 공유수익 상세내역: user-guide/node/check-gpu-sharing-income.md
-    - GPU 공유 모니터링 확인: user-guide/node/check-gpu-sharing-monitoring.md
-    - 에이전트 사용 오류 해결: user-guide/node/troubleshooting_agent_errors.md
-#    - Tier 2 Ubuntu OS 세팅 가이드: user-guide/node/Ubuntu-OS-setup.md
-#    - Tier 2 노드 공급자 세팅 가이드: user-guide/node/tier-2-ubuntu-setting-guide.md
-    - NVIDIA 그래픽 드라이버 인식 오류: user-guide/node/NVIDIA-graphic-driver-error.md
-  - 워크로드 사용자 가이드:
-    - Home: user-guide/workload/workload-home.md
-    - 프로필 설정: user-guide/workload/profile-settings.md
-    - 새 워크로드 등록: user-guide/workload/register-new-workload.md
+  - 시작하기:
+    - gcube란?: user-guide/sign-up/what-is-gcube.md
+    - 계정 만들기: user-guide/sign-up/sign-up.md
+    - 프로필 설정: user-guide/sign-up/profile-settings.md
+    - 저장소 관리: user-guide/sign-up/storage-management.md
+    - 공급자인가요, 소비자인가요?: user-guide/sign-up/provider-vs-consumer.md
+  - GPU 워크로드 사용하기:
+    - 워크로드 대시보드: user-guide/workload/workload-dashboard.md
+    - 워크로드 등록하기: user-guide/workload/register-workload.md
     - 멀티 GPU 워크로드 등록: user-guide/workload/multi-gpu-workload.md
-    - 워크로드 등록 예시: user-guide/workload/example-workload.md
     - 멀티 컨테이너 등록 예시: user-guide/workload/example-multi-container.md
     - 워크로드 배포: user-guide/workload/deploy-workload.md
     - 워크로드 SSH 터미널 접속: user-guide/workload/ssh-terminal.md
-    - 워크로드 모니터링: user-guide/workload/monitor-workload.md
-    - 워크로드 이용내역: user-guide/workload/workload-expenses.md
-    - 워크로드 종료: user-guide/workload/terminate-workload.md
-    - 저장소 관리 설정: user-guide/workload/pv-user-guide.md
-  - 플랫폼 이용 가이드:
-    - Ollama 사용 가이드 - DeepSeek: user-guide/platform-guide/ollama-deepseek.md
-    - Ollama 사용 가이드 - llama3: user-guide/platform-guide/ollama-llama3.md
-    - Stable Diffusion 사용 가이드: user-guide/platform-guide/stable-diffusion.md
-    - QnA 사용 가이드: user-guide/platform-guide/QnA-user-guide.md
-    - Wan2.2 사용 가이드: user-guide/platform-guide/Wan2.2-user-guide.md
-    - openwebui_comfyui 사용 가이드: user-guide/platform-guide/openwebui_comfyui.md
-    - OpenClaw 사용 가이드: user-guide/platform-guide/openclaw-user-guide.md
-
+    - 워크로드 VS Code 익스텐션: user-guide/workload/vscode-extension.md
+    - 모니터링: user-guide/workload/workload-monitoring.md
+    - 이용내역 확인: user-guide/workload/check-usage.md
+    - 워크로드 종료: user-guide/workload/stop-workload.md
+  - GPU 공유하기:
+    - 노드 대시보드: user-guide/node/node-dashboard.md
+    - 노드 연결하기: user-guide/node/connect-node.md
+    - 에이전트 설치 및 세팅: user-guide/node/agent-setup.md
+    - 공유 시작 및 중단: user-guide/node/start-stop-sharing.md
+    - 공유 정보 확인: user-guide/node/sharing-info.md
+    - 가격 설정: user-guide/node/set-price.md
+    - 수익 확인: user-guide/node/check-income.md
+    - 모니터링 확인: user-guide/node/check-monitoring.md
+    - 에이전트 모니터링 확인: user-guide/node/agent-monitoring.md
+    - 문제 해결 (Troubleshooting): user-guide/node/troubleshooting.md
+  - AI 모델 실행하기:
+    - Ollama + DeepSeek 실행하기: user-guide/platform-guide/ollama-api.md
+    - Ollama + Llama3 실행하기: user-guide/platform-guide/ollama-ssh.md
+    - ComfyUI + WebUI 실행하기: user-guide/platform-guide/openwebui-comfyui.md
+    - OpenClaw 실행하기: user-guide/platform-guide/openclaw-user-guide.md
+  - gcube CLI:
+    - CLI 시작하기: user-guide/gcube-cli/cli-overview.md
+    - 설정 관리: user-guide/gcube-cli/cli-configure.md
+    - GPU 목록 조회: user-guide/gcube-cli/cli-gpu.md
+    - 워크로드 관리: user-guide/gcube-cli/cli-workload.md
+    - 리소스 모니터링: user-guide/gcube-cli/cli-resource.md
+    - 포인트 조회: user-guide/gcube-cli/cli-point.md
+    - 레지스트리 인증 관리: user-guide/gcube-cli/cli-credential.md
+    - 사용 예시: user-guide/gcube-cli/cli-examples.md

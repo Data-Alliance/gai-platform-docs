@@ -66,7 +66,7 @@ gcube workload register \
 | `--description` | 워크로드 이름 (2-80자) |
 | `--image` | 컨테이너 이미지 |
 | `--gpu` | GPU 코드 (`gcube gpu list`의 CODE 값) |
-| `--cuda` | CUDA 버전 코드 (선택, [CUDA 버전 코드 표](#cuda-버전-코드) 참고) |
+| `--cuda` | CUDA 버전 코드 (선택, [CUDA 버전 코드 표](http://127.0.0.1:8000/gai-platform-docs/user-guide/gcube-cli/cli-workload/#cuda) 참고) |
 | `--repo` | 레지스트리 (기본: `docker.io`) |
 | `--port` | 서비스 포트 (기본: 자동 감지) |
 | `--credential` | 비공개 레지스트리 인증 사용 |
@@ -83,7 +83,7 @@ gcube workload register \
     태그(`:latest` 등)를 생략하면 자동으로 `:latest`가 적용됩니다.
 
 !!! note "`--cuda` 선택 기준"
-    컨테이너 이미지에 특정 CUDA 버전이 필요한 경우에만 지정합니다. 생략하면 선택한 GPU 노드의 기본 드라이버 버전이 적용됩니다. 이미지 문서에서 요구 CUDA 버전을 확인한 뒤 [CUDA 버전 코드 표](#cuda-버전-코드)를 참고해 입력하세요.
+    컨테이너 이미지에 특정 CUDA 버전이 필요한 경우에만 지정합니다. 생략하면 선택한 GPU 노드의 기본 드라이버 버전이 적용됩니다. 이미지 문서에서 요구 CUDA 버전을 확인한 뒤 [CUDA 버전 코드 표](http://127.0.0.1:8000/gai-platform-docs/user-guide/gcube-cli/cli-workload/#cuda)를 참고해 입력하세요.
 
 !!! note "`--port` 자동 감지"
     이미지의 Dockerfile에 `EXPOSE` 지시어가 있으면 해당 포트가 자동으로 감지됩니다. 감지되지 않거나 다른 포트를 사용해야 하는 경우 직접 지정합니다.

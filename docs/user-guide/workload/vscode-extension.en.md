@@ -85,7 +85,7 @@ Install the following extensions before using the gcube Extension.
 2. Search for the extension name.
 3. Click the **Install** button.
 
-![Screenshot: Required extension installation screen](img/vscode-extension/vscode-extension_01.png)
+![001_vscode-extension](img/vscode-extension/001_vscode-extension.png)
 
 !!! note
     It is recommended to restart VSCode after installation is complete.
@@ -97,11 +97,11 @@ Install the following extensions before using the gcube Extension.
 1. Type `gcube` in the VSCode Extensions search bar.
 2. Find **gcube Extension** (provider: Data Alliance) and click the **Install** button.
 
-    ![Screenshot: gcube Extension installation screen](img/vscode-extension/vscode-extension_02.png)
+    ![002_vscode-extension](img/vscode-extension/002_vscode-extension.png)
 
 3. Once installed, the **GCUBE WORKLOADS** menu will appear in the left Explorer area.
 
-    ![Screenshot: GCUBE WORKLOADS menu displayed](img/vscode-extension/vscode-extension_03.png)
+    ![003_vscode-extension](img/vscode-extension/003_vscode-extension.png)
 
 ---
 
@@ -111,7 +111,7 @@ After installing the extension, complete the initial setup to connect with the g
 
 **Settings path:** Extensions → gcube Extension → Click **Manage** button → Select **Settings**
 
-![Screenshot: gcube Extension Settings screen](img/vscode-extension/vscode-extension_04.png)
+![004_vscode-extension](img/vscode-extension/004_vscode-extension.png)
 
 Enter the following items accurately.
 
@@ -123,7 +123,7 @@ Enter the following items accurately.
 | gcube Websocket Base URL | `wss://console.gcube.ai:61443` |
 | Log Refresh Interval | `2000` |
 
-![Screenshot: gcube Extension settings input screen](img/vscode-extension/vscode-extension_05.png)
+![005_vscode-extension](img/vscode-extension/005_vscode-extension.png)
 
 !!! warning
     All items must be entered accurately for a successful connection. Request the Access Token from your administrator.
@@ -134,7 +134,7 @@ Enter the following items accurately.
 
 When setup is complete, the **GCUBE WORKLOADS** area will display your existing workload list.
 
-![Screenshot: GCUBE WORKLOADS list screen](img/vscode-extension/vscode-extension_06.png)
+![006_vscode-extension](img/vscode-extension/006_vscode-extension.png)
 
 If no workloads appear, refer to the table below to check your settings.
 

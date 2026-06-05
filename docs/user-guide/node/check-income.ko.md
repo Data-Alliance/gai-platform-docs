@@ -15,3 +15,9 @@ GPU 공유로 발생한 수익 내역을 날짜별·시간별로 확인합니다
 ![003_check-income](img/check-income/003_check-income.png)
 1. 시간별 수입 세부내역을 확인합니다.
 ![004_check-income](img/check-income/004_check-income.png)
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 모니터링 확인 →](check-monitoring.ko.md){ .md-button .md-button--primary }
+</div>

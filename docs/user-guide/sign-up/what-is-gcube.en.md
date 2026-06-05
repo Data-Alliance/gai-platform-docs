@@ -57,3 +57,9 @@ A patented distributed contribution tracking system ensures transparent, fair pa
 - 🏆 **CES 2026 Innovation Award** — Recognized for global technology innovation
 - 🔬 **Selected for Korean Ministry of Science & ICT R&D Program**
 - 💰 **Pre-Series A — ₩3B raised** (Naver Cloud · BNK Venture Investment · TS Investment)
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Create Account →](sign-up.en.md){ .md-button .md-button--primary }
+</div>

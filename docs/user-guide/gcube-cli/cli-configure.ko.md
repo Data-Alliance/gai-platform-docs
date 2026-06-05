@@ -107,3 +107,10 @@ GitHub Actions 사용 예시:
 | `2` | gcube API 오류 |
 | `3` | 인증 실패 또는 토큰 만료 |
 | `4` | 네트워크 오류 |
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: GPU 목록 조회 →](cli-gpu.ko.md){ .md-button .md-button--primary }
+</div>
+

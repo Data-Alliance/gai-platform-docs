@@ -23,3 +23,10 @@ There are two user roles in gcube:
 
 !!! warning
     Switching modes does not affect your account information or point balance.
+
+---
+
+<div style="text-align: center;" markdown>
+[Use GPU →](../workload/workload-dashboard.en.md){ .md-button .md-button--primary }
+[Share GPU →](../node/node-dashboard.en.md){ .md-button }
+</div>

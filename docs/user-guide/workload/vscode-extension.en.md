@@ -85,7 +85,7 @@ Install the following extensions before using the gcube Extension.
 2. Search for the extension name.
 3. Click the **Install** button.
 
-![001_vscode-extension](img/vscode-extension/001_vscode-extension.png)
+![001_vscode-extension](img_en/vscode-extension/001_vscode-extension.png)
 
 !!! note
     It is recommended to restart VSCode after installation is complete.
@@ -97,11 +97,11 @@ Install the following extensions before using the gcube Extension.
 1. Type `gcube` in the VSCode Extensions search bar.
 2. Find **gcube Extension** (provider: Data Alliance) and click the **Install** button.
 
-    ![002_vscode-extension](img/vscode-extension/002_vscode-extension.png)
+    ![002_vscode-extension](img_en/vscode-extension/002_vscode-extension.png)
 
 3. Once installed, the **GCUBE WORKLOADS** menu will appear in the left Explorer area.
 
-    ![003_vscode-extension](img/vscode-extension/003_vscode-extension.png)
+    ![003_vscode-extension](img_en/vscode-extension/003_vscode-extension.png)
 
 ---
 
@@ -111,7 +111,7 @@ After installing the extension, complete the initial setup to connect with the g
 
 **Settings path:** Extensions → gcube Extension → Click **Manage** button → Select **Settings**
 
-![004_vscode-extension](img/vscode-extension/004_vscode-extension.png)
+![004_vscode-extension](img_en/vscode-extension/004_vscode-extension.png)
 
 Enter the following items accurately.
 
@@ -123,7 +123,7 @@ Enter the following items accurately.
 | gcube Websocket Base URL | `wss://console.gcube.ai:61443` |
 | Log Refresh Interval | `2000` |
 
-![005_vscode-extension](img/vscode-extension/005_vscode-extension.png)
+![005_vscode-extension](img_en/vscode-extension/005_vscode-extension.png)
 
 !!! warning
     All items must be entered accurately for a successful connection. Request the Access Token from your administrator.
@@ -134,7 +134,7 @@ Enter the following items accurately.
 
 When setup is complete, the **GCUBE WORKLOADS** area will display your existing workload list.
 
-![006_vscode-extension](img/vscode-extension/006_vscode-extension.png)
+![006_vscode-extension](img_en/vscode-extension/006_vscode-extension.png)
 
 If no workloads appear, refer to the table below to check your settings.
 
@@ -143,3 +143,9 @@ If no workloads appear, refer to the table below to check your settings.
 | Workload list not displayed | Access Token error |
 | Connection failure message | Platform URL typo |
 | Remote item not shown | Remote - Tunnels not installed |
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Monitoring →](workload-monitoring.en.md){ .md-button .md-button--primary }
+</div>

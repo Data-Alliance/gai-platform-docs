@@ -372,3 +372,10 @@ From the OpenClaw web dashboard, you can review and update settings, and use Ope
     - Remove the Pairing Code and Request ID from documents after use.
     - Only enter `http://<SERVICE_URL>:18789` in `allowedOrigins`.
     - `allowInsecureAuth: true`, `dangerouslyDisableDeviceAuth: true`, and `tls.enabled: false` settings are recommended for test environments only.
+
+---
+
+<div style="text-align: center;" markdown>
+[gcube CLI →](../gcube-cli/cli-overview.en.md){ .md-button .md-button--primary }
+[Use Workloads →](../workload/workload-dashboard.en.md){ .md-button }
+</div>

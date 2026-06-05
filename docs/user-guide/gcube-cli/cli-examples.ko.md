@@ -66,3 +66,10 @@ gcube workload logs 2226 --pod 0 --container 1
 ---
 
 문제가 발생하거나 추가 지원이 필요한 경우 [gcube 웹 콘솔](https://gcube.ai)을 방문하거나 gcube 지원팀(gcube.ai@data-alliance.com)에 문의해 주세요.
+
+---
+
+<div style="text-align: center;" markdown>
+[워크로드 사용하기 →](../workload/workload-dashboard.ko.md){ .md-button .md-button--primary }
+[AI 모델 실행하기 →](../platform-guide/ollama-api.ko.md){ .md-button }
+</div>

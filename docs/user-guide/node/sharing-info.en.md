@@ -19,8 +19,14 @@ Check the specs, status, and earnings of your shared GPU.
 ## **How to Check Sharing Info**
 
 1. Go to the node list screen from the left menu in Share Mode.
-![001_sharing-info](img/sharing-info/001_sharing-info.png)
+![001_sharing-info](img_en/sharing-info/001_sharing-info.png)
 2. If you have many devices, switch to list view to see a summary at a glance.
-![002_sharing-info](img/sharing-info/002_sharing-info.png)
+![002_sharing-info](img_en/sharing-info/002_sharing-info.png)
 
 Click a node name to go to that node's detail page.
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Set Pricing →](set-price.en.md){ .md-button .md-button--primary }
+</div>

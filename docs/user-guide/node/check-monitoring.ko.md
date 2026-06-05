@@ -32,3 +32,9 @@
 1. 샘플링 간격 버튼으로 그래프 시간 단위를 조절합니다.
 
     | 기본값: 10분  | 최소: 1분 | 최대: 5시간 |
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 에이전트 모니터링 확인 →](agent-monitoring.ko.md){ .md-button .md-button--primary }
+</div>

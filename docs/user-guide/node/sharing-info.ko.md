@@ -24,3 +24,9 @@
 ![002_sharing-info](img/sharing-info/002_sharing-info.png)
 
 노드명을 클릭하면 해당 노드의 상세 정보 페이지로 이동합니다.
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 가격 설정 →](set-price.ko.md){ .md-button .md-button--primary }
+</div>

@@ -9,9 +9,9 @@ Check real-time resource usage of your shared node from the agent app.
 ## **How to Check Monitoring**
 
 1. Click the Monitoring button in the agent program.
-![001_agent-monitoring](img/agent-monitoring/001_agent-monitoring.PNG)
+![001_agent-monitoring](img_en/agent-monitoring/001_agent-monitoring.PNG)
 2. Check real-time resource usage on the Node Monitoring screen.
-![002_agent-monitoring](img/agent-monitoring/002_agent-monitoring.PNG)
+![002_agent-monitoring](img_en/agent-monitoring/002_agent-monitoring.PNG)
 
 ## **Available Metrics**
 
@@ -23,3 +23,9 @@ Check real-time resource usage of your shared node from the agent app.
 | Memory Usage | System RAM usage status |
 | Disk Usage | Storage space usage status |
 | Network Traffic | Inbound/outbound network traffic |
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Troubleshooting →](troubleshooting.en.md){ .md-button .md-button--primary }
+</div>

@@ -8,9 +8,9 @@ View real-time performance metrics of your shared GPU in graph format.
 ## **How to Access Monitoring**
 
 1. Click the Monitoring button on the shared GPU information screen.
-![001_check-monitoring](img/check-monitoring/001_check-monitoring.png)
+![001_check-monitoring](img_en/check-monitoring/001_check-monitoring.png)
 2. The full node monitoring overview screen will be displayed.
-![002_check-monitoring](img/check-monitoring/002_check-monitoring.png)
+![002_check-monitoring](img_en/check-monitoring/002_check-monitoring.png)
 
 ## **Available Metrics**
 
@@ -26,9 +26,15 @@ View real-time performance metrics of your shared GPU in graph format.
 ## **Setting the Time Range**
 
 1. Click the time range selector to choose from predefined time periods.
-![003_check-monitoring](img/check-monitoring/003_check-monitoring.png)
+![003_check-monitoring](img_en/check-monitoring/003_check-monitoring.png)
 2. Select a custom time range to specify the start and end times manually.
-![004_check-monitoring](img/check-monitoring/004_check-monitoring.png)
+![004_check-monitoring](img_en/check-monitoring/004_check-monitoring.png)
 3. Use the sampling interval button to adjust the time unit of the graph.
 
 Default: 10 min  /  Minimum: 1 min  /  Maximum: 5 hours
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Check Agent Monitoring →](agent-monitoring.en.md){ .md-button .md-button--primary }
+</div>

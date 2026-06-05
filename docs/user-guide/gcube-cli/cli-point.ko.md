@@ -38,3 +38,9 @@ Spending Summary:
 
     !!! question "검토 필요"
         `Network Point`의 정확한 과금 기준(트래픽 단위, 적용 조건 등)을 개발팀에 확인 후 보완이 필요합니다.
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 레지스트리 인증 관리 →](cli-credential.ko.md){ .md-button .md-button--primary }
+</div>

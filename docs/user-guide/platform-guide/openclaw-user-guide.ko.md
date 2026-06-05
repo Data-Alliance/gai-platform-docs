@@ -372,3 +372,10 @@ OpenClaw 웹 대시보드에서는 설정 확인 및 수정, 연결된 기능을
     - Pairing Code와 Request ID는 사용 후 문서에서 제거합니다.
     - `allowedOrigins`에는 실제 사용하는 `http://<서비스_URL>:18789`만 입력합니다.
     - `allowInsecureAuth: true`, `dangerouslyDisableDeviceAuth: true`, `tls.enabled: false` 설정은 테스트 환경에서만 사용하는 것을 권장합니다.
+
+---
+
+<div style="text-align: center;" markdown>
+[gcube CLI 시작하기 →](../gcube-cli/cli-overview.ko.md){ .md-button .md-button--primary }
+[워크로드 사용하기 →](../workload/workload-dashboard.ko.md){ .md-button }
+</div>

@@ -143,3 +143,9 @@ Extension 설치 후 gcube 플랫폼과 연결되도록 초기 설정을 진행�
 | 워크로드 목록이 보이지 않음 | Access Token 오류 |
 | 연결 실패 메시지 | Platform URL 오타 |
 | Remote 항목 미표시 | Remote - Tunnels 미설치 |
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 모니터링 →](workload-monitoring.ko.md){ .md-button .md-button--primary }
+</div>

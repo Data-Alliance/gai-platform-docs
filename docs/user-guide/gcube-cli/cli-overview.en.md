@@ -80,3 +80,9 @@ gcube [global options] <service> <action> [options]
 | `-o, --output <format>` | Output format: `table` \| `json` \| `yaml` | `table` |
 | `-V, --version` | Show version | — |
 | `--help` | Show help | — |
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Configuration Management →](cli-configure.en.md){ .md-button .md-button--primary }
+</div>

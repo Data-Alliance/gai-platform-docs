@@ -268,3 +268,9 @@ Open WebUI 관리자 패널에 접속합니다.
 설정 완료 후 Open WebUI 채팅창에서 텍스트 질문과 이미지 생성을 함께 사용할 수 있습니다.
 
 ![Open WebUI 텍스트 및 이미지 생성 화면](img/openwebui-comfyui/opencomfy_15.png)
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: OpenClaw 실행하기 →](openclaw-user-guide.ko.md){ .md-button .md-button--primary }
+</div>

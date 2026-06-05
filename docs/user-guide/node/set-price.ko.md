@@ -26,3 +26,9 @@
     설정 금액이 기준 범위를 벗어나면 저장되지 않습니다. 
     메시지를 확인하고 범위 내 금액으로 입력하세요.<br>
     수정을 취소하려면 취소 버튼을 클릭하면 이전 화면으로 돌아갑니다.
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 수익 확인 →](check-income.ko.md){ .md-button .md-button--primary }
+</div>

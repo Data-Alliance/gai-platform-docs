@@ -294,3 +294,9 @@ It may take time depending on network conditions. Do not close the terminal and 
 
 If you **Stop** the container and restart it, existing data may not be preserved.
 If you **Delete** it, you must re-download the model.
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Run ComfyUI + WebUI →](openwebui-comfyui.en.md){ .md-button .md-button--primary }
+</div>

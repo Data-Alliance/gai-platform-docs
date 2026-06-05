@@ -107,3 +107,9 @@ GitHub Actions usage example:
 | `2` | gcube API error |
 | `3` | Authentication failure or token expired |
 | `4` | Network error |
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: GPU List →](cli-gpu.en.md){ .md-button .md-button--primary }
+</div>

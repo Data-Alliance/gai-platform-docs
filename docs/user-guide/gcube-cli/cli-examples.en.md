@@ -66,3 +66,10 @@ gcube workload logs 2226 --pod 0 --container 1
 ---
 
 If you encounter any issues or need additional support, visit the [gcube web console](https://gcube.ai) or contact the gcube support team at gcube.ai@data-alliance.com.
+
+---
+
+<div style="text-align: center;" markdown>
+[Use Workloads →](../workload/workload-dashboard.en.md){ .md-button .md-button--primary }
+[Run AI Models →](../platform-guide/ollama-api.en.md){ .md-button }
+</div>

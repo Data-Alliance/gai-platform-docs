@@ -24,19 +24,19 @@ Connect directly to a deployed workload container via SSH.
 
 1. Click the workload you want to connect to in the workload list to go to its detail page.
 
-    ![Screenshot: Workload detail screen](img/ssh-terminal/001_워크로드_세부_정보_화면.png)
+    ![Screenshot: Workload detail screen](img_en/ssh-terminal/001_ssh-terminal.png)
 
 2. Confirm the pod status is **Running** in the **Deployment Status** tab.
 
-    ![Screenshot: Pod running status confirmation](img/ssh-terminal/002_파드_상태_실행_확인_화면.png)
+    ![Screenshot: Pod running status confirmation](img_en/ssh-terminal/002_ssh-terminal.png)
 
 3. Click the **Container SSH** button.
 
-    ![Screenshot: Container SSH button](img/ssh-terminal/003_컨테이너_SSH_버튼_화면.png)
+    ![Screenshot: Container SSH button](img_en/ssh-terminal/003_ssh-terminal.png)
 
 4. Look up your public IP and register the connection info.
 
-    ![Screenshot: Container SSH access](img/ssh-terminal/004_컨테이너_SSH_접속_화면.png)
+    ![Screenshot: Container SSH access](img_en/ssh-terminal/004_ssh-terminal.png)
 
 5. Check the following information in the SSH connection info popup.
 
@@ -48,7 +48,7 @@ Connect directly to a deployed workload container via SSH.
     | Username | SSH login account name |
     | Password | SSH login password |
 
-    ![Screenshot: SSH connection info popup](img/ssh-terminal/005_SSH_접속_정보_팝업_화면.png)
+    ![Screenshot: SSH connection info popup](img_en/ssh-terminal/005_ssh-terminal.png)
 
     !!! warning
         If the public IP address changes, delete the connection info and re-register the public IP.
@@ -72,7 +72,7 @@ Connect directly to a deployed workload container via SSH.
 
 2. Enter your password to complete the connection. (The password will not be displayed as you type.)
 
-    ![Screenshot: Terminal SSH connection complete](img/ssh-terminal/006_터미널_SSH_접속_완료_화면.png)
+    ![Screenshot: Terminal SSH connection complete](img_en/ssh-terminal/006_ssh-terminal.png)
 
 ---
 
@@ -94,9 +94,9 @@ Commonly used programs are listed below.
     3. Set Connection type to **SSH** and click **Open**.
     4. Enter your username at `login as:`, then enter your password. (The password will not be displayed as you type.)
 
-    ![Screenshot: PuTTY connection setup](img/ssh-terminal/007_PuTTY_접속_설정_화면.png)
+    ![Screenshot: PuTTY connection setup](img_en/ssh-terminal/007_ssh-terminal.png)
 
-    ![Screenshot: PuTTY login complete](img/ssh-terminal/008_PuTTY_로그인_완료_화면.png)
+    ![Screenshot: PuTTY login complete](img_en/ssh-terminal/008_ssh-terminal.png)
 
 ---
 
@@ -112,3 +112,9 @@ Commonly used programs are listed below.
 
 !!! warning
     Do not share your SSH credentials (password) externally. Connection info may change when the workload is redeployed.
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: VS Code Extension →](vscode-extension.en.md){ .md-button .md-button--primary }
+</div>

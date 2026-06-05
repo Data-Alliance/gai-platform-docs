@@ -13,10 +13,10 @@ Stop a deployed workload.
 ## **How to Stop**
 
 1. Click the Stop Deployment button for the workload you want to stop in the workload list.
-![001_stop-workload.png](img/stop-workload/001_stop-workload.png)
+![001_stop-workload.png](img_en/stop-workload/001_stop-workload.png)
 2. Click the Confirm button in the confirmation popup.
 3. The workload status will change from Deployed → Stopped and the service will be terminated.
-![002_stop-workload.png](img/stop-workload/002_stop-workload.png)
+![002_stop-workload.png](img_en/stop-workload/002_stop-workload.png)
 
 ## **How to Preserve Data After Stopping**
 
@@ -24,3 +24,10 @@ To preserve data after stopping a workload, you must connect Personal Storage in
 
 - Storage Management → Register personal backup storage connection
 - When registering a workload → Select the storage under the Personal Storage field
+
+---
+
+<div style="text-align: center;" markdown>
+[Run AI Models →](../platform-guide/ollama-api.en.md){ .md-button .md-button--primary }
+[Share GPU →](../node/node-dashboard.en.md){ .md-button }
+</div>

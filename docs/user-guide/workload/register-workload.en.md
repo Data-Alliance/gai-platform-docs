@@ -14,13 +14,13 @@ Select a container image and GPU to register a workload.
 ## **① Enter Basic Information**
 
 1. Click New Workload Registration in the left menu of Workload Mode.
-![001_register-workload](img/register-workload/001_register-workload.png)
+![001_register-workload](img_en/register-workload/001_register-workload.png)
 2. Enter a brief description of the workload's purpose in the description field.
-![002_register-workload](img/register-workload/002_register-workload.png)
+![002_register-workload](img_en/register-workload/002_register-workload.png)
 
 ## **② Container Settings**
 
-![003_register-workload](img/register-workload/003_register-workload.png)
+![003_register-workload](img_en/register-workload/003_register-workload.png)
 
 | **Item** | **Description** |
 | --- | --- |
@@ -46,7 +46,7 @@ If the image URL is entered correctly, a green checkmark will appear and the por
 
 ## **③ GPU Selection**
 
-![004_register-workload](img/register-workload/004_register-workload.png)
+![004_register-workload](img_en/register-workload/004_register-workload.png)
 
 | **Item** | **Description** |
 | --- | --- |
@@ -64,7 +64,7 @@ If the image URL is entered correctly, a green checkmark will appear and the por
 
 ## **④ Options**
 
-![005_register-workload](img/register-workload/005_register-workload.png)
+![005_register-workload](img_en/register-workload/005_register-workload.png)
 
 | **Item** | **Description** |
 | --- | --- |
@@ -75,10 +75,10 @@ If the image URL is entered correctly, a green checkmark will appear and the por
 
 ## **⑤ Register**
 
-![006_register-workload](img/register-workload/006_register-workload.png)
-1. Confirm the estimated total cost.
-2. Select whether to deploy immediately.
-3. Click the Register button to create the workload.
+![006_register-workload](img_en/register-workload/006_register-workload.png)
+    1. Confirm the estimated total cost.<br>
+    2. Select whether to deploy immediately.<br>
+    3. Click the Register button to create the workload.<br>
 
 ## **Registration Example — Ollama**
 
@@ -93,3 +93,9 @@ If the image URL is entered correctly, a green checkmark will appear and the por
 | GPU | RTX 3090 or higher recommended (VRAM 16GB+) |
 | Replicas | 1 |
 | Deploy Immediately | ON |
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Deploy Workload →](deploy-workload.en.md){ .md-button .md-button--primary }
+</div>

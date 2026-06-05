@@ -25,7 +25,7 @@ plugins:
             계정 만들기: Create Account
             프로필 설정: Profile Setup
             저장소 관리: Storage Management
-            나는 공급자인가요, 소비자인가요?: Provider or Consumer?
+            공급자인가요, 소비자인가요?: Provider or Consumer?
             # B — GPU 사용하기 (워크로드 소비자)
             GPU 워크로드 사용하기: Use GPU
             워크로드 대시보드: Workload Dashboard
@@ -54,7 +54,7 @@ plugins:
             AI 모델 실행하기: Run AI Models
             Ollama - 외부 API 버전: Run Ollama - API 
             Ollama - SSH 접속 버전: Run Ollama - SSH
-            OpenWebUI + ComfyUI 실행하기: Run OpenWebUI + ComfyUI
+            ComfyUI + WebUI 실행하기: Run OpenWebUI + ComfyUI
             OpenClaw 실행하기: Run OpenClaw
             # E — gcube CLI
             gcube CLI: gcube CLI
@@ -96,6 +96,7 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+    - navigation.instant
 
 extra_css:
   - stylesheets/extra.css
@@ -129,6 +130,7 @@ markdown_extensions:
   - pymdownx.details 
   - admonition
   - attr_list
+  - md_in_html
   - meta
   - tables
   - toc:
@@ -183,8 +185,8 @@ nav:
     - 에이전트 모니터링 확인: user-guide/node/agent-monitoring.md
     - 문제 해결 (Troubleshooting): user-guide/node/troubleshooting.md
   - AI 모델 실행하기:
-    - Ollama + DeepSeek 실행하기: user-guide/platform-guide/ollama-api.md
-    - Ollama + Llama3 실행하기: user-guide/platform-guide/ollama-ssh.md
+    - Ollama - 외부 API 버전: user-guide/platform-guide/ollama-api.md
+    - Ollama - SSH 접속 버전: user-guide/platform-guide/ollama-ssh.md
     - ComfyUI + WebUI 실행하기: user-guide/platform-guide/openwebui-comfyui.md
     - OpenClaw 실행하기: user-guide/platform-guide/openclaw-user-guide.md
   - gcube CLI:

@@ -22,3 +22,9 @@
 | 메모리 사용량 | MB |
 | 네트워크 받은 패킷 | Kbps |
 | 네트워크 보낸 패킷 | Kbps |
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 이용내역 확인 →](check-usage.ko.md){ .md-button .md-button--primary }
+</div>

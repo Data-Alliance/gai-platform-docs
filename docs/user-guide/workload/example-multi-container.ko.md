@@ -81,3 +81,9 @@ Ollama(추론 서버)와 Open WebUI(채팅 인터페이스)를 하나의 워크�
 
 !!! warning
     컨테이너 간 통신이 필요한 경우 (예: Open WebUI → Ollama 호출) 포트와 환경변수 설정을 사전에 확인하세요.
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 워크로드 배포 →](deploy-workload.ko.md){ .md-button .md-button--primary }
+</div>

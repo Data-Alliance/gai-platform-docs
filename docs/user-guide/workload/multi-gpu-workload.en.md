@@ -30,15 +30,15 @@ Connect multiple GPUs to a single workload to handle large-scale AI tasks.
 
 1. Complete the container setup on the new workload registration screen. (The screen below is an example.)
 
-    ![Screenshot: Container setup screen](img/multi-gpu-workload/001_컨테이너_설정_화면.png)
+    ![Screenshot: Container setup screen](img_en/multi-gpu-workload/001_multi-gpu-workload.png)
 
-2. Set the desired number of replicas in the GPU selection section.
+2. Select your desired GPU model in the GPU selection section.
 
-    ![Screenshot: Replica count screen](img/multi-gpu-workload/002_레플리카_수량_화면.png)
+    ![Screenshot: Replica count screen](img_en/multi-gpu-workload/002_multi-gpu-workload.png)
 
-3. Select GPUs equal to the number of replicas you set.
+3. Choose how many GPUs to allocate for the selected model.
 
-    ![Screenshot: GPU selection screen](img/multi-gpu-workload/003_GPU_선택_화면.png)
+    ![Screenshot: GPU selection screen](img_en/multi-gpu-workload/003_multi-gpu-workload.png)
 
     !!! warning
         Make sure the selected GPU model is available in the required quantity on the same node.
@@ -49,7 +49,7 @@ Connect multiple GPUs to a single workload to handle large-scale AI tasks.
 
 4. Confirm the estimated total cost. Costs increase proportionally with the number of GPUs.
 
-    ![Screenshot: Estimated total cost screen](img/multi-gpu-workload/004_총_예상_금액_화면.png)
+    ![Screenshot: Estimated total cost screen](img_en/multi-gpu-workload/004_multi-gpu-workload.png)
 
 5. Select whether to deploy immediately and click the **Register** button.
 
@@ -62,3 +62,9 @@ Connect multiple GPUs to a single workload to handle large-scale AI tasks.
 | LLaMA3 70B | A100 × 2 (80GB VRAM) | Large LLM inference |
 | Stable Diffusion XL | RTX 3090 × 2 | High-resolution batch image generation |
 | Training (Fine-tuning) | RTX 4090 × 4 | Model fine-tuning |
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Multi-Container Registration Example →](example-multi-container.en.md){ .md-button .md-button--primary }
+</div>

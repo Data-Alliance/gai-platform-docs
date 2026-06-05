@@ -25,3 +25,9 @@ CODE  GPU_NAME    TIER   GPU  VRAM(GB)  CPU  MEM(GB)  DISK(GB)  PRICE/HR(₩)
     - `PRICE/HR`: 범위로 표시되는 이유는 공급자가 설정한 가격이 노드마다 다를 수 있기 때문입니다. 실제 과금은 선택한 노드의 단가로 결정됩니다.
 
 `CODE` 값은 워크로드 등록 시 `--gpu` 옵션 또는 YAML의 `gpuCode`로 사용합니다.
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 워크로드 관리 →](cli-workload.ko.md){ .md-button .md-button--primary }
+</div>

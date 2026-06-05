@@ -144,3 +144,10 @@ NVIDIA 이외의 그래픽 드라이버 제거 및 Agent 재설치 후 노드를
 
 !!! warning
     문제가 지속되면 gcube 고객지원(support@gcube.ai)으로 문의하세요.
+
+---
+
+<div style="text-align: center;" markdown>
+[AI 모델 실행하기 →](../platform-guide/ollama-api.ko.md){ .md-button .md-button--primary }
+[워크로드 사용하기 →](../workload/workload-dashboard.ko.md){ .md-button }
+</div>

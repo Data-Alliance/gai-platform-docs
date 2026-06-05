@@ -23,3 +23,9 @@
 
 !!! warning
     NVIDIA 드라이버가 인식되지 않는 경우 문제 해결 가이드를 참고하세요
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 에이전트 설치 및 세팅 →](agent-setup.ko.md){ .md-button .md-button--primary }
+</div>

@@ -8,9 +8,9 @@ Check real-time GPU, CPU, and network usage of your deployed workload.
 ## **How to Access Monitoring**
 
 1. Click the Monitoring button at the bottom right of the workload item in the workload list.
-![001_workload-monitoring](img/workload-monitoring/001_workload-monitoring.png)
+![001_workload-monitoring](img_en/workload-monitoring/001_workload-monitoring.png)
 2. The real-time monitoring screen will be displayed.
-![002_workload-monitoring](img/workload-monitoring/002_workload-monitoring.png)
+![002_workload-monitoring](img_en/workload-monitoring/002_workload-monitoring.png)
 
 ## **Available Metrics**
 
@@ -22,3 +22,9 @@ Check real-time GPU, CPU, and network usage of your deployed workload.
 | Memory Usage | MB |
 | Network Packets Received | Kbps |
 | Network Packets Sent | Kbps |
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Check Usage History →](check-usage.en.md){ .md-button .md-button--primary }
+</div>

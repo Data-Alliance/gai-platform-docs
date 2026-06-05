@@ -46,3 +46,9 @@ gcube credential create \
 | `aws` | AWS ECR |
 | `huggingface` | Hugging Face |
 | `quay` | Red Hat Quay |
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 사용 예시 →](cli-examples.ko.md){ .md-button .md-button--primary }
+</div>

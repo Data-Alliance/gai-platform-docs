@@ -268,3 +268,9 @@ Go to **Admin Panel → Settings → Images** and enter the following.
 After configuration, you can use text chat and image generation together in the Open WebUI chat window.
 
 ![Open WebUI text and image generation screen](img/openwebui-comfyui/opencomfy_15.png)
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Run OpenClaw →](openclaw-user-guide.en.md){ .md-button .md-button--primary }
+</div>

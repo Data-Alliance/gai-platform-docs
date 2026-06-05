@@ -24,3 +24,9 @@
 
 !!! warning
     공유 중단 중에는 소비자가 해당 GPU를 사용할 수 없으며 수익이 발생하지 않습니다.
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 공유 정보 확인 →](sharing-info.ko.md){ .md-button .md-button--primary }
+</div>

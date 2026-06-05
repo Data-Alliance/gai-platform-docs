@@ -8,10 +8,10 @@ Manage driver updates and VM settings after installing the agent.
 ## **How to Access Agent Settings**
 
 1. Run the agent program.
-2. Click the Setting button on the agent screen.
-![001_agent-setup](img/agent-setup/001_agent-setup.PNG)
-3. Modify the desired items on the settings screen.
-![001_agent-setup](img/agent-setup/001_agent-setup.PNG)
+2. Click the Setting button on the agent screen.<br>
+![001_agent-setup](img_en/agent-setup/001_agent-setup.PNG)
+3. Modify the desired items on the settings screen.<br>
+![001_agent-setup](img_en/agent-setup/001_agent-setup.PNG)
 
 ## **Configurable Items**
 
@@ -22,3 +22,9 @@ Manage driver updates and VM settings after installing the agent.
 
 !!! warning
     Deleting a VM will reset all configuration information for that VM. Make sure to confirm before deleting.
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Start and Stop Sharing →](start-stop-sharing.en.md){ .md-button .md-button--primary }
+</div>

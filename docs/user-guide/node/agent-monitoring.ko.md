@@ -25,3 +25,9 @@
 | 메모리 사용량 | 시스템 RAM 사용 현황 |
 | Disk 사용량 | 저장 공간 사용 현황 |
 | Network Traffic | 수신/송신 네트워크 트래픽 |
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 문제 해결 →](troubleshooting.ko.md){ .md-button .md-button--primary }
+</div>

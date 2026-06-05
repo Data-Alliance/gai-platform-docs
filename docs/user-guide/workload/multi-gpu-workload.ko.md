@@ -32,11 +32,11 @@
 
     ![스크린샷: 컨테이너 설정 화면](img/multi-gpu-workload/001_컨테이너_설정_화면.png)
 
-2. GPU 선택 섹션에서 원하는 레플리카 수를 설정합니다.
+2. GPU 선택 섹션에서 원하는 GPU 모델을 선택합니다.
 
     ![스크린샷: 레플리카 수량 화면](img/multi-gpu-workload/002_레플리카_수량_화면.png)
 
-3. 설정한 레플리카 수 만큼 GPU를 선택합니다.
+3. 선택한 모델에 할당할 GPU 수를 지정합니다.
 
     ![스크린샷: GPU 선택 화면](img/multi-gpu-workload/003_GPU_선택_화면.png)
 
@@ -61,3 +61,9 @@
 | LLaMA3 70B | A100 × 2 (80GB VRAM) | 대용량 LLM 추론 |
 | Stable Diffusion XL | RTX 3090 × 2 | 고해상도 이미지 배치 생성 |
 | 학습 작업 (Fine-tuning) | RTX 4090 × 4 | 모델 파인튜닝 |
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 멀티 컨테이너 등록 예시 →](example-multi-container.ko.md){ .md-button .md-button--primary }
+</div>

@@ -23,6 +23,18 @@
     /* max-height: 90px; */
 }
 
+.md-typeset h1 {
+    color: #1a1a2e;
+    font-weight: 700;
+    border-bottom: 2px solid rgb(130, 71, 255);
+    padding-bottom: 0.3em;
+}
+
+.md-typeset h2 {
+    color: #1a1a2e;
+    font-weight: 600;
+}
+
 .md-footer-meta {
     background-color: rgb(8, 8, 8) !important;
     border-top: 1px solid #1b2532 !important;
@@ -31,6 +43,45 @@
     width: 50px
 }
 
+.md-main {
+    background: linear-gradient(135deg, #f8f6ff 0%, #ffffff 60%);
+}
+
+.md-typeset a {
+    color: rgb(130, 71, 255);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(130, 71, 255, 0.3);
+}
+.md-typeset a:hover {
+    border-bottom-color: rgb(130, 71, 255);
+    color: rgb(100, 40, 220);
+}
+
+.md-typeset pre {
+    border-left: 3px solid rgb(130, 71, 255);
+    border-radius: 4px;
+}
+
+.md-typeset table:not([class]) th {
+    background-color: rgb(130, 71, 255);
+    color: #ffffff;
+}
+
+.md-footer-nav__link:hover {
+    background-color: rgba(130, 71, 255, 0.06);
+}
+
+.md-footer-nav__title {
+    color: rgb(130, 71, 255);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(130, 71, 255, 0.4);
+    border-radius: 3px;
+}
 
 .md-nav__link:hover {
   color: rgb(130, 71 ,255) !important;

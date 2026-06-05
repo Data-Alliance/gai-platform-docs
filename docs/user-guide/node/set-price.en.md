@@ -8,12 +8,12 @@ Set the hourly usage fee for your shared GPU.
 ## **How to Set Pricing**
 
 1. Click the **Edit Node Price** button on the shared GPU information screen.
-![001_set-price](img/set-price/001_set-price.png)
+![001_set-price](img_en/set-price/001_set-price.png)
 2. Enter your desired amount in the hourly usage fee field.
-![002_set-price](img/set-price/002_set-price.png)
+![002_set-price](img_en/set-price/002_set-price.png)
 3. Click the Set Price button.
-4. Confirm the entered amount in the confirmation popup, then click the Set Price button to complete.
-![003_set-price](img/set-price/003_set-price.PNG)
+4. Confirm the entered amount in the confirmation popup, then click the Set Price button to complete.<br>
+![003_set-price](img_en/set-price/003_set-price.PNG)
 
 ## **Input Guidelines**
 
@@ -26,3 +26,9 @@ Set the hourly usage fee for your shared GPU.
     If the entered amount is outside the allowed range, it will not be saved.
     Check the message and enter an amount within the valid range.
     To cancel the edit, click the Cancel button to return to the previous screen.
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Check Earnings →](check-income.en.md){ .md-button .md-button--primary }
+</div>

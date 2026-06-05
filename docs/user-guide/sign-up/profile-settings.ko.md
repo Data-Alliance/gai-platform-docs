@@ -15,3 +15,9 @@
 ![003_profile-settings.png](img/profile-settings/003_profile-settings.png)
 1. 수정 팝업에서 원하는 정보를 변경한 후 수정 버튼을 클릭하면 완료됩니다.
 ![004_profile-settings.png](img/profile-settings/004_profile-settings.png)
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 저장소 관리 →](storage-management.ko.md){ .md-button .md-button--primary }
+</div>

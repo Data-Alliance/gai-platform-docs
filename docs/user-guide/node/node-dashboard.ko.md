@@ -26,3 +26,9 @@
 !!! warning
     노드가 표시되지 않는 경우 아직 노드를 연결하지 않은 상태입니다.
     아래 다음 단계를 따라 노드를 연결하세요.
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 노드 연결하기 →](connect-node.ko.md){ .md-button .md-button--primary }
+</div>

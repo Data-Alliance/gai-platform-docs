@@ -14,12 +14,18 @@ Install the agent to connect your GPU to gcube.
 ## **How to Connect**
 
 1. Click **Connect New Node** in the left menu in Share Mode.
-![001_connect-node](img/connect-node/001_connect-node.png)
+![001_connect-node](img_en/connect-node/001_connect-node.png)
 2. Click the **Download Program** button to download the agent program.
-![002_connect-node](img/connect-node/002_connect-node.png)
+![002_connect-node](img_en/connect-node/002_connect-node.png)
 3. Run the downloaded installer and follow the on-screen instructions to complete the installation.
-![003_connect-node](img/connect-node/003_connect-node.png)
+![003_connect-node](img_en/connect-node/003_connect-node.png)
 4. Once installation is complete, GPU sharing will start automatically.
 
 !!! warning
     If the NVIDIA driver is not recognized, refer to the Troubleshooting guide.
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Agent Setup →](agent-setup.en.md){ .md-button .md-button--primary }
+</div>

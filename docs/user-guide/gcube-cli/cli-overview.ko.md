@@ -80,3 +80,9 @@ gcube [글로벌 옵션] <서비스> <액션> [옵션]
 | `-o, --output <형식>` | 출력 형식: `table` \| `json` \| `yaml` | `table` |
 | `-V, --version` | 버전 표시 | — |
 | `--help` | 도움말 | — |
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 설정 관리 →](cli-configure.ko.md){ .md-button .md-button--primary }
+</div>

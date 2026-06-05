@@ -34,3 +34,9 @@
 
 !!! success
     로그인 후 좌측 메뉴 상단의 모드 변경 버튼으로 공급자(Share Mode)와 소비자(Workload Mode)를 전환할 수 있습니다.
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 프로필 설정 →](profile-settings.ko.md){ .md-button .md-button--primary }
+</div>

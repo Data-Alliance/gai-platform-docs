@@ -11,7 +11,7 @@ Common issues that occur during node operation and how to resolve them.
 
 ### **Initializing Error**
 
-![Agent error screen](img/troubleshooting/001_troubleshooting.PNG)
+![Agent error screen](img_en/troubleshooting/001_troubleshooting.PNG)
 
 If an Initializing error occurs, check whether Hyper-V is enabled.
 
@@ -21,18 +21,18 @@ If an Initializing error occurs, check whether Hyper-V is enabled.
 
 1. Search for **"Turn Windows features on or off"** in the Windows search bar and open it.
 
-    ![Turn Windows features on or off screen](img/troubleshooting/002_troubleshooting.png)
+    ![Turn Windows features on or off screen](img_en/troubleshooting/002_troubleshooting.png)
 
 2. Find **"Hyper-V"** and check the box.
 
-    ![Hyper-V checkbox screen](img/troubleshooting/003_troubleshooting.png)
+    ![Hyper-V checkbox screen](img_en/troubleshooting/003_troubleshooting.png)
 
     !!! warning
         The Hyper-V feature is only available by default on **Windows PRO** editions.
 
 3. Click the **Restart** button to reboot.
 
-    ![Reboot screen](img/troubleshooting/004_troubleshooting.png)
+    ![Reboot screen](img_en/troubleshooting/004_troubleshooting.png)
 
 ---
 
@@ -40,22 +40,22 @@ If an Initializing error occurs, check whether Hyper-V is enabled.
 
 1. Search for **"Hyper-V Manager"** in the search bar and open it.
 
-    ![Hyper-V Manager screen](img/troubleshooting/005_troubleshooting.png)
+    ![Hyper-V Manager screen](img_en/troubleshooting/005_troubleshooting.png)
 
 2. Right-click your computer name and select **"New" → "Virtual Machine"**.
 
-    ![Create virtual machine screen](img/troubleshooting/006_troubleshooting.png)
+    ![Create virtual machine screen](img_en/troubleshooting/006_troubleshooting.png)
 
 3. Set the virtual machine name and storage location, then click **Next**.
 
-    ![Virtual machine name setup screen](img/troubleshooting/007_troubleshooting.png)
+    ![Virtual machine name setup screen](img_en/troubleshooting/007_troubleshooting.png)
 
     !!! note
         Since virtual Windows installations can be large, it is recommended to choose a drive with sufficient free space.
 
 4. Select the virtual machine generation.
 
-    ![Virtual machine generation selection screen](img/troubleshooting/008_troubleshooting.png)
+    ![Virtual machine generation selection screen](img_en/troubleshooting/008_troubleshooting.png)
 
     | Generation | Description |
     |---|---|
@@ -67,11 +67,11 @@ If an Initializing error occurs, check whether Hyper-V is enabled.
 
 5. Set the memory to allocate to the virtual machine. Consider your current RAM capacity and the tasks you plan to run. (1GB = 1024MB)
 
-    ![Memory allocation screen](img/troubleshooting/009_troubleshooting.png)
+    ![Memory allocation screen](img_en/troubleshooting/009_troubleshooting.png)
 
 6. Enter the location and size for the virtual hard disk. The capacity can be expanded later, so set it with your installed disk capacity in mind.
 
-    ![Virtual hard disk setup screen](img/troubleshooting/010_troubleshooting.png)
+    ![Virtual hard disk setup screen](img_en/troubleshooting/010_troubleshooting.png)
 
 ---
 
@@ -102,12 +102,12 @@ If the error `Failed to change VM state (0x???????)` appears, you need to enable
 1. Press the **F2** key when the logo screen first appears during boot.
 2. In the main tab, change **Auto Boot** to disabled.
 
-    ![BIOS auto boot setting screen](img/troubleshooting/011_troubleshooting.png)
+    ![BIOS auto boot setting screen](img_en/troubleshooting/011_troubleshooting.png)
 
 3. Return to the top tab and press the right arrow key to navigate to the **Save & Exit** tab.
 4. Select **Save Changes and Exit** to boot with the changes saved.
 
-    ![BIOS save and exit screen](img/troubleshooting/012_troubleshooting.png)
+    ![BIOS save and exit screen](img_en/troubleshooting/012_troubleshooting.png)
 
 ---
 
@@ -117,7 +117,7 @@ If the error `Failed to change VM state (0x???????)` appears, you need to enable
 
 The node status may display as **'Failed'** while providing GPU sharing.
 
-![NVIDIA driver recognition error screen](img/troubleshooting/013_troubleshooting.jpg)
+![NVIDIA driver recognition error screen](img_en/troubleshooting/013_troubleshooting.jpg)
 
 ### **Cause**
 
@@ -125,7 +125,7 @@ This can occur when **two or more graphics drivers** are running simultaneously 
 
 Example: Running both NVIDIA and iGPU (AMD) graphics drivers at the same time.
 
-![AMD iGPU driver screen](img/troubleshooting/014_troubleshooting.png)
+![AMD iGPU driver screen](img_en/troubleshooting/014_troubleshooting.png)
 
 Since gcube only supports NVIDIA graphics cards, the **iGPU (AMD) driver must be removed** in this case.
 
@@ -140,7 +140,14 @@ Since gcube only supports NVIDIA graphics cards, the **iGPU (AMD) driver must be
 
 After removing non-NVIDIA graphics drivers and reinstalling the Agent, the node will display correctly as shown below.
 
-![NVIDIA driver recognition error resolved screen](img/troubleshooting/015_troubleshooting.png)
+![NVIDIA driver recognition error resolved screen](img_en/troubleshooting/015_troubleshooting.png)
 
 !!! warning
     If the issue persists, contact gcube support at support@gcube.ai.
+
+---
+
+<div style="text-align: center;" markdown>
+[Run AI Models →](../platform-guide/ollama-api.en.md){ .md-button .md-button--primary }
+[Use Workloads →](../workload/workload-dashboard.en.md){ .md-button }
+</div>

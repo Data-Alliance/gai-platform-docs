@@ -225,3 +225,9 @@ Output example:
 │ dep2212-76db6545b6-85zbb │ Running │ 10.244.1.6  │ 2026-05-15 09:00:04 │
 └──────────────────────────┴─────────┴─────────────┴─────────────────────┘
 ```
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Resource Monitoring →](cli-resource.en.md){ .md-button .md-button--primary }
+</div>

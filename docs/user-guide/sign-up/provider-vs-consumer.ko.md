@@ -23,3 +23,10 @@ gcube에는 두 가지 사용 역할이 있습니다:
 
 !!! warning
     모드를 전환해도 계정 정보와 포인트는 유지됩니다.
+
+---
+
+<div style="text-align: center;" markdown>
+[GPU 사용하기 →](../workload/workload-dashboard.ko.md){ .md-button .md-button--primary }
+[GPU 공유하기 →](../node/node-dashboard.ko.md){ .md-button }
+</div>

@@ -310,3 +310,9 @@ Check the following in order:
 
 If you **Stop** the container and restart it, existing data may not be preserved.
 If you **Delete** it, you must re-download the model.
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Ollama + Llama3 →](ollama-ssh.en.md){ .md-button .md-button--primary }
+</div>

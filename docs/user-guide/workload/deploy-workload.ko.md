@@ -28,3 +28,9 @@
 | 배포 중 | 배포 명령 후 준비 중인 상태 |
 | 배포 | 정상 실행 중, 서비스 URL 접속 가능 |
 | 종료 | 배포 중지된 상태 |
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: SSH 터미널 접속 →](ssh-terminal.ko.md){ .md-button .md-button--primary }
+</div>

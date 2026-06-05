@@ -57,3 +57,9 @@ gcube는 이 두 가지 문제를 동시에 해결합니다.
 - 🏆 **CES 2026 혁신상** — 글로벌 기술 혁신성 공인
 - 🔬 **과학기술정보통신부 R&D 선정**
 - 💰 **Pre-A 30억 투자 유치** (Naver Cloud · BNK벤처투자 · TS인베스트먼트)
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 계정 만들기 →](sign-up.ko.md){ .md-button .md-button--primary }
+</div>

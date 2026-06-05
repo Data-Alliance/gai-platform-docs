@@ -14,3 +14,9 @@
 ![002_check-usage.png](img/check-usage/002_check-usage.png)
 1. 파드별, 시간별 세부 내역이 필요한 경우 세부내역 버튼을 클릭합니다.
 ![003_check-usage.png](img/check-usage/003_check-usage.png)
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 워크로드 종료 →](stop-workload.ko.md){ .md-button .md-button--primary }
+</div>

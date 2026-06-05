@@ -26,3 +26,9 @@
 !!! warning
     워크로드가 없는 경우 아직 워크로드를 등록하지 않은 상태입니다. 
     아래 다음 단계를 따라 등록을 시작하세요.
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 워크로드 등록하기 →](register-workload.ko.md){ .md-button .md-button--primary }
+</div>

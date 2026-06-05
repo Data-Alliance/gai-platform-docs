@@ -30,7 +30,7 @@
 | 컨테이너 명령 | 컨테이너 실행 시 시작 명령어 (선택) |
 | 컨테이너 환경변수 | 컨테이너 내부 환경변수 설정 (선택) |
 | 개인 Storage | 백업용 개인 저장소 연결 (선택) |
-| 저장소 인증 | 개인 저장소 이미지 사용 시 체크 |
+| 동시 처리 요청 수 | 서비스로 한 번에 전달할 수 있는 HTTP 요청 또는 연결 수 |
 
 **저장소별 이미지 URL 입력 형식**
 
@@ -40,7 +40,6 @@
 | NVIDIA NGC | nvcr.io/nvidia/repository:tag | nvcr.io/nvidia/cuda:12.0.0-base-ubuntu22.04 |
 | GitHub | ghcr.io/owner/repository:tag | ghcr.io/organization/app:1.0 |
 | Red Hat Quay | quay.io/namespace/repository:tag | quay.io/redhat/ubi8:latest |
-| Hugging Face | registry.hf.space/username/repository:tag | registry.hf.space/username/model-server:v1 |
 
 이미지 URL을 올바르게 입력하면 녹색 체크 표시와 함께 포트가 자동 입력됩니다.<br> 유효하지 않은 이미지는 빨간색 표시가 나타납니다.
 
@@ -54,7 +53,6 @@
 | GPU 메모리 | 필요한 최소 VRAM 용량 설정 |
 | 비용 | 시간당 최소~최대 비용 범위로 필터링 |
 | 사용가능한 GPU만 보기 | 현재 즉시 사용 가능한 GPU만 표시 |
-| 레플리카 | 사용 GPU 대수 설정 |
 
 **Tier 구분 기준**
 
@@ -91,5 +89,11 @@
 | 저장소 유형 | Docker Hub |
 | 컨테이너 이미지 | ollama/ollama:latest |
 | GPU | RTX 3090 이상 권장 (VRAM 16GB+) |
-| 레플리카 | 1 |
+| GPU 대수 | 1 |
 | 즉시 배포 | ON |
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 워크로드 배포 →](deploy-workload.ko.md){ .md-button .md-button--primary }
+</div>

@@ -24,3 +24,10 @@
 
 - 저장소 관리 → 백업 데이터 개인 저장소 연결 등록
 - 워크로드 등록 시 → 개인 Storage 항목에서 해당 저장소 선택
+
+---
+
+<div style="text-align: center;" markdown>
+[AI 모델 실행하기 →](../platform-guide/ollama-api.ko.md){ .md-button .md-button--primary }
+[GPU 공유하기 →](../node/node-dashboard.ko.md){ .md-button }
+</div>

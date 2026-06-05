@@ -48,3 +48,9 @@
 
 !!! warning
     워크로드 등록 시 개인 Storage 항목에서 이 저장소를 선택해야 실제로 데이터가 백업됩니다.
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 공급자 / 소비자 확인 →](provider-vs-consumer.ko.md){ .md-button .md-button--primary }
+</div>

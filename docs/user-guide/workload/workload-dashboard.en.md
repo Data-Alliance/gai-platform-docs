@@ -17,12 +17,18 @@ Check your available points and the status of your running workloads.
 ## **How to Use the Dashboard**
 
 1. In Workload Mode, click Dashboard in the left menu.
-![001_workload-dashboard](img/workload-dashboard/001_workload-dashboard.png)
+![001_workload-dashboard](img_en/workload-dashboard/001_workload-dashboard.png)
 2. Check your available points at the top. Recharge if your balance is low.
-![002_workload-dashboard](img/workload-dashboard/002_workload-dashboard.png)
+![002_workload-dashboard](img_en/workload-dashboard/002_workload-dashboard.png)
 3. Check the operation status of each workload in the workload list.
-![003_workload-dashboard](img/workload-dashboard/003_workload-dashboard.png)
+![003_workload-dashboard](img_en/workload-dashboard/003_workload-dashboard.png)
 
 !!! warning
     If no workloads are displayed, you have not registered a workload yet.
     Follow the next steps below to start registration.
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Register Workload →](register-workload.en.md){ .md-button .md-button--primary }
+</div>

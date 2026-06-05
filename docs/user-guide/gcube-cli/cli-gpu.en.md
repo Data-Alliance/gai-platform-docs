@@ -25,3 +25,9 @@ CODE  GPU_NAME    TIER   GPU  VRAM(GB)  CPU  MEM(GB)  DISK(GB)  PRICE/HR(₩)
     - `PRICE/HR`: Displayed as a range because the price set by each provider may vary per node. Actual billing is based on the rate of the selected node.
 
 The `CODE` value is used with the `--gpu` option or `gpuCode` in YAML when registering a workload.
+
+---
+
+<div style="text-align: center;" markdown>
+[Next: Workload Management →](cli-workload.en.md){ .md-button .md-button--primary }
+</div>

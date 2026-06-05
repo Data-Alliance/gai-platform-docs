@@ -110,3 +110,9 @@
 
 !!! warning
     SSH 접속 정보(비밀번호)는 외부에 공유하지 마세요. 워크로드 재배포 시 접속 정보가 변경될 수 있습니다.
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: VS Code 익스텐션 →](vscode-extension.ko.md){ .md-button .md-button--primary }
+</div>

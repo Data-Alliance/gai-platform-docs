@@ -22,3 +22,9 @@
 
 !!! warning
     VM을 삭제하면 해당 VM의 설정 정보가 초기화됩니다. 삭제 전 반드시 확인하세요
+
+---
+
+<div style="text-align: center;" markdown>
+[다음: 공유 시작 및 중단 →](start-stop-sharing.ko.md){ .md-button .md-button--primary }
+</div>

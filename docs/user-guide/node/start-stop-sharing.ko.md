@@ -9,12 +9,12 @@
 ## **공유 중단 방법**
 
 1. PC에서 에이전트 프로그램을 실행합니다.
-2. 에이전트 중앙의 Status 항목에서 Running을 클릭합니다.
+2. 에이전트 중앙의 Status 항목에서 Running을 클릭합니다.<br>
 ![001_start-stop-sharing](img/start-stop-sharing/001_start-stop-sharing.PNG)
 3. Run과 Stop 중 Stop을 클릭합니다.
-4. Turning off 상태로 전환된 후 잠시 기다립니다.
+4. Turning off 상태로 전환된 후 잠시 기다립니다.<br>
 ![002_start-stop-sharing](img/start-stop-sharing/002_start-stop-sharing.PNG)
-5. Stopped로 표시되면 공유가 완전히 중단된 상태입니다.
+5. Stopped로 표시되면 공유가 완전히 중단된 상태입니다.<br>
 ![003_start-stop-sharing](img/start-stop-sharing/003_start-stop-sharing.PNG)
 
 ## **공유 재시작 방법**

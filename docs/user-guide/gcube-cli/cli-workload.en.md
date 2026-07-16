@@ -42,9 +42,6 @@ gcube -o json workload describe <SER>
     | `pending` | Preparing for deployment |
     | `error` | Error occurred |
 
-    !!! question "Review Needed"
-        The full list of actual STATE values should be confirmed with the development team.
-
 ---
 
 ## **Register**
@@ -198,9 +195,6 @@ gcube workload logs <SER> --pod 0 --container 1
 
 !!! note
     Press **Ctrl+C** to stop log streaming. Running this on a workload that is not in `deploy` status will return an error.
-
-!!! question "Review Needed"
-    Whether Ctrl+C terminates cleanly needs to be confirmed.
 
 !!! note
     If there are multiple pods or containers, running without `--pod`/`--container` will display a selection list.

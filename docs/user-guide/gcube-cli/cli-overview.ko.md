@@ -11,9 +11,6 @@ Python 3.10 이상이 필요합니다.
 !!! note
     터미널(Windows: 명령 프롬프트 또는 PowerShell, macOS/Linux: Terminal)을 실행한 뒤 아래 명령어를 입력합니다.
 
-!!! question "검토 필요"
-    Windows 및 macOS/Linux 환경에서 정상 작동 여부를 확인해야 합니다.
-
 ```bash
 pip install gcube-cli
 gcube --version     # 설치가 정상적으로 완료되면 버전 번호가 출력됩니다
@@ -71,9 +68,6 @@ gcube [글로벌 옵션] <서비스> <액션> [옵션]
     - `<서비스>`: 명령 대상 (예: `gpu`, `workload`, `resource`, `point`, `credential`, `configure`)
     - `<액션>`: 수행할 작업 (예: `list`, `register`, `describe`, `logs`, `delete`)
     - `[글로벌 옵션]`과 `[옵션]`은 선택 사항입니다.
-
-!!! question "검토 필요"
-    서비스 및 액션의 전체 목록과 정확한 사용 방법을 개발팀에 확인 후 보완이 필요합니다.
 
 | 글로벌 옵션 | 설명 | 기본값 |
 |---|---|---|

@@ -22,9 +22,6 @@ gcube configure status                       # Check current settings and token 
 !!! note
     `platform-url` and `ws-url` are set to the official gcube server by default. There is no need to change them unless you are using a separate private environment.
 
-!!! question "Review Needed"
-    Confirmation from the development team is needed on what `platform-url` and `ws-url` represent and how they are used.
-
 The configuration file is saved at `~/.gcube/config.yaml`.
 
 ```yaml
@@ -38,9 +35,6 @@ output: table
 
 !!! note
     If your token expires, reissue a new token from the website and update it with `gcube configure set --token <new token>`. Running commands with an expired token will return exit code `3` (authentication failure).
-
-!!! question "Review Needed"
-    The specific steps and path for reissuing a token need to be confirmed.
 
 ---
 
@@ -61,9 +55,6 @@ gcube -o json workload describe 2212 | jq '.state'
     - macOS: `brew install jq`
     - Ubuntu/Debian: `sudo apt install jq`
     - Windows: Download from the [jq official site](https://jqlang.github.io/jq/download/)
-
-!!! question "Review Needed"
-    Whether `jq` needs to be pre-installed and how it integrates with gcube CLI should be confirmed.
 
 To change the default output format, use the following command.
 

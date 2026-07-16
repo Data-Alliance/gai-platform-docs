@@ -11,9 +11,6 @@ Python 3.10 or higher is required.
 !!! note
     Open a terminal (Windows: Command Prompt or PowerShell, macOS/Linux: Terminal) and enter the commands below.
 
-!!! question "Review Needed"
-    Verification is required to confirm proper operation on Windows and macOS/Linux environments.
-
 ```bash
 pip install gcube-cli
 gcube --version     # If installation is successful, the version number will be displayed
@@ -71,9 +68,6 @@ gcube [global options] <service> <action> [options]
     - `<service>`: The target of the command (e.g., `gpu`, `workload`, `resource`, `point`, `credential`, `configure`)
     - `<action>`: The operation to perform (e.g., `list`, `register`, `describe`, `logs`, `delete`)
     - `[global options]` and `[options]` are optional.
-
-!!! question "Review Needed"
-    The full list of services and actions and their exact usage should be confirmed with the development team.
 
 | Global Option | Description | Default |
 |---|---|---|

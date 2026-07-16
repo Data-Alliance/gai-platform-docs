@@ -36,9 +36,6 @@ Spending Summary:
     | `Spent Point` | Total cumulative spent amount |
     | `Network Point` | Points deducted based on network traffic usage |
 
-    !!! question "Review Needed"
-        The exact billing criteria for `Network Point` (traffic unit, applicable conditions, etc.) should be confirmed with the development team.
-
 ---
 
 <div style="text-align: center;" markdown>

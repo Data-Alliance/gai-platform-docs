@@ -36,9 +36,6 @@ Spending Summary:
     | `Spent Point` | 누적 사용 총액 |
     | `Network Point` | 네트워크 트래픽 사용에 따라 차감되는 포인트 |
 
-    !!! question "검토 필요"
-        `Network Point`의 정확한 과금 기준(트래픽 단위, 적용 조건 등)을 개발팀에 확인 후 보완이 필요합니다.
-
 ---
 
 <div style="text-align: center;" markdown>

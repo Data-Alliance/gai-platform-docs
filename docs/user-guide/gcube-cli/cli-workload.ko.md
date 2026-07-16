@@ -42,8 +42,6 @@ gcube -o json workload describe <SER>
     | `pending` | 배포 준비 중 |
     | `error` | 오류 발생 |
 
-    !!! question "검토 필요"
-        실제 STATE 값 전체 목록을 개발팀에 확인 후 보완이 필요합니다.
 
 ---
 
@@ -198,9 +196,6 @@ gcube workload logs <SER> --pod 0 --container 1
 
 !!! note
     로그 스트리밍을 종료하려면 **Ctrl+C**를 누르세요. `deploy` 상태가 아닌 워크로드에서 실행하면 오류가 반환됩니다.
-
-!!! question "검토 필요"
-    Ctrl+C로 정상 종료되는지 확인이 필요합니다.
 
 !!! note
     Pod·컨테이너가 여러 개인 경우 `--pod`/`--container` 없이 실행하면 선택 목록이 출력됩니다.

@@ -22,9 +22,6 @@ gcube configure status                       # 현재 설정 및 토큰 유효�
 !!! note
     `platform-url`과 `ws-url`은 기본값으로 gcube 공식 서버가 설정되어 있습니다. 별도의 프라이빗 환경을 사용하는 경우가 아니라면 변경할 필요가 없습니다.
 
-!!! question "검토 필요"
-    `platform-url`과 `ws-url`이 정확히 무엇인지, 어떻게 사용하는지 개발팀 확인이 필요합니다.
-
 설정 파일은 `~/.gcube/config.yaml`에 저장됩니다.
 
 ```yaml
@@ -38,9 +35,6 @@ output: table
 
 !!! note
     토큰이 만료되면 `gcube configure set --token <새 토큰>` 명령어로 토큰을 홈페이지에서 재발급 후 갱신하세요. 만료된 토큰으로 명령을 실행하면 종료 코드 `3`(인증 실패)이 반환됩니다.
-
-!!! question "검토 필요"
-    토큰 재발급 방법에 대한 구체적인 경로 및 절차 확인이 필요합니다.
 
 ---
 
@@ -61,9 +55,6 @@ gcube -o json workload describe 2212 | jq '.state'
     - macOS: `brew install jq`
     - Ubuntu/Debian: `sudo apt install jq`
     - Windows: [jq 공식 사이트](https://jqlang.github.io/jq/download/)에서 다운로드
-
-!!! question "검토 필요"
-    `jq` 사전 설치 필요 여부 및 gcube CLI와의 연동 방식 확인이 필요합니다.
 
 기본 출력 형식을 변경하려면 아래 명령어를 사용하세요.
 

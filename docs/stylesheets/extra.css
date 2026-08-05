@@ -1,38 +1,62 @@
 
 
-.md-header {
+[data-md-color-scheme="default"] .md-header {
     background-color: rgb(255, 255, 255) !important;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+    background-color: #16121f !important;
 }
 
 .md-header .md-search input {
     color: #999999;
 }
 
-.md-header .md-search:hover {
+[data-md-color-scheme="default"] .md-header .md-search:hover {
     background-color: #f0f0f0;
 }
 
-.md-header .md-search input::placeholder {
+[data-md-color-scheme="default"] .md-header .md-search input::placeholder {
     color: #070707;
 }
 
-.md-footer-nav {
+[data-md-color-scheme="slate"] .md-header .md-search:hover {
+    background-color: #241d33;
+}
+
+[data-md-color-scheme="slate"] .md-header .md-search input::placeholder {
+    color: #cfc7e0;
+}
+
+[data-md-color-scheme="default"] .md-footer-nav {
     /* background-image: url(../assets/images/second-nav-blue.png); */
     background-color: rgb(255, 255, 255) !important;
 
     /* max-height: 90px; */
 }
 
+[data-md-color-scheme="slate"] .md-footer-nav {
+    background-color: #16121f !important;
+}
+
 .md-typeset h1 {
-    color: #1a1a2e;
     font-weight: 700;
     border-bottom: 2px solid rgb(130, 71, 255);
     padding-bottom: 0.3em;
 }
 
 .md-typeset h2 {
-    color: #1a1a2e;
     font-weight: 600;
+}
+
+[data-md-color-scheme="default"] .md-typeset h1,
+[data-md-color-scheme="default"] .md-typeset h2 {
+    color: #1a1a2e;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2 {
+    color: #f0eaff;
 }
 
 .md-footer-meta {
@@ -43,8 +67,12 @@
     width: 50px
 }
 
-.md-main {
+[data-md-color-scheme="default"] .md-main {
     background: linear-gradient(135deg, #f8f6ff 0%, #ffffff 60%);
+}
+
+[data-md-color-scheme="slate"] .md-main {
+    background: linear-gradient(135deg, #0f0622 0%, #16121f 60%);
 }
 
 .md-typeset a {
@@ -100,6 +128,34 @@
      /*font-weight: bold; */
     /* font-size: 0.9em;  }*/
 
+/* Grid cards 텍스트 가시성 — 이전 fade 버그 재발 방지, scheme별 고정 */
+[data-md-color-scheme="default"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="default"] .md-typeset .grid.cards > ul > li p,
+[data-md-color-scheme="default"] .md-typeset .grid.cards > ul > li a {
+    color: #1a1a2e !important;
+    opacity: 1 !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li p,
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li a {
+    color: #f0eaff !important;
+    opacity: 1 !important;
+}
+
+/* 본문 텍스트 기본 색상 명시 고정 (scheme 전환 시 흐림 방지) */
+[data-md-color-scheme="default"] .md-typeset,
+[data-md-color-scheme="default"] .md-typeset p,
+[data-md-color-scheme="default"] .md-typeset li {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+[data-md-color-scheme="slate"] .md-typeset,
+[data-md-color-scheme="slate"] .md-typeset p,
+[data-md-color-scheme="slate"] .md-typeset li {
+    color: rgba(255, 255, 255, 0.87);
+}
+
 
 root {
   --md-text-font: "Inter", sans-serif;
@@ -133,45 +189,69 @@ p, li {
 }
 
 /* Change the toggle button color to dark gray */
-.md-header__option {
-    background-color: #ffffff; /* Dark gray background */
-    color: #8b8b8b; /* White text color */
+[data-md-color-scheme="default"] .md-header__option {
+    background-color: #ffffff;
+    color: #8b8b8b;
+}
+
+[data-md-color-scheme="slate"] .md-header__option {
+    background-color: #16121f;
+    color: #cfc7e0;
 }
 
 
 
 /* Mobile navigation bar styles */
 @media only screen and (max-width: 76.1875em) {
-    .md-nav__title,
-    .md-nav__title--site,
-    .md-nav__source {
+    [data-md-color-scheme="default"] .md-nav__title,
+    [data-md-color-scheme="default"] .md-nav__title--site,
+    [data-md-color-scheme="default"] .md-nav__source {
       background-color: rgb(255, 255, 255) !important;
-      color: #110606 !important; /* White text */
+      color: #110606 !important;
     }
-  
-    .md-nav__title {
-      border-bottom: 1px solid #666666 !important; /* Darker gray border */
+
+    [data-md-color-scheme="default"] .md-nav__title {
+      border-bottom: 1px solid #666666 !important;
     }
-  
+
+    [data-md-color-scheme="default"] .md-nav__list {
+      background-color: #f0f0f0 !important;
+    }
+
+    [data-md-color-scheme="default"] .md-nav__item {
+      color: #333333 !important;
+    }
+
+    [data-md-color-scheme="slate"] .md-nav__title,
+    [data-md-color-scheme="slate"] .md-nav__title--site,
+    [data-md-color-scheme="slate"] .md-nav__source {
+      background-color: #16121f !important;
+      color: #f0eaff !important;
+    }
+
+    [data-md-color-scheme="slate"] .md-nav__title {
+      border-bottom: 1px solid #3a3350 !important;
+    }
+
+    [data-md-color-scheme="slate"] .md-nav__list {
+      background-color: #1e1830 !important;
+    }
+
+    [data-md-color-scheme="slate"] .md-nav__item {
+      color: #d8d0ea !important;
+    }
+
     .md-nav__title::before {
-      color: #ffffff !important; /* White color for the menu icon */
+      color: #ffffff !important; /* 메뉴 아이콘 — 배경(퍼플 헤더)과 대비되므로 scheme 무관 유지 */
     }
-  
-    .md-nav__list {
-      background-color: #f0f0f0 !important; /* Light gray background for the menu items */
-    }
-  
-    .md-nav__item {
-      color: #333333 !important; /* Dark gray text for menu items */
-    }
-    
+
     .md-header {
       background-color: rgb(130, 71 ,255) !important;
     }
 
     .md-header__option {
         background-color: rgb(130, 71 ,255) !important;
-        color: #f0f0f0; /* White text color */
+        color: #f0f0f0;
     }
     body {
         font-family: 'Inter', sans-serif;

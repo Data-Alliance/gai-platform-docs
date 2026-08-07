@@ -67,6 +67,16 @@
     width: 50px
 }
 
+/* 다크모드 전용 로고 교체 (경로: docs/images/gcube_logo_w.png) */
+[data-md-color-scheme="slate"] .md-header__button.md-logo img {
+    content: url("../images/gcube_logo_w.png");
+}
+
+/* 다크모드에서 로고 옆 site_name("gcube Docs") 텍스트 숨김 — 라이트는 유지 */
+[data-md-color-scheme="slate"] .md-header__topic:first-child {
+    display: none;
+}
+
 [data-md-color-scheme="default"] .md-main {
     background: linear-gradient(135deg, #f8f6ff 0%, #ffffff 60%);
 }

@@ -18,7 +18,7 @@
 ![001_sign-up.png](img/sign-up/001_sign-up.png)
 2. 로그인 화면 하단의 **회원가입 버튼**을 클릭합니다.
 ![002_sign-up.png](img/sign-up/002_sign-up.png)
-3. **구글 또는 마이크로소프트 계정**을 선택합니다.
+3. **구글/마이크로소프트 계정** 또는 **사용하시는 이메일**을 선택합니다.
 ![003_sign-up.png](img/sign-up/003_sign-up.png)
 4. 사용할 계정을 선택하고 약관에 동의한 뒤, 회원 정보를 입력해 가입을 완료합니다.
 ![004_sign-up.png](img/sign-up/004_sign-up.png)

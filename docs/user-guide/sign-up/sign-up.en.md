@@ -18,7 +18,7 @@
 ![001_sign-up.png](img_en/sign-up/001_sign-up.png)
 2. Click the **Sign Up button** at the bottom of the login screen.
 ![002_sign-up.png](img_en/sign-up/002_sign-up.png)
-3. Select your **Google or Microsoft account**.
+3. Select your **Google/Microsoft account** or **any type of email address**.
 ![003_sign-up.png](img_en/sign-up/003_sign-up.png)
 4. Select the account you want to use, agree to the terms, and fill in your information to complete registration.
 ![004_sign-up.png](img_en/sign-up/004_sign-up.png)
